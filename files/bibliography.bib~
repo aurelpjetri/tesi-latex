@@ -1,0 +1,21 @@
+@article{art:rif.1,
+	author={Insert here the authors of paper},
+    title={Insert here the title of paper},
+	year={Insert here the year of paper's publication},
+    journal={Insert here the journal's paper, ex. IEEE Transactions},
+}
+
+@book{book:rif.50,
+	author={F.Sempronio},
+	title={S-{P}lus is better than {SAS}},
+	year={1990}
+	editor={Wiley},
+}
+
+@article{
+	author={Seth Tisue, Uri Wilensky},
+	title={NetLogo: Design and Implementation of a Multi-Agent Modeling Environment},
+	year={2004},
+	journal={Agent2004. Chicago, IL. Retrieved October 4, 2012},
+}
+	
