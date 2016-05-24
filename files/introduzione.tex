@@ -1,10 +1,12 @@
 \chapter{Introduzione}
 NetLogo è un linguaggio di programmazione agent-based e un ambiente di modellazione di sistemi complessi. Permette la simulazione di fenomeni naturali e sociali, e si adatta molto bene alla simulazione di eventi complessi che si evolvono nel tempo. La natura del linguaggio di programmazione permette di specificare comandi a singoli agenti o a intere \textit{breeds}, definendo quindi \textit{behaviors} individuali e globali. In questo modo si possono studiare comportamenti a più livelli, come quello microscopico dei singoli individui, o quello macroscopico delle loro interazioni e dei pattern che ne possono emergere.\\
-NetLogo come linguaggio di programmazione multi-agent eredita da \textbf{Logo} il principio fondamentale " low threshold, no ceiling ". Low threshold implica la sua accessibilità a utenti poco esperti o con alcuna esperienza di programmazione precedente. No ceiling, invece, significa un apertura completa a progetti di ogni tipo, rendendolo quindi uno strumento molto utile per la ricerca.\\
-La sua natura, però lo rende un linguaggio piuttosto rigido e, per alcuni aspetti, poco versatile ad occhi esperti, lo scopo di questo progetto, quindi è di agevolare l'utente NetLogo nella costruzione di particolari modelli. Si vuole facilitare la scrittura del codice NetLogo che permetta di rappresentare ambienti fisici sotto forma di grafi.\\
+NetLogo come linguaggio di programmazione agent-based eredita da \textbf{Logo} il principio fondamentale " low threshold, no ceiling ". Low threshold implica la sua accessibilità a utenti poco esperti o con alcuna esperienza di programmazione precedente, questo perché Logo nasce come linguaggio di programmazione educativo. No ceiling, invece, si riferisce alla completa programmabilità di tutte le sue parti.\\
+Come il suo predecessore, però, NetLogo è un compromesso tra linguaggio sequenziale e funzionale rendendolo, per alcuni aspetti, poco versatile ad occhi esperti. Lo scopo di questo progetto, quindi, è di agevolare l'utente NetLogo nella costruzione di particolari modelli. Si vuole facilitare la scrittura del codice NetLogo rappresenta ambienti fisici sotto forma di grafi, e che definisce tutti i possibili comportamenti che gli agenti possono avere al suo interno.\\
 Il progetto prevede la lettura di un file XML in cui si descrive il modello di interesse, costituito da:
-\begin{itemize}
+\begin{enumerate}
 \item ambiente fisico
 \item comportamento degli attori
 \item stato iniziale 
-\end{itemize} 
+\end{enumerate}
+La natura funzionale di NetLogo fa sì che gran parte del codice per la rappresentazione dei modelli di interesse per questo progetto rimanga invariata, quindi l'obiettivo ultimo è quello di inserire le parti variabili che descrivono topologia, comportamenti e stato, all'interno di un codice fisso.
+ 

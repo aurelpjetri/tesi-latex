@@ -1,19 +1,15 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: master-thesis.aux
-A level-1 auxiliary file: files/introduzione.tex.aux
+A level-1 auxiliary file: files/introduzione.aux
 A level-1 auxiliary file: files/capitolo1.aux
+A level-1 auxiliary file: files/bibliography.aux
 The style file: plain.bst
 I found no \citation commands---while reading file master-thesis.aux
 Database file #1: files/bibliography.bib
-I was expecting a `,' or a `}'---line 23 of file files/bibliography.bib
- :  
- :  editor={Wiley},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            499 strings with 4062 characters,
+            500 strings with 4080 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -52,4 +48,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 2 error messages)
+(There was 1 error message)
