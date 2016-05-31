@@ -1,0 +1,23 @@
+\chapter{Sviluppo del progetto}
+In questo capitolo verranno descritte nel dettaglio tutte le parti che costituiscono il progetto di tesi. In particolare si parlerà di obiettivo e requisiti, struttura del documento XML, class diagram, design pattern utilizzati, struttura del modello NetLogo costruito.\\ 
+
+\section{Obiettivo e requisiti}
+L'obiettivo di questa tesi è creare un programma che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.\\
+Il progetto è stato sviluppato in linguaggio Java. Per l'analisi del documento XML si è scelta la libreria JDOM\footnote{http://www.jdom.org/}. Per la scrittura del codice NetLogo, invece, è stata usata la libreria di stream standard di Java.
+Lo strumento in questione segue il seguente workflow:
+\begin{itemize}
+\item analisi del documento XML e costruzione degli oggetti Java per la rappresentazione del modello
+\item visita degli oggetti Java e scrittura su file del codice NetLogo
+\end{itemize}
+
+\section{Struttura del documento XML}
+La struttura del documento XML prevista per il funzionamento del nostro strumento si attiene il più possibile allo standard di formato GraphML\footnote{http://graphml.graphdrawing.org/} (approvato dal W3C) in modo da evitare inconsistenze e incomprensioni, soprattutto per la parte in cui è descritta la topologia dell'ambiente, per la quale questo formato è pienamente adatto.
+Il file XML è suddiviso in tre sezioni distinte:
+\begin{itemize}
+\item \texttt{Graph}
+\item \texttt{Behaviors}
+\item \texttt{System}
+\end{itemize} 
+\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto-forma di grafo con edges che rappresentano le strade e nodes che rappresentano gli incroci. Per quanto riguarda i \texttt{Behavior} si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni behavior viene indicato il nome, l'identificatore e la lista dei nodi di interesse. La sezione \texttt{System} descrive lo stato iniziale dell'ambiente indicando, per ogni nodo, il numero di attori presenti e i loro behavior.
+
+\section{Class Diagram}
