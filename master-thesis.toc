@@ -6,4 +6,5 @@
 \contentsline {chapter}{\numberline {2}Sviluppo del progetto}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Obiettivo e requisiti}{3}{section.2.1}
 \contentsline {section}{\numberline {2.2}Struttura del documento XML}{4}{section.2.2}
-\contentsline {chapter}{Bibliografia}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Class Diagram}{5}{section.2.3}
+\contentsline {chapter}{Bibliografia}{7}{figure.2.1}

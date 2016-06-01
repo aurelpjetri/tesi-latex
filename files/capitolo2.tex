@@ -18,6 +18,14 @@ Il file XML è suddiviso in tre sezioni distinte:
 \item \texttt{Behaviors}
 \item \texttt{System}
 \end{itemize} 
-\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto-forma di grafo con edges che rappresentano le strade e nodes che rappresentano gli incroci. Per quanto riguarda i \texttt{Behavior} si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni behavior viene indicato il nome, l'identificatore e la lista dei nodi di interesse. La sezione \texttt{System} descrive lo stato iniziale dell'ambiente indicando, per ogni nodo, il numero di attori presenti e i loro behavior.
+\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto-forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci. Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza. I nodes invece possono essere di tre tipi, normal, entry o exit, per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta.\\
+Per quanto riguarda i \texttt{Behavior} si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni behavior viene indicato la tipologia, l'identificatore e la lista dei nodi di interesse.\\
+La sezione \texttt{System} descrive lo stato iniziale (\texttt{state}) dell'ambiente. Per ogni nodo indica il numero di attori presenti e i loro behavior. In particolare nei nodi contrassegnati come entry o exit viene aggiunta una sezione denominata \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili.
 
 \section{Class Diagram}
+L'unico scopo delle classi Java utilizzate è quello di rappresentare e conservare l'informazione raccolta dal documento XML, senza eseguire alcun tipo di manipolazione. Per questo motivo abbiamo cercato di mantenere la struttura delle classi il più semplice possibile, come mostrato in figura 1
+\begin{figure}[htbp]
+\centering
+\includegraphics[width= 15cm,keepaspectratio]{../../../Documenti/class}
+\caption{File \protect\url{../../../Documenti/classf}\label{fig:class-diagram}}
+\end{figure}
