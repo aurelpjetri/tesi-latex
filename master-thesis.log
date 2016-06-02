@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  1 JUN 2016 13:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  2 JUN 2016 20:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,42 +788,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  (./files/capitolo2.tex
 Capitolo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
-
- []
-
 [3
 
 
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 17.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 19.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [4]
-<../../../Documenti/class.pdf, id=103, 597.50786pt x 845.04686pt>
-File: ../../../Documenti/class.pdf Graphic file (type pdf)
+<images/graph-diagram.pdf, id=104, 597.51233pt x 845.0471pt>
+File: images/graph-diagram.pdf Graphic file (type pdf)
 
-<use ../../../Documenti/class.pdf>
-Package pdftex.def Info: ../../../Documenti/class.pdf used on input line 29.
-(pdftex.def)             Requested size: 426.79134pt x 603.6108pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 29--30
- [][] 
- []
-
-
-LaTeX Warning: Float too large for page by 38.23943pt on input line 31.
-
-) [5] [6 <../../../Documenti/class.pdf>]
+<use images/graph-diagram.pdf>
+Package pdftex.def Info: images/graph-diagram.pdf used on input line 31.
+(pdftex.def)             Requested size: 390.00128pt x 551.5693pt.
+) [5] [6 <./images/graph-diagram.pdf>]
 \openout2 = `files/bibliography.aux'.
 
 
@@ -850,13 +837,13 @@ Package rerunfilecheck Info: File `master-thesis.out' has not changed.
  )
 (\end occurred when \ifx on line 60 was incomplete) 
 Here is how much of TeX's memory you used:
- 10653 strings out of 493304
- 148173 string characters out of 6139872
- 269714 words of memory out of 5000000
- 13873 multiletter control sequences out of 15000+600000
- 25320 words of font info for 71 fonts, out of 8000000 for 9000
+ 10644 strings out of 493304
+ 148011 string characters out of 6139872
+ 269716 words of memory out of 5000000
+ 13865 multiletter control sequences out of 15000+600000
+ 23293 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,8n,32p,1007b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,8n,32p,1007b,402s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/
 dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200
@@ -868,13 +855,12 @@ f/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public
 /cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.p
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfxc1728.pfb>
-Output written on master-thesis.pdf (11 pages, 685310 bytes).
+cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfxc1728.pfb>
+Output written on master-thesis.pdf (11 pages, 624132 bytes).
 PDF statistics:
- 185 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
+ 188 PDF objects out of 1000 (max. 8388607)
+ 150 compressed objects within 2 object streams
  22 named destinations out of 1000 (max. 500000)
  75 words of extra memory for PDF output out of 10000 (max. 10000000)
 
