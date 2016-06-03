@@ -5,6 +5,8 @@
 \BOOKMARK [2][-]{subsection.1.2.1}{Linguaggio}{section.1.2}% 5
 \BOOKMARK [0][-]{chapter.2}{Sviluppo del progetto}{}% 6
 \BOOKMARK [1][-]{section.2.1}{Obiettivo e requisiti}{chapter.2}% 7
-\BOOKMARK [1][-]{section.2.2}{Struttura del documento XML}{chapter.2}% 8
-\BOOKMARK [1][-]{section.2.3}{Class Diagram}{chapter.2}% 9
-\BOOKMARK [0][-]{figure.2.1}{Bibliografia}{}% 10
+\BOOKMARK [1][-]{section.2.2}{Documento XML}{chapter.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Struttura Interna}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.3.1}{Parser XML e Builder}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.2}{Visitor}{section.2.3}% 11
+\BOOKMARK [0][-]{figure.2.4}{Bibliografia}{}% 12
