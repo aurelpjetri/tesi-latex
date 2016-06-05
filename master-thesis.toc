@@ -10,8 +10,8 @@
 \contentsline {section}{\numberline {2.2}Documento XML}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Struttura Interna}{6}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Parser XML e Builder}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Visitor}{9}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Modello NetLogo}{12}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Ambiente}{12}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Behaviors e stato iniziale}{14}{subsection.2.4.2}
-\contentsline {chapter}{Bibliografia}{16}{figure.2.7}
+\contentsline {subsection}{\numberline {2.3.2}Visitor}{8}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Modello NetLogo}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Ambiente}{13}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Behaviors e stato iniziale}{15}{subsection.2.4.2}
+\contentsline {chapter}{Bibliografia}{17}{figure.2.7}

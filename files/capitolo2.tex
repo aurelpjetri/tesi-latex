@@ -37,21 +37,24 @@ Ogni behavior è caratterizzato da un identificatore, attribuitogli dal XML, e d
 
 \subsection{Parser XML e Builder}
 Come già accennato, abbiamo scelto il formato JDOM per la rappresentazione del file XML. La scelta di questo formato è stata dettata dalla sua struttura, che si adatta meglio ai nostri fini di sola lettura e non di manipolazione del documento.\\
-Per la fase di costruzione delle classi abbiamo usato il pattern Builder, in modo da mantenere il processo di costruzione della struttura interna dell'oggetto di tipo Grafo trasparente all'utente di questo strumento.\\
-Abbiamo mantenuto l'interfaccia Parser per rendere il progetto aperto ad estensioni future, come il supporto di linguaggi alternativi al XML.\\
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/builder-diagram.png}
-\caption{Class diagram di parser e builder}
+\caption{Class diagram di Parser e Builder}
 \label{fig:builder-diagram}
 \end{figure}
-Come si vede in Figura \ref{fig:builder-diagram} il parser esercita il ruolo di Director per il builder. Il processo di analisi del documento e costruzione degli oggetti Java è descritto nel sequence diagram in Figura \ref{fig:builder-sequence}.
+Per la fase di costruzione delle classi abbiamo usato il pattern Builder, in modo da mantenere il processo di costruzione della struttura interna dell'oggetto di tipo Grafo trasparente all'utente di questo strumento. In particolare l'interfaccia del Builder aiuta a mantenere l'algoritmo di interpretazione dell'XML separato dal processo di costruzione e rappresentazione del suo contenuto in classi Java.\\
+Il pattern Builder, inoltre, porta il grande beneficio di migliorare la modularizzazione derivante dall'incapsulamento di tutta la procedura di manipolazione della struttura interna dell'oggetto costruito, in questo modo il Client non ha necessità di conoscere la sua composizione interna.\\
+Una conseguenza che rende il pattern ancora più adatto al nostro caso è il miglioramento del controllo sul processo di costruzione del prodotto. Al contrario di altri pattern creazionali, i quali costruiscono e restituiscono il prodotto in un'unica funzione, il Builder separa queste due operazioni mettendo a disposizione un'interfaccia più completa.\\
+Grazie a questo noi siamo, quindi, in grado di esercitare un maggiore controllo sulla correttezza delle operazioni eseguite e delle informazioni inserite durante questa prima fase.\\
+L'interfaccia Parser rende il progetto aperto ad estensioni future, come il supporto di linguaggi alternativi al XML.\\
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/builder-sequence.png}
 \caption{Sequence diagram della costruzione di un grafo da parte di XMLParser}
 \label{fig:builder-sequence}
 \end{figure}
+Come si vede in Figura \ref{fig:builder-diagram} il parser esercita il ruolo di Director per il builder. Il processo di analisi del documento e costruzione degli oggetti Java è descritto nel sequence diagram in Figura \ref{fig:builder-sequence}.
 XMLParser costruisce, attraverso la libreria JDOM2, il modello JDOM del documento, il quale rispecchia la struttura ad albero del documento. Quindi il parser effettua una visita del modello ad albero, legge le informazioni necessarie e impartisce i corretti comandi al builder.\\
 
 \subsection{Visitor}
