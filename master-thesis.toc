@@ -4,14 +4,15 @@
 \contentsline {chapter}{\numberline {1}Sezione teorica}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Simulazione delle masse}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}NetLogo}{1}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Linguaggio}{2}{subsection.1.2.1}
-\contentsline {chapter}{\numberline {2}Sviluppo del progetto}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Obiettivo e requisiti}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Documento XML}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Struttura Interna}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Parser XML e Builder}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Visitor}{8}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Modello NetLogo}{13}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Ambiente}{13}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Behaviors e stato iniziale}{15}{subsection.2.4.2}
-\contentsline {chapter}{Bibliografia}{18}{figure.2.8}
+\contentsline {subsection}{\numberline {1.2.1}Storia}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Linguaggio}{3}{subsection.1.2.2}
+\contentsline {chapter}{\numberline {2}Sviluppo del progetto}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Obiettivo e requisiti}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Documento XML}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Struttura Interna}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Parser XML e Builder}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Visitor}{9}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Modello NetLogo}{14}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Ambiente}{14}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Behaviors e stato iniziale}{16}{subsection.2.4.2}
+\contentsline {chapter}{Bibliografia}{19}{figure.2.8}
