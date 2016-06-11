@@ -7,52 +7,53 @@ A level-1 auxiliary file: files/capitolo2.aux
 A level-1 auxiliary file: files/bibliography.aux
 The style file: plain.bst
 Database file #1: files/bibliography.bib
-I was expecting a `,' or a `}'---line 12 of file files/bibliography.bib
- :  
- :  url="http://ccl.northwestern.edu/cm/starlogot/"
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--to sort, need author or key in netlogo
-Warning--empty author in netlogo
-You've used 2 entries,
+Warning--to sort, need author or key in jdom
+Warning--to sort, need author or key in graphml
+Warning--empty author in graphml
+Warning--empty journal in graphml
+Warning--empty year in graphml
+Warning--empty author in jdom
+Warning--empty journal in jdom
+Warning--empty year in jdom
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            510 strings with 4379 characters,
-and the built_in function-call counts, 388 in all, are:
-= -- 36
-> -- 8
+            523 strings with 4742 characters,
+and the built_in function-call counts, 1080 in all, are:
+= -- 100
+> -- 40
 < -- 0
-+ -- 4
-- -- 2
-* -- 21
-:= -- 70
-add.period$ -- 5
-call.type$ -- 2
-change.case$ -- 7
++ -- 17
+- -- 12
+* -- 67
+:= -- 188
+add.period$ -- 14
+call.type$ -- 5
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 20
-empty$ -- 36
-format.name$ -- 2
-if$ -- 78
+cite$ -- 13
+duplicate$ -- 50
+empty$ -- 88
+format.name$ -- 12
+if$ -- 215
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 12
-num.names$ -- 2
-pop$ -- 8
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 27
+num.names$ -- 6
+pop$ -- 28
 preamble$ -- 1
-purify$ -- 5
+purify$ -- 16
 quote$ -- 0
-skip$ -- 14
+skip$ -- 34
 stack$ -- 0
-substring$ -- 10
-swap$ -- 2
+substring$ -- 25
+swap$ -- 3
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
-warning$ -- 2
-while$ -- 2
-width$ -- 3
-write$ -- 20
-(There was 1 error message)
+type$ -- 20
+warning$ -- 8
+while$ -- 6
+width$ -- 6
+write$ -- 48
+(There were 8 warnings)

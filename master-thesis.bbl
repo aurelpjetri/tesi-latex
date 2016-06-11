@@ -1,12 +1,28 @@
 \begin{thebibliography}{1}
 
+\bibitem{graphml}
+Graph{ML}.
+\newblock \url{http://graphml.graphdrawing.org/}.
+
+\bibitem{jdom}
+{JDOM}.
+\newblock \url{http://www.jdom.org/}.
+
+\bibitem{hierarchical-report}
+Sandro Mehic, Marco Paolieri, and Enrico Vicario.
+\newblock Research report of hierarchical approach for the scalable analysis of
+  crowd evacuation models.
+\newblock {\em Università degli Studi di Firenze}, 2015-2016.
+
 \bibitem{netlogo}
-Netlogo (and netlogo user manual).
+Uri Wilensky.
+\newblock Netlogo (and netlogo user manual).
 \newblock {\em Center for Connected Learning and Computer-Based Modeling,
   Northwestern}, 1997.
+\newblock \url{http://ccl.northwestern.edu/cm/starlogot/}.
 
 \bibitem{wilensky-tisue}
-Seth~Tisue Uri~Wilensky.
+Uri Wilensky and Seth Tisue.
 \newblock {N}etlogo: Design and implementation of a multi-agent modeling
   environment.
 \newblock {\em Agent2004. Chicago, IL. Retrieved October 4, 2012}, 2004.

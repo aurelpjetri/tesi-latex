@@ -1,8 +1,17 @@
-\chapter{Sezione teorica}
-<<descrizione del contesto teorico della tesi>>
+\chapter{Contesto teorico}
+In questo capitolo si descrive il contesto di ricerca in cui si inserisce questo progetto di tesi, andando a descrivere lo stato dell'arte della simulazione delle masse (Sezione \ref{sec:simulazione-masse}). Successivamente si fornisce una descrizione dell'ambiente NetLogo (Sezione \ref{sec:netlogo}) e dei Design Patterns (Sezione \ref{sec:builder} e \ref{sec:visitor}) che questo progetto usa al fine di una migliore comprensione e chiarezza dei concetti esposti nel Capitolo \ref{cap:sviluppo-progetto}.
 \section{Simulazione delle masse}
- 
+\label{sec:simulazione-masse}
+Descriviamo brevemente gli approcci più diffusi e riconosciuti per la simulazione delle masse per andare poi a soffermarci sull'approccio gerarchico in cui si inserisce questo progetto di tesi.
+\subsection{Stato dell'arte}
+
+\subsection{Approccio gerarchico}
+ L'approccio proposto (da Sandro Mehic, Marco Paolieri e Enrico Vicario) in \cite{hierarchical-report} per affrontare il problema della simulazione delle masse è di tipo gerarchico. Si scompone la simulazione in tre livelli di scala diversi in modo da ottenere una soluzione analitica indipendente dal numero di agenti.\\
+ Al primo livello si usa una modellazione di tipo microscopico basata su agenti (Agent Based Modeling) per ottenere parametri come tempo medio di soggiorno e probabilità di transizione. Oltre alle strategie di movimento si introducono due paradigmi diversi di comportamento che modellano l'aspetto sociale della folla.\\
+ Il primo è l'altruismo, ovvero la probabilità che un attore aiuti un altro attore con una capacità di movimento minore della sua, è stato dimostrato infatti che questa risulta essere un aspetto caratteristico delle masse. Il secondo è il conformismo, ovvero quanto questo attore tenderà ad unirsi alla massa oppure a cambiare percorso di fronte a una strada affollata.\\
+L'aspetto fisico dell'attore invece, inteso come strategia di movimento, consiste nell'individuazione e raggiungimento dell'uscita più vicina.
 \section {NetLogo} 
+\label{sec:netlogo}
 NetLogo \nocite{wilensky-tisue} \cite{netlogo} è un linguaggio di programmazione e un ambiente di modellazione di sistemi complessi. Adatto per la simulazione e lo studio di fenomeni naturali e sociali che si evolvono nel tempo.\\
 Gli utenti possono dare istruzioni a migliaia di agenti che operano in modo concorrenziale. Questi comandi possono essere dati in modo individuale o collettivo, permettendo quindi lo studio dei comportamenti su più livelli, come quello microscopico dei behaviors individuali o quello macroscopico delle loro interazioni con gli altri.\\
 NetLogo è usato per costruire una infinita varietà di simulazioni. I suoi turtles sono stati trasformati in molecole, lupi, clienti, commercianti, api, uccelli, batteri, macchine, magneti, pianeti, formiche e molto altro. Le sue patches allo stesso modo sono state usate come alberi, muri, corsi d'acqua, cellule tumorali, cellule vegetali e altro ancora. Turtles a patches possono essere usate per studiare astrazioni matematiche, ma anche per fare arte o giocare.\\
@@ -21,7 +30,12 @@ Il mondo in cui i turtles si muovono è suddiviso in \textbf{patches} anche esse
 Possono essere definite diverse “razze” (\textbf{breeds}) di turtles, ciascuna con variabili e behaviors caratteristici.\\
 Una peculiarità che contraddistingue NetLogo dai suoi predecessori sono gli “agentsets”, ovvero insiemi di agenti.
 
+\section{Builder Pattern}
+\label{sec:builder}
 
+
+\section{Visitor Pattern}
+\label{sec:visitor}
 
 
  

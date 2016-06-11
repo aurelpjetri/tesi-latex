@@ -1,10 +1,11 @@
 \chapter{Sviluppo del progetto}
+\label{cap:sviluppo-progetto}
 In questo capitolo verrà descritto lo scopo di questo progetto, i requisiti necessari al suo raggiungimento e i dettagli della sua struttura interna che ne permette il funzionamento. In particolare andremo ad analizzare il class-diagram che mostra le relazioni tra le classi che lo costituiscono e discuteremo delle scelte implementative fatte.
 
 \section{Obiettivo e requisiti}
 L'obiettivo di questa tesi è creare un programma in linguaggio Java che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.\\
 La scelta del linguaggio XML è dettata dalla sua diffusione, con lo scopo di ridurre le conoscenze preliminari necessarie per l'utilizzo di questo strumento.\\
-Per l'analisi del documento XML abbiamo scelto la libreria JDOM2\footnote{http://www.jdom.org/} non inclusa in Java. Il Wold Wide Web Consortium, infatti, ha stabilito uno standard cross-platform e language-indipendent detto DOM (Document Object Model) per la rappresentazione di documenti strutturati (quindi XML, HTML, XHTML) come modello orientato agli oggetti. Il formato JDOM usato dalla libreria è una variazione dello standard disegnata appositamente per Java.\\
+Per l'analisi del documento XML abbiamo scelto la libreria JDOM2  non inclusa in Java. Il Wold Wide Web Consortium, infatti, ha stabilito uno standard cross-platform e language-indipendent detto DOM (Document Object Model) per la rappresentazione di documenti strutturati (quindi XML, HTML, XHTML) come modello orientato agli oggetti. Il formato JDOM \cite{jdom} usato dalla libreria è una variazione dello standard disegnata appositamente per Java.\\
 JDOM2 sfrutta la classe \texttt{SAXBuilder} della libreria SAX (Simple Api for Xml) per la costruzione del modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. Ogni nodo dell'albero è di tipo \texttt{Element}. Conserva una lista dei figli e un riferimento al padre.\\
 Per quanto riguarda la parte della scrittura del codice NetLogo, si ha che gran parte del codice che modella la simulazione rimane fissa al variare dei modelli descritti negli XML, quindi abbiamo pensato di mantenere questa in un semplice file di testo che viene letto e integrato con le informazioni contenute negli oggetti Java. Per le operazioni di lettura e scrittura su file abbiamo usato le classi BufferedReader e PrintWriter che permettono lettura e scrittura di intere linee di testo.\\ 
 Lo strumento segue il seguente workflow:
@@ -15,7 +16,7 @@ Lo strumento segue il seguente workflow:
 \end{itemize}
 
 \section{Documento XML}
-La struttura del documento XML prevista per il funzionamento del nostro strumento si attiene il più possibile allo standard di formato GraphML\footnote{http://graphml.graphdrawing.org/} (approvato dal W3C) in modo da evitare inconsistenze e incomprensioni, soprattutto per la parte in cui è descritta la topologia dell'ambiente, per la quale questo formato è pienamente adatto.\\
+La struttura del documento XML prevista per il funzionamento del nostro strumento si attiene il più possibile allo standard di formato GraphML \cite{graphml} (approvato dal W3C) in modo da evitare inconsistenze e incomprensioni, soprattutto per la parte in cui è descritta la topologia dell'ambiente, per la quale questo formato è pienamente adatto.\\
 Il file XML è suddiviso in tre sezioni distinte:
 \begin{itemize}
 \item \texttt{Graph}
