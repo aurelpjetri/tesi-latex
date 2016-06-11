@@ -8,11 +8,33 @@ Graph{ML}.
 {JDOM}.
 \newblock \url{http://www.jdom.org/}.
 
+\bibitem{dijkstra}
+Jan Dijkstra, Harry~JP Timmermans, and AJ~Jessurun.
+\newblock A multi-agent cellular automata system for visualising simulated
+  pedestrian activity.
+\newblock {\em Theory and Practical Issues on Cellular Automata}, 2001.
+
+\bibitem{helbing}
+Dirk Helbing, Ill~\'es Farkas, and Tamas Vicsek.
+\newblock Simulating dynamical features of escape panic.
+\newblock {\em Nature}, 2000.
+
 \bibitem{hierarchical-report}
 Sandro Mehic, Marco Paolieri, and Enrico Vicario.
 \newblock Research report of hierarchical approach for the scalable analysis of
   crowd evacuation models.
 \newblock {\em Università degli Studi di Firenze}, 2015-2016.
+
+\bibitem{okazaki}
+S.~Okazaki.
+\newblock A study of pedestrian movement in architectural space. part 1:
+  pedestrian movement by the application of magnetic models.
+\newblock {\em Trans. of AIJ}, 1979.
+
+\bibitem{reynolds}
+Craig~W Reynolds.
+\newblock Flocks, herds and schools: A distributed behavioral model.
+\newblock {\em ACM SIGGRAPH computer graphics}, 1987.
 
 \bibitem{netlogo}
 Uri Wilensky.
