@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{graphml}
 Graph{ML}.
@@ -19,6 +19,18 @@ Dirk Helbing, Ill~\'es Farkas, and Tamas Vicsek.
 \newblock Simulating dynamical features of escape panic.
 \newblock {\em Nature}, 2000.
 
+\bibitem{starlisp}
+Clifford Lasser and Stephen~M. Omohundro.
+\newblock {\em The Essential Star-lisp Manual}.
+\newblock Thinking Machines Corporation.
+
+\bibitem{mean-field}
+J-Y Le~Boudec, David McDonald, , and Jochen Mundinger.
+\newblock A generic mean field convergence result for systems of interacting
+  objects.
+\newblock In {\em Quantitative Evaluation of Systems, 2007. QEST 2007. Fourth
+  International Conference}, pages 3--18. IEEE, 2007.
+
 \bibitem{hierarchical-report}
 Sandro Mehic, Marco Paolieri, and Enrico Vicario.
 \newblock Research report of hierarchical approach for the scalable analysis of
@@ -31,6 +43,11 @@ S.~Okazaki.
   pedestrian movement by the application of magnetic models.
 \newblock {\em Trans. of AIJ}, 1979.
 
+\bibitem{logo}
+Seymour Papert.
+\newblock {\em Mindstorms: Children, Computers, and Powerful Ideas}.
+\newblock Basic Books.
+
 \bibitem{reynolds}
 Craig~W Reynolds.
 \newblock Flocks, herds and schools: A distributed behavioral model.
@@ -41,6 +58,13 @@ Uri Wilensky.
 \newblock Netlogo (and netlogo user manual).
 \newblock {\em Center for Connected Learning and Computer-Based Modeling,
   Northwestern}, 1997.
+\newblock \url{http://ccl.northwestern.edu/cm/starlogot/}.
+
+\bibitem{starlogot}
+Uri Wilensky.
+\newblock {StarLogoT}.
+\newblock {\em Center for Connected Learning and Computer-Based Modeling,
+  Northwestern University}, 1997.
 \newblock \url{http://ccl.northwestern.edu/cm/starlogot/}.
 
 \bibitem{wilensky-tisue}
