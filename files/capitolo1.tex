@@ -61,7 +61,25 @@ Lo scopo di questo pattern è quello di separare la costruzione di un oggetto co
 \caption{Class diagram di un generico Builder}
 \label{fig:builder-design-pattern}
 \end{figure}
-
+\subsection{Applicabilità}
+Il pattern Builder è solitamente usato nei seguenti casi:
+\begin{itemize}
+\item l'algoritmo per la creazione di un oggetto deve rimanere separato dalle parti che lo costituiscono e dal modo in cui esse sono composte
+\item il processo di costruzione deve rendere possibili diverse rappresentazioni dell'oggetto a cui è associato
+\end{itemize}
+\subsection{Partecipanti}
+\begin{itemize}
+\item \textbf{Builder} mette a disposizione un interfaccia per la costruzione delle parti dell'oggetto '\textit{Product}'
+\item \textbf{ConcreteBuilder} 
+	\begin{itemize}
+	\item Costruisce le parti dell'oggetto e le assembla secondo una specifica rappresentazione.
+	\item Definisce e tiene traccia delle varie rappresentazioni create.
+	\item Fornisce un 'interfaccia per ottenere il Product creato.
+	\end{itemize}
+\item \textbf{Director} sfrutta l'interfaccia del Builder per costruire il Product.
+\item \textbf{Product} è l'oggetto complesso che viene costruito. ConcreteBuilder provvede a costruire le sue parti e definisce il processo con cui vengono assemblate. 
+	 
+\end{itemize}
 \section{Visitor Pattern}
 \label{sec:visitor}
 

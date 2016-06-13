@@ -7,14 +7,16 @@
 \BOOKMARK [2][-]{subsection.1.2.1}{Storia}{section.1.2}% 7
 \BOOKMARK [2][-]{subsection.1.2.2}{Linguaggio}{section.1.2}% 8
 \BOOKMARK [1][-]{section.1.3}{Builder Pattern}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.4}{Visitor Pattern}{chapter.1}% 10
-\BOOKMARK [0][-]{chapter.2}{Sviluppo del progetto}{}% 11
-\BOOKMARK [1][-]{section.2.1}{Obiettivo e requisiti}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.2}{Documento XML}{chapter.2}% 13
-\BOOKMARK [1][-]{section.2.3}{Struttura Interna}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.3.1}{Parser XML e Builder}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.2}{Visitor}{section.2.3}% 16
-\BOOKMARK [1][-]{section.2.4}{Modello NetLogo}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.4.1}{Ambiente}{section.2.4}% 18
-\BOOKMARK [2][-]{subsection.2.4.2}{Behaviors e stato iniziale}{section.2.4}% 19
-\BOOKMARK [0][-]{figure.2.8}{Bibliografia}{}% 20
+\BOOKMARK [2][-]{subsection.1.3.1}{Applicabilit\340}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.2}{Partecipanti}{section.1.3}% 11
+\BOOKMARK [1][-]{section.1.4}{Visitor Pattern}{chapter.1}% 12
+\BOOKMARK [0][-]{chapter.2}{Sviluppo del progetto}{}% 13
+\BOOKMARK [1][-]{section.2.1}{Obiettivo e requisiti}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.2}{Documento XML}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.3}{Struttura Interna}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.3.1}{Parser XML e Builder}{section.2.3}% 17
+\BOOKMARK [2][-]{subsection.2.3.2}{Visitor}{section.2.3}% 18
+\BOOKMARK [1][-]{section.2.4}{Modello NetLogo}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.4.1}{Ambiente}{section.2.4}% 20
+\BOOKMARK [2][-]{subsection.2.4.2}{Behaviors e stato iniziale}{section.2.4}% 21
+\BOOKMARK [0][-]{figure.2.8}{Bibliografia}{}% 22
