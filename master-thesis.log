@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  12 JUN 2016 18:57
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  13 JUN 2016 13:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -653,8 +653,11 @@ Package hyperref Info: Option `plainpages' set `false' on input line 76.
 Package hyperref Info: Option `breaklinks' set `true' on input line 76.
 Package hyperref Info: Option `colorlinks' set `false' on input line 76.
  (./master-thesis.aux
-(./files/introduzione.aux) (./files/capitolo1.aux) (./files/capitolo2.aux)
-(./files/bibliography.aux))
+(./files/introduzione.aux) (./files/capitolo1.aux) (./files/capitolo2.aux
+
+LaTeX Warning: Label `fig:builder-diagram' multiply defined.
+
+) (./files/bibliography.aux))
 \openout1 = `master-thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
@@ -800,7 +803,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--41
 
  []
 
-[5] [6] [7]) [8]
+[5] [6] [7]
+<images/builder-design-pattern.pdf, id=203, 442.8545pt x 160.1985pt>
+File: images/builder-design-pattern.pdf Graphic file (type pdf)
+
+<use images/builder-design-pattern.pdf>
+Package pdftex.def Info: images/builder-design-pattern.pdf used on input line 6
+0.
+(pdftex.def)             Requested size: 390.00374pt x 141.08022pt.
+) [8 <./images/builder-design-pattern.pdf>]
 \openout2 = `files/capitolo2.aux'.
 
  (./files/capitolo2.tex
@@ -821,78 +832,78 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
  [10] [11]
-<images/graph-diagram.png, id=226, 735.74875pt x 359.3425pt>
-File: images/graph-diagram.png Graphic file (type png)
+<images/graph-diagram.pdf, id=276, 554.47153pt x 253.3465pt>
+File: images/graph-diagram.pdf Graphic file (type pdf)
 
-<use images/graph-diagram.png>
-Package pdftex.def Info: images/graph-diagram.png used on input line 34.
-(pdftex.def)             Requested size: 390.01233pt x 190.4835pt.
+<use images/graph-diagram.pdf>
+Package pdftex.def Info: images/graph-diagram.pdf used on input line 34.
+(pdftex.def)             Requested size: 389.9972pt x 178.19566pt.
 
-<images/builder-diagram.png, id=228, 797.98125pt x 555.07375pt>
-File: images/builder-diagram.png Graphic file (type png)
+<images/builder-diagram.pdf, id=277, 526.36653pt x 438.0365pt>
+File: images/builder-diagram.pdf Graphic file (type pdf)
 
-<use images/builder-diagram.png>
-Package pdftex.def Info: images/builder-diagram.png used on input line 44.
-(pdftex.def)             Requested size: 390.0036pt x 271.28552pt.
+<use images/builder-diagram.pdf>
+Package pdftex.def Info: images/builder-diagram.pdf used on input line 44.
+(pdftex.def)             Requested size: 390.01114pt x 324.56302pt.
 
-<images/builder-sequence.png, id=229, 988.69376pt x 1069.9975pt>
-File: images/builder-sequence.png Graphic file (type png)
+<images/builder-sequence.pdf, id=278, 755.63083pt x 815.44652pt>
+File: images/builder-sequence.pdf Graphic file (type pdf)
 
-<use images/builder-sequence.png>
-Package pdftex.def Info: images/builder-sequence.png used on input line 55.
-(pdftex.def)             Requested size: 389.9942pt x 422.06477pt.
+<use images/builder-sequence.pdf>
+Package pdftex.def Info: images/builder-sequence.pdf used on input line 55.
+(pdftex.def)             Requested size: 390.00168pt x 420.87418pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 41--61
 
  []
 
-[12 <./images/graph-diagram.png>] [13 <./images/builder-diagram.png>]
-<images/visitor-class-diagram.png, id=245, 493.845pt x 377.41pt>
-File: images/visitor-class-diagram.png Graphic file (type png)
+[12 <./images/graph-diagram.pdf>] [13 <./images/builder-diagram.pdf>]
+<images/visitor-class-diagram.pdf, id=439, 341.6765pt x 255.75551pt>
+File: images/visitor-class-diagram.pdf Graphic file (type pdf)
 
-<use images/visitor-class-diagram.png>
-Package pdftex.def Info: images/visitor-class-diagram.png used on input line 71
+<use images/visitor-class-diagram.pdf>
+Package pdftex.def Info: images/visitor-class-diagram.pdf used on input line 71
 .
-(pdftex.def)             Requested size: 389.99762pt x 298.04697pt.
+(pdftex.def)             Requested size: 390.02097pt x 291.94283pt.
 
-<images/visitor-sequence.png, id=248, 718.685pt x 570.13pt>
-File: images/visitor-sequence.png Graphic file (type png)
+<images/visitor-sequence.pdf, id=442, 688.5725pt x 372.19049pt>
+File: images/visitor-sequence.pdf Graphic file (type pdf)
 
-<use images/visitor-sequence.png>
-Package pdftex.def Info: images/visitor-sequence.png used on input line 80.
-(pdftex.def)             Requested size: 390.01418pt x 309.39673pt.
- [14] [15 <./images/builder-sequence.png>]
-[16] [17 <./images/visitor-class-diagram.png>] [18 <./images/visitor-sequence.p
-ng>] <images/ambiente-screen.png, id=275, 592.2125pt x 588.1975pt>
+<use images/visitor-sequence.pdf>
+Package pdftex.def Info: images/visitor-sequence.pdf used on input line 80.
+(pdftex.def)             Requested size: 390.00029pt x 210.80481pt.
+ [14] [15 <./images/builder-sequence.pdf>]
+[16] [17 <./images/visitor-class-diagram.pdf>]
+<images/ambiente-screen.png, id=568, 592.2125pt x 588.1975pt>
 File: images/ambiente-screen.png Graphic file (type png)
 
 <use images/ambiente-screen.png>
 Package pdftex.def Info: images/ambiente-screen.png used on input line 94.
 (pdftex.def)             Requested size: 390.01202pt x 387.36787pt.
-
-<images/movers-screen.png, id=276, 500.87125pt x 501.875pt>
+ [18 <./images/visitor-sequence.pdf>] [19 <./images/ambiente-screen.png>]
+<images/movers-screen.png, id=636, 500.87125pt x 501.875pt>
 File: images/movers-screen.png Graphic file (type png)
 
 <use images/movers-screen.png>
 Package pdftex.def Info: images/movers-screen.png used on input line 106.
 (pdftex.def)             Requested size: 390.01308pt x 390.79468pt.
- [19] [20 <./images/ambiente-screen.png>]
-<images/complete-diagram.png, id=287, 1264.725pt x 2211.26125pt>
-File: images/complete-diagram.png Graphic file (type png)
 
-<use images/complete-diagram.png>
-Package pdftex.def Info: images/complete-diagram.png used on input line 113.
-(pdftex.def)             Requested size: 338.5856pt x 591.98737pt.
+<images/complete-diagram.pdf, id=637, 1270.34598pt x 2021.15097pt>
+File: images/complete-diagram.pdf Graphic file (type pdf)
+
+<use images/complete-diagram.pdf>
+Package pdftex.def Info: images/complete-diagram.pdf used on input line 113.
+(pdftex.def)             Requested size: 372.07384pt x 591.97842pt.
 
 
-LaTeX Warning: Float too large for page by 26.616pt on input line 116.
+LaTeX Warning: Float too large for page by 26.60706pt on input line 116.
 
-) [21] [22 <./images/movers-screen.png>] [23 <./images/complete-diagram.png>]
+) [20] [21 <./images/movers-screen.png>] [22 <./images/complete-diagram.pdf>]
 \openout2 = `files/bibliography.aux'.
 
 
 No file files/bibliography.tex.
-(./master-thesis.bbl [24
+(./master-thesis.bbl [23
 
 
 
@@ -905,7 +916,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 64--69
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
- [25]
+ [24]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
  (./master-thesis.aux (./files/introduzione.aux) (./files/capitolo1.aux)
 (./files/capitolo2.aux) (./files/bibliography.aux))
@@ -913,13 +924,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
 Package rerunfilecheck Info: File `master-thesis.out' has not changed.
 (rerunfilecheck)             Checksum: A196CB20DC5AEE6789426A3AB8D2501A;1244.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  )
 (\end occurred when \ifx on line 60 was incomplete) 
 Here is how much of TeX's memory you used:
- 10752 strings out of 493304
- 150037 string characters out of 6139872
- 273325 words of memory out of 5000000
- 13921 multiletter control sequences out of 15000+600000
+ 10758 strings out of 493304
+ 150245 string characters out of 6139872
+ 273364 words of memory out of 5000000
+ 13926 multiletter control sequences out of 15000+600000
  19579 words of font info for 50 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,7n,32p,810b,471s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -935,10 +950,10 @@ f/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public
 fb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf
 /fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/
 cm-super/sfxc1728.pfb>
-Output written on master-thesis.pdf (31 pages, 1001656 bytes).
+Output written on master-thesis.pdf (30 pages, 925818 bytes).
 PDF statistics:
- 381 PDF objects out of 1000 (max. 8388607)
- 314 compressed objects within 4 object streams
+ 882 PDF objects out of 1000 (max. 8388607)
+ 616 compressed objects within 7 object streams
  71 named destinations out of 1000 (max. 500000)
- 206 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

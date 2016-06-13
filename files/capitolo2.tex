@@ -31,7 +31,7 @@ La sezione \texttt{System} descrive lo stato iniziale (\texttt{state}) dell'ambi
 L'unico scopo delle classi Java utilizzate è quello di rappresentare e conservare l'informazione raccolta dal documento XML, senza eseguire alcun tipo di manipolazione. Per questo motivo abbiamo cercato di mantenere la struttura delle classi il più semplice possibile, come mostrato in Figura \ref{fig:graph-diagram}.\\
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/graph-diagram.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/graph-diagram.pdf}
 \caption{Class diagram della struttura del grafo}
 \label{fig:graph-diagram}
 \end{figure}
@@ -41,7 +41,7 @@ Ogni behavior è caratterizzato da un identificatore, attribuitogli dal XML, e d
 Come già accennato, abbiamo scelto il formato JDOM per la rappresentazione del file XML. La scelta di questo formato è stata dettata dalla sua struttura, che si adatta meglio ai nostri fini di sola lettura e non di manipolazione del documento.\\
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/builder-diagram.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/builder-diagram.pdf}
 \caption{Class diagram di Parser e Builder}
 \label{fig:builder-diagram}
 \end{figure}
@@ -52,7 +52,7 @@ Grazie a questo noi siamo, quindi, in grado di esercitare un maggiore controllo 
 L'interfaccia Parser rende il progetto aperto ad estensioni future, come il supporto di linguaggi alternativi al XML.\\
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/builder-sequence.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/builder-sequence.pdf}
 \caption{Sequence diagram della costruzione di un grafo da parte di XMLParser}
 \label{fig:builder-sequence}
 \end{figure}
@@ -68,7 +68,7 @@ La struttura dei modelli NetLogo finali è tale che gran parte del codice necess
 Abbiamo inoltre scelto di separare il modello NetLogo finale in due parti, mantenendo distinta la parte del modello che mette in vita l'ambiente da quella che controlla i movimenti degli attori e raccoglie le informazioni di interesse.\\
 \begin{figure}[htb]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/visitor-class-diagram.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/visitor-class-diagram.pdf}
 \caption{Class Diagram del Visitor}
 \label{fig:visitor-diagram}
 \end{figure}
@@ -77,7 +77,7 @@ In questo modo le interfacce delle classi del grafo, rimangono inalterate ma le 
 In Figura \ref{fig:visitor-sequence} è mostrato il funzionamento di un NetLogoGraphVisitor. L'oggetto finale ottenuto da questo visitor è un file eseguibile \texttt{.nlogo} che costruisce l'ambiente con la corretta topologia e esporta un file \texttt{.csv} necessario al secondo modello per l'acquisizione dell'ambiente.\\
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/visitor-sequence.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/visitor-sequence.pdf}
 \caption{Sequence Diagram del NetLogoGraphVisitor su un grafo con un unico nodo}
 \label{fig:visitor-sequence}
 \end{figure}
@@ -110,7 +110,7 @@ Lo stato iniziale del sistema è contenuto in una semplice lista \texttt{initial
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/complete-diagram.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/complete-diagram.pdf}
 \caption{Classi diagram}
 \label{fig:complete-diagram}
 \end{figure}
