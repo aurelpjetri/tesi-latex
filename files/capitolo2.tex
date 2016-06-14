@@ -1,18 +1,19 @@
 \chapter{Sviluppo del progetto}
 \label{cap:sviluppo-progetto}
-In questo capitolo verrà descritto lo scopo di questo progetto, i requisiti necessari al suo raggiungimento e i dettagli della sua struttura interna che ne permette il funzionamento. In particolare andremo ad analizzare il class-diagram che mostra le relazioni tra le classi che lo costituiscono e discuteremo delle scelte implementative fatte.
+In questo capitolo verrà descritto lo scopo di questo progetto, i requisiti necessari al suo raggiungimento e i dettagli della sua struttura interna che ne permette il funzionamento. \\
+In particolare andremo ad analizzare il class diagram che mostra le relazioni tra le classi che lo costituiscono e discuteremo delle scelte implementative fatte.
 
 \section{Obiettivo e requisiti}
 L'obiettivo di questa tesi è creare un programma in linguaggio Java che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.\\
 La scelta del linguaggio XML è dettata dalla sua diffusione, con lo scopo di ridurre le conoscenze preliminari necessarie per l'utilizzo di questo strumento.\\
-Per l'analisi del documento XML abbiamo scelto la libreria JDOM2  non inclusa in Java. Il Wold Wide Web Consortium, infatti, ha stabilito uno standard cross-platform e language-indipendent detto DOM (Document Object Model) per la rappresentazione di documenti strutturati (quindi XML, HTML, XHTML) come modello orientato agli oggetti. Il formato JDOM \cite{jdom} usato dalla libreria è una variazione dello standard disegnata appositamente per Java.\\
-JDOM2 sfrutta la classe \texttt{SAXBuilder} della libreria SAX (Simple Api for Xml) per la costruzione del modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. Ogni nodo dell'albero è di tipo \texttt{Element}. Conserva una lista dei figli e un riferimento al padre.\\
-Per quanto riguarda la parte della scrittura del codice NetLogo, si ha che gran parte del codice che modella la simulazione rimane fissa al variare dei modelli descritti negli XML, quindi abbiamo pensato di mantenere questa in un semplice file di testo che viene letto e integrato con le informazioni contenute negli oggetti Java. Per le operazioni di lettura e scrittura su file abbiamo usato le classi BufferedReader e PrintWriter che permettono lettura e scrittura di intere linee di testo.\\ 
+Per l'analisi del documento XML abbiamo scelto la libreria JDOM2 \cite{jdom} non inclusa in Java. Il Wold Wide Web Consortium, infatti, ha stabilito uno standard cross-platform e language-indipendent detto DOM (Document Object Model) per la rappresentazione di documenti strutturati (quindi XML, HTML, XHTML) come modello orientato agli oggetti. Il formato JDOM \cite{jdom} usato dalla libreria è una variazione dello standard disegnata appositamente per Java.\\
+JDOM2 sfrutta la classe \texttt{SAXBuilder} della libreria SAX (Simple Api for Xml) per la costruzione del modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. Ogni nodo dell'albero è di tipo \texttt{Element} e conserva una lista dei figli e un riferimento al padre.\\
+Per quanto riguarda la parte della scrittura del codice NetLogo, si ha che gran parte del codice che modella la simulazione rimane fissa al variare dei modelli descritti negli XML, quindi abbiamo pensato di mantenere questa in un semplice file di testo che viene letto e integrato con le informazioni contenute negli oggetti Java. Per le operazioni di lettura e scrittura su file abbiamo usato le classi BufferedReader \cite{buffered-reader} e PrintWriter \cite{print-writer} che permettono lettura e scrittura di intere linee di testo.\\ 
 Lo strumento segue il seguente workflow:
 \begin{itemize}
-\item analisi del documento XML e costruzione di una rappresentazione della struttura orientata agli oggetti in JDOM attraverso l'omonima libreria
-\item costruzione degli oggetti Java per la rappresentazione della simulazione descritta nel modello JDOM 
-\item visita degli oggetti Java e scrittura su file del codice NetLogo che eseguirà la simulazione
+\item analisi del documento XML e costruzione di una rappresentazione della struttura orientata agli oggetti in JDOM attraverso l'omonima libreria;
+\item costruzione degli oggetti Java per la rappresentazione della simulazione descritta nel modello JDOM;
+\item visita degli oggetti Java e scrittura su file del codice NetLogo che eseguirà la simulazione.
 \end{itemize}
 
 \section{Documento XML}
@@ -23,8 +24,10 @@ Il file XML è suddiviso in tre sezioni distinte:
 \item \texttt{Behaviors}
 \item \texttt{System}
 \end{itemize} 
-\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto-forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci. Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza. I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta.\\
-Per quanto riguarda i \texttt{Behavior} si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni behavior viene indicata la tipologia, l'identificatore e la lista dei nodi di interesse.\\
+\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto-forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci.\\
+Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza.\\
+I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta.\\
+Per quanto riguarda i \texttt{Behaviors} si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni behavior viene indicata la tipologia, l'identificatore e la lista dei nodi di interesse.\\
 La sezione \texttt{System} descrive lo stato iniziale (\texttt{state}) dell'ambiente. Per ogni nodo indica il numero di attori presenti e i loro behavior. In particolare nei nodi contrassegnati come entry o exit viene aggiunta una sezione denominata \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili.
 
 \section{Struttura Interna}
@@ -35,7 +38,7 @@ L'unico scopo delle classi Java utilizzate è quello di rappresentare e conserva
 \caption{Class diagram della struttura del grafo}
 \label{fig:graph-diagram}
 \end{figure}
-Ogni behavior è caratterizzato da un identificatore, attribuitogli dal XML, e da una lista di nodi regolari di interesse che devono essere visitati prima di permettere all'attore di puntare ad una uscita. 
+Ogni behavior è caratterizzato da un identificatore, attribuitogli dall'XML e da una lista di nodi regolari di interesse che devono essere visitati prima di permettere all'attore di puntare ad una uscita. 
 
 \subsection{Parser XML e Builder}
 Come già accennato, abbiamo scelto il formato JDOM per la rappresentazione del file XML. La scelta di questo formato è stata dettata dalla sua struttura, che si adatta meglio ai nostri fini di sola lettura e non di manipolazione del documento.\\
@@ -48,7 +51,7 @@ Come già accennato, abbiamo scelto il formato JDOM per la rappresentazione del 
 Per la fase di costruzione delle classi abbiamo usato il pattern Builder, in modo da mantenere il processo di costruzione della struttura interna dell'oggetto di tipo Grafo trasparente all'utente di questo strumento. In particolare l'interfaccia del Builder aiuta a mantenere l'algoritmo di interpretazione dell'XML separato dal processo di costruzione e rappresentazione del suo contenuto in classi Java.\\
 Il pattern Builder, inoltre, porta il grande beneficio di migliorare la modularizzazione derivante dall'incapsulamento di tutta la procedura di manipolazione della struttura interna dell'oggetto costruito, in questo modo il Client non ha necessità di conoscere la sua composizione interna.\\
 Una conseguenza che rende il pattern ancora più adatto al nostro caso è il miglioramento del controllo sul processo di costruzione del prodotto. Al contrario di altri pattern creazionali, i quali costruiscono e restituiscono il prodotto in un'unica funzione, il Builder separa queste due operazioni mettendo a disposizione un'interfaccia più completa.\\
-Grazie a questo noi siamo, quindi, in grado di esercitare un maggiore controllo sulla correttezza delle operazioni eseguite e delle informazioni inserite durante questa prima fase.\\
+Grazie a questo noi siamo in grado di esercitare un maggiore controllo sulla correttezza delle operazioni eseguite e delle informazioni inserite durante questa prima fase.\\
 L'interfaccia Parser rende il progetto aperto ad estensioni future, come il supporto di linguaggi alternativi al XML.\\
 \begin{figure}[htbp]
 \centering
@@ -88,7 +91,7 @@ Come già accennato in precedenza abbiamo scelto di dividere il modello NetLogo 
 Questa scelta porta, inoltre, il vantaggio di poter sfruttare il file csv generato dal primo modello eseguendo questo una sola volta, in questo modo si evitano operazioni ridondanti nel caso in cui si vogliano simulare le interazioni di diversi comportamenti nello stesso ambiente.
 \subsection{Ambiente}
 L'ambiente in cui gli attori si muoveranno è modellato sotto forma di grafo con specifiche tipologie di turtles dette \texttt{beacon} che fanno da nodi e rappresentano quindi gli incroci tra le vie percorribili.\\
-Gli archi sono rappresentati da due tipologie diverse di turtles dette \texttt{street}, percorribili in entrambi i versi, e \texttt{directed-street}, percorribili solo in un verso.\\
+Gli archi sono rappresentati da due tipologie diverse di turtles dette \texttt{street}, percorribile in entrambi i versi, e \texttt{directed-street}, percorribile solo in un verso.\\
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/ambiente-screen.png}

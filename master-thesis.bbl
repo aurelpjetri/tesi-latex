@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{buffered-reader}
+Buffered{R}eader.
+\newblock
+  \url{https://docs.oracle.com/javase/7/docs/api/java/io/BufferedReader.html}.
+
 \bibitem{graphml}
 Graph{ML}.
 \newblock \url{http://graphml.graphdrawing.org/}.
@@ -7,6 +12,11 @@ Graph{ML}.
 \bibitem{jdom}
 {JDOM}.
 \newblock \url{http://www.jdom.org/}.
+
+\bibitem{print-writer}
+Print{W}riter.
+\newblock
+  \url{https://docs.oracle.com/javase/7/docs/api/java/io/PrintWriter.html}.
 
 \bibitem{dijkstra}
 Jan Dijkstra, Harry~JP Timmermans, and AJ~Jessurun.

@@ -16,54 +16,62 @@ I was expecting a `,' or a `}'---line 79 of file files/bibliography.bib
  :                        ;
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in jdom
+Warning--to sort, need author or key in buffered-reader
+Warning--to sort, need author or key in print-writer
 Warning--to sort, need author or key in graphml
+Warning--empty author in buffered-reader
+Warning--empty journal in buffered-reader
+Warning--empty year in buffered-reader
 Warning--empty author in graphml
 Warning--empty journal in graphml
 Warning--empty year in graphml
 Warning--empty author in jdom
 Warning--empty journal in jdom
 Warning--empty year in jdom
+Warning--empty author in print-writer
+Warning--empty journal in print-writer
+Warning--empty year in print-writer
 Warning--empty year in starlisp
 Warning--empty year in logo
-You've used 13 entries,
+You've used 15 entries,
             2118 wiz_defined-function locations,
-            561 strings with 5853 characters,
-and the built_in function-call counts, 3171 in all, are:
-= -- 295
-> -- 140
+            567 strings with 6056 characters,
+and the built_in function-call counts, 3507 in all, are:
+= -- 325
+> -- 142
 < -- 1
-+ -- 61
++ -- 63
 - -- 44
-* -- 179
-:= -- 561
-add.period$ -- 40
-call.type$ -- 13
-change.case$ -- 59
+* -- 207
+:= -- 603
+add.period$ -- 44
+call.type$ -- 15
+change.case$ -- 65
 chr.to.int$ -- 0
-cite$ -- 23
-duplicate$ -- 143
-empty$ -- 253
+cite$ -- 33
+duplicate$ -- 163
+empty$ -- 289
 format.name$ -- 44
-if$ -- 646
+if$ -- 716
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 15
-newline$ -- 68
+int.to.str$ -- 15
+missing$ -- 17
+newline$ -- 76
 num.names$ -- 22
-pop$ -- 81
+pop$ -- 95
 preamble$ -- 1
-purify$ -- 48
+purify$ -- 52
 quote$ -- 0
-skip$ -- 92
+skip$ -- 104
 stack$ -- 0
-substring$ -- 84
+substring$ -- 94
 swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
-warning$ -- 10
+type$ -- 56
+warning$ -- 18
 while$ -- 24
-width$ -- 15
-write$ -- 130
+width$ -- 17
+write$ -- 144
 (There were 2 error messages)
