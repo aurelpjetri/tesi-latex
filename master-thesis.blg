@@ -16,6 +16,7 @@ I was expecting a `,' or a `}'---line 79 of file files/bibliography.bib
  :                        ;
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in jdom
+Warning--to sort, need author or key in sax-builder
 Warning--to sort, need author or key in buffered-reader
 Warning--to sort, need author or key in print-writer
 Warning--to sort, need author or key in graphml
@@ -31,47 +32,50 @@ Warning--empty year in jdom
 Warning--empty author in print-writer
 Warning--empty journal in print-writer
 Warning--empty year in print-writer
+Warning--empty author in sax-builder
+Warning--empty journal in sax-builder
+Warning--empty year in sax-builder
 Warning--empty year in starlisp
 Warning--empty year in logo
-You've used 15 entries,
+You've used 16 entries,
             2118 wiz_defined-function locations,
-            567 strings with 6056 characters,
-and the built_in function-call counts, 3507 in all, are:
-= -- 325
-> -- 142
+            570 strings with 6149 characters,
+and the built_in function-call counts, 3675 in all, are:
+= -- 340
+> -- 143
 < -- 1
-+ -- 63
++ -- 64
 - -- 44
-* -- 207
-:= -- 603
-add.period$ -- 44
-call.type$ -- 15
-change.case$ -- 65
+* -- 221
+:= -- 624
+add.period$ -- 46
+call.type$ -- 16
+change.case$ -- 68
 chr.to.int$ -- 0
-cite$ -- 33
-duplicate$ -- 163
-empty$ -- 289
+cite$ -- 38
+duplicate$ -- 173
+empty$ -- 307
 format.name$ -- 44
-if$ -- 716
+if$ -- 751
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 17
-newline$ -- 76
+int.to.str$ -- 16
+missing$ -- 18
+newline$ -- 80
 num.names$ -- 22
-pop$ -- 95
+pop$ -- 102
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 54
 quote$ -- 0
-skip$ -- 104
+skip$ -- 110
 stack$ -- 0
-substring$ -- 94
+substring$ -- 99
 swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 18
+type$ -- 60
+warning$ -- 22
 while$ -- 24
-width$ -- 17
-write$ -- 144
+width$ -- 18
+write$ -- 151
 (There were 2 error messages)

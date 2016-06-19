@@ -4,11 +4,15 @@ In questo capitolo verrà descritto lo scopo di questo progetto, i requisiti nec
 In particolare andremo ad analizzare il class diagram che mostra le relazioni tra le classi che lo costituiscono e discuteremo delle scelte implementative fatte.
 
 \section{Obiettivo e requisiti}
-L'obiettivo di questa tesi è creare un programma in linguaggio Java che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.\\
-La scelta del linguaggio XML è dettata dalla sua diffusione, con lo scopo di ridurre le conoscenze preliminari necessarie per l'utilizzo di questo strumento.\\
-Per l'analisi del documento XML abbiamo scelto la libreria JDOM2 \cite{jdom} non inclusa in Java. Il Wold Wide Web Consortium, infatti, ha stabilito uno standard cross-platform e language-indipendent detto DOM (Document Object Model) per la rappresentazione di documenti strutturati (quindi XML, HTML, XHTML) come modello orientato agli oggetti. Il formato JDOM \cite{jdom} usato dalla libreria è una variazione dello standard disegnata appositamente per Java.\\
-JDOM2 sfrutta la classe \texttt{SAXBuilder} della libreria SAX (Simple Api for Xml) per la costruzione del modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. Ogni nodo dell'albero è di tipo \texttt{Element} e conserva una lista dei figli e un riferimento al padre.\\
-Per quanto riguarda la parte della scrittura del codice NetLogo, si ha che gran parte del codice che modella la simulazione rimane fissa al variare dei modelli descritti negli XML, quindi abbiamo pensato di mantenere questa in un semplice file di testo che viene letto e integrato con le informazioni contenute negli oggetti Java. Per le operazioni di lettura e scrittura su file abbiamo usato le classi BufferedReader \cite{buffered-reader} e PrintWriter \cite{print-writer} che permettono lettura e scrittura di intere linee di testo.\\ 
+L'obiettivo di questa tesi è studiare e realizzare un programma in linguaggio Java che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.\\
+La scelta del linguaggio XML è dettata dalla sua diffusione, con lo scopo di ridurre le conoscenze preliminari necessarie per l'utilizzo di questo strumento e per facilitare la sua integrazione con altri componenti.\\
+Per l'analisi del documento XML esistono diverse alternative, tra le quali le più interessanti sono: DOM, SAX e JDOM.\\
+DOM (Document Object Model) è uno standard cross-platform e language-indipendent stabilito dal W3C per la rappresentazione di documenti strutturati, quindi XML, HTML, XHTML, come modelli orientati agli oggetti. Il difetto di questo formato e delle sue API, però, sta nella pesantezza in memoria.\\
+La tecnologia SAX (Simple Api for Xml) rappresenta un'alternativa veloce e potente nel caso in cui si voglia gestire il documento con un approccio event-driven.\\
+JDOM \cite{jdom}, infine, è un formato open-source disegnato appositamente per Java che completa DOM e SAX semplificando la manipolazione dei documenti XML. Questo al contrario delle due alternative non è incluso nel JDK, ma è ampiamente accettato dalla comunità.\\
+Il metodo più rapido e semplice per analizzare un documento XML e costruire un modello JDOM è attraverso le API SAX, che JDOM, grazie alla sua natura open source, può sfruttare.\\
+La API JDOM2 associata al formato, quindi, usa la classe \texttt{SAXBuilder} \cite{sax-builder} per la costruzione del modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. Ogni nodo dell'albero è di tipo \texttt{Element} e conserva una lista dei figli e un riferimento al padre.\\
+Per quanto riguarda la parte della scrittura del codice NetLogo, si ha che gran parte del codice che modella la simulazione rimane fissa al variare dei modelli descritti negli XML, quindi abbiamo pensato di mantenere questa in un semplice file di testo che viene letto e integrato con le informazioni contenute negli oggetti Java. Per le operazioni di lettura e scrittura su file abbiamo usato le classi \texttt{BufferedReader} \cite{buffered-reader} e \texttt{PrintWriter} \cite{print-writer} che permettono lettura e scrittura di intere linee di testo.\\ 
 Lo strumento segue il seguente workflow:
 \begin{itemize}
 \item analisi del documento XML e costruzione di una rappresentazione della struttura orientata agli oggetti in JDOM attraverso l'omonima libreria;
@@ -28,7 +32,7 @@ Il file XML è suddiviso in tre sezioni distinte:
 Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza.\\
 I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta.\\
 Per quanto riguarda i \texttt{Behaviors} si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni behavior viene indicata la tipologia, l'identificatore e la lista dei nodi di interesse.\\
-La sezione \texttt{System} descrive lo stato iniziale (\texttt{state}) dell'ambiente. Per ogni nodo indica il numero di attori presenti e i loro behavior. In particolare nei nodi contrassegnati come entry o exit viene aggiunta una sezione denominata \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili.
+La sezione \texttt{System} descrive lo stato iniziale dell'ambiente. Per ogni nodo, sotto il tag con attributo \texttt{state}, è indicato il numero di attori presenti e i loro behavior. In particolare, nei nodi contrassegnati come entry o exit, vi è un ulteriore tag con attributo \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili (\texttt{entry-limit}).
 
 \subsection{Esempio}
 Di seguito è riportato un XML in cui si mostra la definizione di ogni tipo di entità coinvolta: attributi, tutti i tipi di nodi, tutti i tipi di edge, behavior e stato associato ai nodi.
@@ -49,16 +53,27 @@ Di seguito è riportato un XML in cui si mostra la definizione di ogni tipo di e
   breakatwhitespace=true
 }
 
-\lstinputlisting[language=XML, firstline=0, lastline=6]{images/example.xml}
-\[\textbf{[...]}\]
-\lstinputlisting[language=XML, firstline=30, lastline=45]{images/example.xml}
-\[\textbf{[...]}\]
-\lstinputlisting[language=XML, firstline=53, lastline=69]{images/example.xml}
-\[\textbf{[...]}\]
-\lstinputlisting[language=XML, firstline=77, lastline=124]{images/example.xml}
-\[\textbf{[...]}\]
-\lstinputlisting[language=XML, firstline=135, lastline=155]{images/example.xml}
+%\lstinputlisting[language=XML, firstline=0, lastline=6]{images/example.xml}
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=30, lastline=45]{images/example.xml}
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=53, lastline=69]{images/example.xml}
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=77, lastline=124]{images/example.xml}
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=135, lastline=155]{images/example.xml}
 
+\lstinputlisting[language=XML, firstline=0, lastline=6]{images/example.xml} %attributi
+\[\textbf{[...]}\]
+\lstinputlisting[language=XML, firstline=30, lastline=38]{images/example.xml} %nodo regolare
+\[\textbf{[...]}\]
+\lstinputlisting[language=XML, firstline=152, lastline=169]{images/example.xml} %entry e exit node
+\[\textbf{[...]}\]
+\lstinputlisting[language=XML, firstline=178, lastline=188]{images/example.xml} %behavior e stato nodo regolare
+\[\textbf{[...]}\]
+\lstinputlisting[language=XML, firstline=439, lastline=469]{images/example.xml} %stato entry e exit
+\[\textbf{[...]}\]
+\lstinputlisting[language=XML, firstline=484, lastline=485]{images/example.xml} %chiusura tag
 
 \section{Struttura Interna}
 L'unico scopo delle classi Java utilizzate è quello di rappresentare e conservare l'informazione raccolta dal documento XML, senza eseguire alcun tipo di manipolazione. Per questo motivo abbiamo cercato di mantenere la struttura delle classi il più semplice possibile, come mostrato in Figura \ref{fig:graph-diagram}.\\

@@ -258,7 +258,7 @@ to generate-map
   draw-squares
   draw-streets
   make-patches-non-wall
-end 
+end
 
 to generate-beacons
   ask patch (world-offset + 0) (world-offset + 0) [sprout-beacons 1 [
@@ -312,15 +312,22 @@ to connect-beacons
       set weight 3
       set street-width 3]]
 end
+
+to imposta-colori
+  ask beacon 0[set color yellow]
+  ask beacon 1[set color  104]
+  ask beacon 2 [set color green]
+  ask beacon 3[set color red]
+end
 @#$#@#$#@
 GRAPHICS-WINDOW
 285
 10
-958
-704
+787
+533
 -1
 -1
-13.0
+12.0
 1
 10
 1
@@ -331,9 +338,9 @@ GRAPHICS-WINDOW
 0
 1
 0
-50
+40
 0
-50
+40
 0
 0
 1

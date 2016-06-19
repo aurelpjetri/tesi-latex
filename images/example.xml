@@ -28,46 +28,161 @@
 	<key id="eWidth" for="edge" attr.name="edgeWidth" attr.type="int" />
 
 	<graph id="Graph" edgedefault="undirected">
+		<!-- nodo regolare -->
 		<node id="n0">
-			<data key="nType">entry</data>
-			<data key="nx">0</data>
-			<data key="ny">0</data>
+			<data key="nx">10</data>
+			<data key="ny">10</data>
 			<data key="nWidth">5</data>
 			<data key="nHeight">5</data>
 			<data key="nRadius">3</data>
 		</node>
 		<node id="n1">
-			<data key="nx">0</data>
-			<data key="ny">20</data>
+			<data key="nx">20</data>
+			<data key="ny">10</data>
 			<data key="nWidth">5</data>
 			<data key="nHeight">5</data>
 			<data key="nRadius">3</data>
 		</node>
 		<node id="n2">
-			<data key="nx">20</data>
-			<data key="ny">0</data>
+			<data key="nx">30</data>
+			<data key="ny">10</data>
 			<data key="nWidth">5</data>
 			<data key="nHeight">5</data>
 			<data key="nRadius">3</data>
 		</node>
 		<node id="n3">
-			<data key="nType">exit</data>
+			<data key="nx">40</data>
+			<data key="ny">10</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n4">
+			<data key="nx">10</data>
+			<data key="ny">20</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n5">
 			<data key="nx">20</data>
 			<data key="ny">20</data>
 			<data key="nWidth">5</data>
 			<data key="nHeight">5</data>
 			<data key="nRadius">3</data>
 		</node>
+		<node id="n6">
+			<data key="nx">30</data>
+			<data key="ny">20</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n7">
+			<data key="nx">40</data>
+			<data key="ny">20</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n8">
+			<data key="nx">10</data>
+			<data key="ny">30</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n9">
+			<data key="nx">20</data>
+			<data key="ny">30</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n10">
+			<data key="nx">30</data>
+			<data key="ny">30</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n11">
+			<data key="nx">40</data>
+			<data key="ny">30</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n12">
+			<data key="nx">10</data>
+			<data key="ny">40</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n13">
+			<data key="nx">20</data>
+			<data key="ny">40</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n14">
+			<data key="nx">30</data>
+			<data key="ny">40</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n15">
+			<data key="nx">40</data>
+			<data key="ny">40</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n16">
+			<data key="nType">exit</data>
+			<data key="nx">40</data>
+			<data key="ny">0</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n17">
+			<!-- nodo di uscita -->
+			<data key="nType">exit</data>
+			<data key="nx">50</data>
+			<data key="ny">10</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n18">
+			<!-- nodo di ingresso -->
+			<data key="nType">entry</data>
+			<data key="nx">0</data>
+			<data key="ny">40</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<node id="n19">
+			<data key="nType">entry</data>
+			<data key="nx">10</data>
+			<data key="ny">50</data>
+			<data key="nWidth">5</data>
+			<data key="nHeight">5</data>
+			<data key="nRadius">3</data>
+		</node>
+		<!-- arco percorribile in entrambi i versi -->
 		<edge id="e01" source="n0" target="n1">
 			<data key="weight">3</data>
 			<data key="eWidth">3</data>
 		</edge>
-		<edge id="e13" source="n1" target="n3">
+		<!-- arco percorribile in un unico verso -->
+		<edge id="e12" source="n1" target="n2">
 			<data key="eType">directed</data>
-			<data key="weight">3</data>
-			<data key="eWidth">3</data>
-		</edge>
-		<edge id="e02" source="n0" target="n2">
 			<data key="weight">3</data>
 			<data key="eWidth">3</data>
 		</edge>
@@ -75,80 +190,294 @@
 			<data key="weight">3</data>
 			<data key="eWidth">3</data>
 		</edge>
+		<edge id="e04" source="n0" target="n4">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e15" source="n1" target="n5">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e26" source="n2" target="n6">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e37" source="n3" target="n7">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<!-- second row -->
+		<edge id="e45" source="n4" target="n5">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e56" source="n5" target="n6">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e67" source="n6" target="n7">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e48" source="n4" target="n8">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e59" source="n5" target="n9">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e610" source="n6" target="n10">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e711" source="n7" target="n11">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<!-- third row -->
+		<edge id="e89" source="n8" target="n9">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e910" source="n9" target="n10">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e1011" source="n10" target="n11">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e812" source="n8" target="n12">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e913" source="n9" target="n13">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e1014" source="n10" target="n14">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e1115" source="n11" target="n15">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+
+		<edge id="e1213" source="n12" target="n13">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e1314" source="n13" target="n14">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e1415" source="n14" target="n15">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<!-- exit edges -->
+		<edge id="e316" source="n3" target="n16">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e317" source="n3" target="n17">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e1218" source="n12" target="n18">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
+		<edge id="e1219" source="n12" target="n19">
+			<data key="weight">3</data>
+			<data key="eWidth">3</data>
+		</edge>
 	</graph>
 
+<!-- comportamento -->
 	<graph id="Behaviors">
 		<node id="b0">
-			<data key="bType">evacuate</data>
+			<data key="bType">visit</data>
 			<graph id="0">
-				<node id="n1"/>
-			</graph>
-		</node>
-		<node id="b1">
-			<data key="bType">evacuate</data>
-			<graph id="1">
-				<node id="n2"/>
+				<!-- nodo di intersse -->
+				<node id="n3"/>
 			</graph>
 		</node>
 	</graph>
 
 	<graph id="System">
+		<!-- stato di un nodo regolare -->
 		<node id="n0">
-			<graph id="parameters">
-				<data key="rate">0.05</data>
-				<data key="entry-limit">30</data>
-				<behavior id="0">  <!--  id del behavior -->
-					<data key="percentage">0.4</data>
-				</behavior>
-				<behavior id="1">  <!--  id del behavior -->
-					<data key="percentage">0.6</data>
-				</behavior>
-			</graph>
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
-				</behavior>
-				<behavior id="1">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
+					<data key="moverQuantity">100</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n1">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
-				</behavior>
-				<behavior id="1">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
+					<data key="moverQuantity">100</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n2">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
-				</behavior>
-				<behavior id="1">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
+					<data key="moverQuantity">100</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n3">
-			<graph id="parameters">
-				<data key="rate">0.05</data>
+			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="percentage">0.5</data>
+					<data key="moverQuantity">100</data>
 				</behavior>
-				<behavior id="1">  <!--  id del behavior -->
-					<data key="percentage">0.5</data>
+			</graph>
+		</node>
+		<node id="n4">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n5">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n6">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n7">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n8">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n9">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n10">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n11">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n12">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n13">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n14">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n15">
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">100</data>
+				</behavior>
+			</graph>
+		</node>
+
+		<!-- exit nodes -->
+		<node id="n16">
+			<graph id="parameters">
+				<data key="rate">0.1</data>
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="percentage">1</data>
 				</behavior>
 			</graph>
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
+					<data key="moverQuantity">0</data>
 				</behavior>
-				<behavior id="1">  <!--  id del behavior -->
-					<data key="moverQuantity">20</data>
+			</graph>
+		</node>
+		<node id="n17">
+			<!-- parametri di un nodo di usita -->
+			<graph id="parameters">
+				<data key="rate">0.1</data>
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="percentage">1</data>
+				</behavior>
+			</graph>
+			<!-- stato del nodo -->
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">0</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n18">
+			<!-- parametri di un nodo di ingresso -->
+			<graph id="parameters">
+				<data key="rate">0.05</data>
+				<data key="entry-limit">50</data>
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="percentage">1</data>
+				</behavior>
+			</graph>
+			<!-- stato del nodo -->
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">0</data>
+				</behavior>
+			</graph>
+		</node>
+		<node id="n19">
+			<graph id="parameters">
+				<data key="rate">0.05</data>
+				<data key="entry-limit">50</data>
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="percentage">1</data>
+				</behavior>
+			</graph>
+			<graph id="state">
+				<behavior id="0">  <!--  id del behavior -->
+					<data key="moverQuantity">0</data>
 				</behavior>
 			</graph>
 		</node>
