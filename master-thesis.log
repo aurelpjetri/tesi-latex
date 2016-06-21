@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  21 JUN 2016 21:09
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  21 JUN 2016 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1044,15 +1044,15 @@ Capitolo 3.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 69.
  (./images/example.xml [21]) (./images/example.xml)
-(./images/example.xml) (./images/example.xml [22]) (./images/example.xml)
-(./images/example.xml [23]) (./images/example.xml)
-<images/graph-diagram.pdf, id=633, 554.47153pt x 253.3465pt>
+(./images/example.xml) [22] (./images/example.xml) (./images/example.xml
+[23]) (./images/example.xml) [24] (./images/example.xml)
+<images/graph-diagram.pdf, id=669, 554.47153pt x 253.3465pt>
 File: images/graph-diagram.pdf Graphic file (type pdf)
 
 <use images/graph-diagram.pdf>
 Package pdftex.def Info: images/graph-diagram.pdf used on input line 88.
 (pdftex.def)             Requested size: 389.9972pt x 178.19566pt.
- [24] [25 <./images/graph-diagram.pdf>]
+ [25 <./images/graph-diagram.pdf>]
 <images/builder-diagram.pdf, id=771, 526.36653pt x 438.0365pt>
 File: images/builder-diagram.pdf Graphic file (type pdf)
 
@@ -1082,7 +1082,7 @@ File: images/visitor-sequence.pdf Graphic file (type pdf)
 Package pdftex.def Info: images/visitor-sequence.pdf used on input line 138.
 (pdftex.def)             Requested size: 390.01018pt x 277.75279pt.
  [28] [29 <./images/builder-sequence.pdf>]
-[30 <./images/visitor-class-diagram.pdf>] [31] [32 <./images/visitor-sequence.p
+[30] [31 <./images/visitor-class-diagram.pdf>] [32 <./images/visitor-sequence.p
 df>] <images/ambiente-screen.png, id=1036, 629.35126pt x 629.35126pt>
 File: images/ambiente-screen.png Graphic file (type png)
 
@@ -1103,7 +1103,8 @@ File: images/complete-diagram.pdf Graphic file (type pdf)
 <use images/complete-diagram.pdf>
 Package pdftex.def Info: images/complete-diagram.pdf used on input line 171.
 (pdftex.def)             Requested size: 390.00073pt x 467.27835pt.
-) [35 <./images/movers-screen.png>] [36 <./images/complete-diagram.pdf>]
+) [35] [36 <./images/movers-screen.png>]
+[37 <./images/complete-diagram.pdf>]
 \openout2 = `files/bibliography.aux'.
 
 
@@ -1114,7 +1115,7 @@ Underfull \hbox (badness 3343) in paragraph at lines 4--7
 . com / javase / 7 / docs / api /
  []
 
-[37
+[38
 
 
 
@@ -1127,7 +1128,7 @@ Underfull \hbox (badness 1019) in paragraph at lines 79--84
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
- [38]
+ [39]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./master-thesis.aux (./files/introduzione.aux) (./files/capitolo1.aux)
 (./files/capitolo2.aux) (./files/capitolo3.aux) (./files/bibliography.aux))
@@ -1138,13 +1139,13 @@ Package rerunfilecheck Info: File `master-thesis.out' has not changed.
  )
 (\end occurred when \ifx on line 60 was incomplete) 
 Here is how much of TeX's memory you used:
- 12152 strings out of 493304
- 167470 string characters out of 6139872
- 319128 words of memory out of 5000000
+ 12153 strings out of 493304
+ 167477 string characters out of 6139872
+ 318128 words of memory out of 5000000
  15128 multiletter control sequences out of 15000+600000
  23629 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,7n,40p,810b,1880s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,7n,40p,947b,1884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/
 dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-s
 uper-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sh
@@ -1157,10 +1158,10 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc
 1728.pfb>
-Output written on master-thesis.pdf (44 pages, 1021490 bytes).
+Output written on master-thesis.pdf (45 pages, 1021853 bytes).
 PDF statistics:
- 1328 PDF objects out of 1440 (max. 8388607)
- 980 compressed objects within 10 object streams
- 217 named destinations out of 1000 (max. 500000)
+ 1332 PDF objects out of 1440 (max. 8388607)
+ 983 compressed objects within 10 object streams
+ 218 named destinations out of 1000 (max. 500000)
  314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
