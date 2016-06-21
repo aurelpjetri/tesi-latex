@@ -1,17 +1,17 @@
 \chapter{Sviluppo del progetto}
 \label{cap:sviluppo-progetto}
 In questo capitolo verrà descritto lo scopo di questo progetto, i requisiti necessari al suo raggiungimento e i dettagli della sua struttura interna che ne permette il funzionamento. \\
-In particolare andremo ad analizzare il class diagram che mostra le relazioni tra le classi che lo costituiscono e discuteremo delle scelte implementative fatte.
+In particolare andremo ad analizzare i class diagram che mostrano le relazioni tra le classi che li costituiscono e discuteremo delle scelte implementative fatte.
 
 \section{Obiettivo e requisiti}
-L'obiettivo di questa tesi è studiare e realizzare un programma in linguaggio Java che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.\\
+L'obiettivo di questa tesi è realizzare un programma in linguaggio Java che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.\\
 La scelta del linguaggio XML è dettata dalla sua diffusione, con lo scopo di ridurre le conoscenze preliminari necessarie per l'utilizzo di questo strumento e per facilitare la sua integrazione con altri componenti.\\
 Per l'analisi del documento XML esistono diverse alternative, tra le quali le più interessanti sono: DOM, SAX e JDOM.\\
 DOM (Document Object Model) è uno standard cross-platform e language-indipendent stabilito dal W3C per la rappresentazione di documenti strutturati, quindi XML, HTML, XHTML, come modelli orientati agli oggetti. Il difetto di questo formato e delle sue API, però, sta nella pesantezza in memoria.\\
 La tecnologia SAX (Simple Api for Xml) rappresenta un'alternativa veloce e potente nel caso in cui si voglia gestire il documento con un approccio event-driven.\\
 JDOM \cite{jdom}, infine, è un formato open-source disegnato appositamente per Java che completa DOM e SAX semplificando la manipolazione dei documenti XML. Questo al contrario delle due alternative non è incluso nel JDK, ma è ampiamente accettato dalla comunità.\\
 Il metodo più rapido e semplice per analizzare un documento XML e costruire un modello JDOM è attraverso le API SAX, che JDOM, grazie alla sua natura open source, può sfruttare.\\
-La API JDOM2 associata al formato, quindi, usa la classe \texttt{SAXBuilder} \cite{sax-builder} per la costruzione del modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. Ogni nodo dell'albero è di tipo \texttt{Element} e conserva una lista dei figli e un riferimento al padre.\\
+La API JDOM2 associata al formato, quindi, usa la classe \texttt{SAXBuilder} \cite{sax-builder} per costruire il modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. Ogni nodo dell'albero è di tipo \texttt{Element} e conserva una lista dei figli e un riferimento al padre, espone inoltre una ricca interfaccia con cui si possono estrarre tutte le informazioni di interesse come gli attributi associati al tag rappresentato, oppure il testo sottostante.\\
 Per quanto riguarda la parte della scrittura del codice NetLogo, si ha che gran parte del codice che modella la simulazione rimane fissa al variare dei modelli descritti negli XML, quindi abbiamo pensato di mantenere questa in un semplice file di testo che viene letto e integrato con le informazioni contenute negli oggetti Java. Per le operazioni di lettura e scrittura su file abbiamo usato le classi \texttt{BufferedReader} \cite{buffered-reader} e \texttt{PrintWriter} \cite{print-writer} che permettono lettura e scrittura di intere linee di testo.\\ 
 Lo strumento segue il seguente workflow:
 \begin{itemize}
@@ -43,7 +43,7 @@ Di seguito è riportato un XML in cui si mostra la definizione di ogni tipo di e
   basicstyle=\linespread{1.1}\ttfamily,
   morestring=[s]{"}{"},
   morecomment=[s]{!--}{--},
-  commentstyle=\color{cyan},
+  commentstyle=\color{red},
   moredelim=[s][\color{black}]{>}{<},
   moredelim=[s][\color{violet}]{\ }{=},
   stringstyle=\color{blue},
@@ -69,7 +69,9 @@ Di seguito è riportato un XML in cui si mostra la definizione di ogni tipo di e
 \[\textbf{[...]}\]
 \lstinputlisting[language=XML, firstline=152, lastline=169]{images/example.xml} %entry e exit node
 \[\textbf{[...]}\]
-\lstinputlisting[language=XML, firstline=178, lastline=188]{images/example.xml} %behavior e stato nodo regolare
+\lstinputlisting[language=XML, firstline=178, lastline=188]{images/example.xml} %edges
+\[\textbf{[...]}\]
+\lstinputlisting[language=XML, firstline=297, lastline=318]{images/example.xml} %behavior e stato nodo regolare
 \[\textbf{[...]}\]
 \lstinputlisting[language=XML, firstline=439, lastline=469]{images/example.xml} %stato entry e exit
 \[\textbf{[...]}\]
@@ -140,7 +142,7 @@ Gli archi sono rappresentati da due tipologie diverse di turtles dette \texttt{s
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/ambiente-screen.png}
-\caption{Esempio di ambiente generato. In questo caso i beacons di ingresso sono di colore verde e i beacons di uscita di colore rosso.}
+\caption{Esempio di ambiente generato. In questo caso i beacons di ingresso sono di colore blu e i beacons di uscita di colore rosso.}
 \label{fig:ambiente-screen}
 \end{figure}
 Per i beacons di ingresso e di uscita vengono anche impostati i relativi parametri, ovvero tasso di generazione o eliminazione degli attori e percentuali relative ai behavior da attribuire ad essi. In particolare per gli entry points si imposta anche un limite massimo del numero di attori che possono essere generati.\\
@@ -152,7 +154,7 @@ Lo stato iniziale del sistema è contenuto in una semplice lista \texttt{initial
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/movers-screen.png}
-\caption{Esempio di ambiente popolato con attori nello stato iniziale. Gli attori hanno assunto il colore del beacon che hanno come obiettivo, in questo caso abbiamo un unico behavior che ha come interest point il beacon di colore rosa.}
+\caption{Esempio di ambiente popolato con attori nello stato iniziale. Gli attori hanno assunto il colore del beacon che hanno come obiettivo, in questo caso abbiamo un unico behavior che ha come interest point il beacon di colore verde.}
 \label{fig:movers-screen}
 \end{figure}
 

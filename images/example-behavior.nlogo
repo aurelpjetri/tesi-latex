@@ -498,8 +498,7 @@ to default-configuration
 
   ;; Behaviors get populated in a map and are a list of beacons
   set behaviors-map table:make
-  table:put behaviors-map 0 get-interest-beacons map [ list (world-offset + item 0 ?) (world-offset + item 1 ?) ] [ [(0) (20)] ]
-  table:put behaviors-map 1 get-interest-beacons map [ list (world-offset + item 0 ?) (world-offset + item 1 ?) ] [ [(20) (0)] ]
+  table:put behaviors-map 0 get-interest-beacons map [ list (world-offset + item 0 ?) (world-offset + item 1 ?) ] [ [(40) (10)] ]
 
   ;;===end
 
@@ -519,10 +518,22 @@ end
 to populate-initial-state
   ;; Populate the initial state of movers around the world
   ;; example: [x y behavior_id n_movers]
-  set initial-state lput [0 0 0 20 1 20] initial-state
-  set initial-state lput [0 20 0 20 1 20] initial-state
-  set initial-state lput [20 0 0 20 1 20] initial-state
-  set initial-state lput [20 20 0 20 1 20] initial-state
+  set initial-state lput [10 10 0 50] initial-state
+  set initial-state lput [20 10 0 50] initial-state
+  set initial-state lput [30 10 0 50] initial-state
+  set initial-state lput [40 10 0 50] initial-state
+  set initial-state lput [10 20 0 50] initial-state
+  set initial-state lput [20 20 0 50] initial-state
+  set initial-state lput [30 20 0 50] initial-state
+  set initial-state lput [40 20 0 50] initial-state
+  set initial-state lput [10 30 0 50] initial-state
+  set initial-state lput [20 30 0 50] initial-state
+  set initial-state lput [30 30 0 50] initial-state
+  set initial-state lput [40 30 0 50] initial-state
+  set initial-state lput [10 40 0 50] initial-state
+  set initial-state lput [20 40 0 50] initial-state
+  set initial-state lput [30 40 0 50] initial-state
+  set initial-state lput [40 40 0 50] initial-state
 
   ;;===end
 end

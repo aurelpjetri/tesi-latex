@@ -296,8 +296,8 @@
 		</edge>
 	</graph>
 
-<!-- comportamento -->
 	<graph id="Behaviors">
+		<!-- comportamento -->
 		<node id="b0">
 			<data key="bType">visit</data>
 			<graph id="0">
@@ -312,112 +312,112 @@
 		<node id="n0">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n1">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n2">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n3">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n4">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n5">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n6">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n7">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n8">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n9">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n10">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n11">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n12">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n13">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n14">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
 		<node id="n15">
 			<graph id="state">
 				<behavior id="0">  <!--  id del behavior -->
-					<data key="moverQuantity">100</data>
+					<data key="moverQuantity">50</data>
 				</behavior>
 			</graph>
 		</node>
