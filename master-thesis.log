@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  20 JUN 2016 14:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  21 JUN 2016 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -826,7 +826,7 @@ Package hyperref Info: Option `breaklinks' set `true' on input line 81.
 Package hyperref Info: Option `colorlinks' set `false' on input line 81.
 
 (./master-thesis.aux (./files/introduzione.aux) (./files/capitolo1.aux)
-(./files/capitolo2.aux) (./files/bibliography.aux))
+(./files/capitolo2.aux) (./files/capitolo3.aux) (./files/bibliography.aux))
 \openout1 = `master-thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -901,7 +901,7 @@ LaTeX Info: Redefining \nameref on input line 83.
 
 \c@lstlisting=\count147
 
-<./img/stemma.pdf, id=120, 1622.06pt x 1673.45195pt>
+<./img/stemma.pdf, id=128, 1622.06pt x 1673.45195pt>
 File: ./img/stemma.pdf Graphic file (type pdf)
  <use ./img/stemma.pdf>
 Package pdftex.def Info: ./img/stemma.pdf used on input line 91.
@@ -928,7 +928,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 ...e {2}Sviluppo del progetto}{16}{chapter.2}
+l.22 ... {2.3.4}Conseguenze}{16}{subsection.2.3.4}
                                                    [1
 
 ])
@@ -963,135 +963,156 @@ l.10
 
  (./files/capitolo1.tex
 Capitolo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+
+ []
+
 [1
 
 
 
 
-] [2] [3] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 37--43
+]
+Underfull \hbox (badness 10000) in paragraph at lines 14--19
 
  []
 
-[5] [6] [7]
-<images/builder-design-pattern.pdf, id=248, 442.8545pt x 160.1985pt>
-File: images/builder-design-pattern.pdf Graphic file (type pdf)
-
-<use images/builder-design-pattern.pdf>
-Package pdftex.def Info: images/builder-design-pattern.pdf used on input line 6
-2.
-(pdftex.def)             Requested size: 390.00374pt x 141.08022pt.
- [8 <./images/builder-design-pattern.pdf>] [9] <images/builder-pattern-sequence
-.pdf, id=307, 367.3725pt x 265.3915pt>
-File: images/builder-pattern-sequence.pdf Graphic file (type pdf)
-
-<use images/builder-pattern-sequence.pdf>
-Package pdftex.def Info: images/builder-pattern-sequence.pdf used on input line
- 95.
-(pdftex.def)             Requested size: 390.02399pt x 281.75504pt.
- [10 <./images/builder-pattern-sequence.pdf>] <images/visitor-design-pattern.pd
-f, id=349, 700.79314pt x 404.31049pt>
-File: images/visitor-design-pattern.pdf Graphic file (type pdf)
-
-<use images/visitor-design-pattern.pdf>
-Package pdftex.def Info: images/visitor-design-pattern.pdf used on input line 1
-14.
-(pdftex.def)             Requested size: 390.00342pt x 225.00572pt.
- [11] [12 <./images/visitor-design-pattern.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 132.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-<images/visitor-pattern-sequence.pdf, id=445, 529.57848pt x 197.9395pt>
-File: images/visitor-pattern-sequence.pdf Graphic file (type pdf)
-
-<use images/visitor-pattern-sequence.pdf>
-Package pdftex.def Info: images/visitor-pattern-sequence.pdf used on input line
- 145.
-(pdftex.def)             Requested size: 390.0072pt x 145.7722pt.
- [13] [14 <./images/visitor-pattern-sequence.pdf>]) [15]
+[2] [3]) [4] [5] [6]
 \openout2 = `files/capitolo2.aux'.
 
  (./files/capitolo2.tex
 Capitolo 2.
-[16
 
-
-
-] [17] [18]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 66.
- (./images/example.xml) [19] (./images/example.xml)
-(./images/example.xml) (./images/example.xml [20]) (./images/example.xml)
-(./images/example.xml [21]) (./images/example.xml)
-<images/graph-diagram.pdf, id=621, 554.47153pt x 253.3465pt>
-File: images/graph-diagram.pdf Graphic file (type pdf)
-
-<use images/graph-diagram.pdf>
-Package pdftex.def Info: images/graph-diagram.pdf used on input line 84.
-(pdftex.def)             Requested size: 389.9972pt x 178.19566pt.
- [22]
-<images/builder-diagram.pdf, id=658, 526.36653pt x 438.0365pt>
-File: images/builder-diagram.pdf Graphic file (type pdf)
-
-<use images/builder-diagram.pdf>
-Package pdftex.def Info: images/builder-diagram.pdf used on input line 94.
-(pdftex.def)             Requested size: 390.01114pt x 324.56302pt.
-
-<images/builder-sequence.pdf, id=659, 778.10701pt x 831.90799pt>
-File: images/builder-sequence.pdf Graphic file (type pdf)
-
-<use images/builder-sequence.pdf>
-Package pdftex.def Info: images/builder-sequence.pdf used on input line 105.
-(pdftex.def)             Requested size: 390.00238pt x 416.96848pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--111
+Underfull \hbox (badness 10000) in paragraph at lines 5--12
 
  []
 
-[23 <./images/graph-diagram.pdf>] [24 <./images/builder-diagram.pdf>]
-<images/visitor-class-diagram.pdf, id=819, 341.6765pt x 255.75551pt>
+[7
+
+
+
+] [8]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 19.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 19.
+ [9]
+<images/builder-design-pattern.pdf, id=264, 442.8545pt x 160.1985pt>
+File: images/builder-design-pattern.pdf Graphic file (type pdf)
+
+<use images/builder-design-pattern.pdf>
+Package pdftex.def Info: images/builder-design-pattern.pdf used on input line 3
+4.
+(pdftex.def)             Requested size: 390.00374pt x 141.08022pt.
+ [10] [11 <./images/builder-design-pattern.pdf>]
+<images/builder-pattern-sequence.pdf, id=324, 367.3725pt x 265.3915pt>
+File: images/builder-pattern-sequence.pdf Graphic file (type pdf)
+
+<use images/builder-pattern-sequence.pdf>
+Package pdftex.def Info: images/builder-pattern-sequence.pdf used on input line
+ 67.
+(pdftex.def)             Requested size: 390.02399pt x 281.75504pt.
+ [12] [13 <./images/builder-pattern-sequence.pdf>]
+<images/visitor-design-pattern.pdf, id=371, 700.79314pt x 404.31049pt>
+File: images/visitor-design-pattern.pdf Graphic file (type pdf)
+
+<use images/visitor-design-pattern.pdf>
+Package pdftex.def Info: images/visitor-design-pattern.pdf used on input line 8
+6.
+(pdftex.def)             Requested size: 390.00342pt x 225.00572pt.
+ [14 <./images/visitor-design-pattern.pdf>] [15]
+<images/visitor-pattern-sequence.pdf, id=466, 529.57848pt x 197.9395pt>
+File: images/visitor-pattern-sequence.pdf Graphic file (type pdf)
+
+<use images/visitor-pattern-sequence.pdf>
+Package pdftex.def Info: images/visitor-pattern-sequence.pdf used on input line
+ 117.
+(pdftex.def)             Requested size: 390.0072pt x 145.7722pt.
+ [16 <./images/visitor-pattern-sequence.pdf>]) [17]
+\openout2 = `files/capitolo3.aux'.
+
+ (./files/capitolo3.tex
+Capitolo 3.
+[18
+
+
+
+] [19] [20]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 66.
+ (./images/example.xml [21]) (./images/example.xml)
+(./images/example.xml) [22] (./images/example.xml) (./images/example.xml
+[23]) (./images/example.xml) [24] (./images/example.xml)
+<images/graph-diagram.pdf, id=669, 554.47153pt x 253.3465pt>
+File: images/graph-diagram.pdf Graphic file (type pdf)
+
+<use images/graph-diagram.pdf>
+Package pdftex.def Info: images/graph-diagram.pdf used on input line 85.
+(pdftex.def)             Requested size: 389.9972pt x 178.19566pt.
+
+<images/builder-diagram.pdf, id=670, 526.36653pt x 438.0365pt>
+File: images/builder-diagram.pdf Graphic file (type pdf)
+
+<use images/builder-diagram.pdf>
+Package pdftex.def Info: images/builder-diagram.pdf used on input line 95.
+(pdftex.def)             Requested size: 390.01114pt x 324.56302pt.
+
+<images/builder-sequence.pdf, id=671, 778.10701pt x 831.90799pt>
+File: images/builder-sequence.pdf Graphic file (type pdf)
+
+<use images/builder-sequence.pdf>
+Package pdftex.def Info: images/builder-sequence.pdf used on input line 106.
+(pdftex.def)             Requested size: 390.00238pt x 416.96848pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--112
+
+ []
+
+[25 <./images/graph-diagram.pdf>] [26 <./images/builder-diagram.pdf>]
+<images/visitor-class-diagram.pdf, id=835, 341.6765pt x 255.75551pt>
 File: images/visitor-class-diagram.pdf Graphic file (type pdf)
 
 <use images/visitor-class-diagram.pdf>
 Package pdftex.def Info: images/visitor-class-diagram.pdf used on input line 12
-1.
+2.
 (pdftex.def)             Requested size: 390.02097pt x 291.94283pt.
 
-<images/visitor-sequence.pdf, id=822, 650.02847pt x 462.92952pt>
+<images/visitor-sequence.pdf, id=838, 650.02847pt x 462.92952pt>
 File: images/visitor-sequence.pdf Graphic file (type pdf)
 
 <use images/visitor-sequence.pdf>
-Package pdftex.def Info: images/visitor-sequence.pdf used on input line 130.
+Package pdftex.def Info: images/visitor-sequence.pdf used on input line 131.
 (pdftex.def)             Requested size: 390.01018pt x 277.75279pt.
- [25] [26 <./images/builder-sequence.pdf>]
-[27] [28 <./images/visitor-class-diagram.pdf>] [29 <./images/visitor-sequence.p
-df>] <images/ambiente-screen.png, id=1015, 629.35126pt x 629.35126pt>
+ [27] [28 <./images/builder-sequence.pdf>]
+[29] [30 <./images/visitor-class-diagram.pdf>] [31 <./images/visitor-sequence.p
+df>] <images/ambiente-screen.png, id=1032, 629.35126pt x 629.35126pt>
 File: images/ambiente-screen.png Graphic file (type png)
 
 <use images/ambiente-screen.png>
-Package pdftex.def Info: images/ambiente-screen.png used on input line 144.
+Package pdftex.def Info: images/ambiente-screen.png used on input line 145.
 (pdftex.def)             Requested size: 390.00168pt x 390.00168pt.
- [30] [31 <./images/ambiente-screen.png>]
-<images/movers-screen.png, id=1026, 631.35875pt x 630.355pt>
+ [32] [33 <./images/ambiente-screen.png>]
+<images/movers-screen.png, id=1042, 631.35875pt x 630.355pt>
 File: images/movers-screen.png Graphic file (type png)
 
 <use images/movers-screen.png>
-Package pdftex.def Info: images/movers-screen.png used on input line 156.
+Package pdftex.def Info: images/movers-screen.png used on input line 157.
 (pdftex.def)             Requested size: 390.00294pt x 389.3829pt.
 
-<images/complete-diagram.pdf, id=1027, 1270.34598pt x 2021.15097pt>
+<images/complete-diagram.pdf, id=1043, 1270.34598pt x 2021.15097pt>
 File: images/complete-diagram.pdf Graphic file (type pdf)
 
 <use images/complete-diagram.pdf>
-Package pdftex.def Info: images/complete-diagram.pdf used on input line 163.
+Package pdftex.def Info: images/complete-diagram.pdf used on input line 164.
 (pdftex.def)             Requested size: 372.07384pt x 591.97842pt.
 
 
-LaTeX Warning: Float too large for page by 26.60706pt on input line 166.
+LaTeX Warning: Float too large for page by 26.60706pt on input line 167.
 
-) [32] [33 <./images/movers-screen.png>] [34 <./images/complete-diagram.pdf>]
+) [34] [35 <./images/movers-screen.png>] [36 <./images/complete-diagram.pdf>]
 \openout2 = `files/bibliography.aux'.
 
 
@@ -1102,7 +1123,7 @@ Underfull \hbox (badness 3343) in paragraph at lines 4--7
 . com / javase / 7 / docs / api /
  []
 
-[35
+[37
 
 
 
@@ -1115,27 +1136,27 @@ Underfull \hbox (badness 1019) in paragraph at lines 79--84
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
- [36]
+ [38]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
  (./master-thesis.aux (./files/introduzione.aux) (./files/capitolo1.aux)
-(./files/capitolo2.aux) (./files/bibliography.aux))
+(./files/capitolo2.aux) (./files/capitolo3.aux) (./files/bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
 Package rerunfilecheck Info: File `master-thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3FD0D37FCF4AA6F21E4EEDC0F7673A5E;1843.
+(rerunfilecheck)             Checksum: 85A5939081D3D768A77895BE8614325B;1995.
  )
 (\end occurred when \ifx on line 60 was incomplete) 
 Here is how much of TeX's memory you used:
- 12134 strings out of 493304
- 167222 string characters out of 6139872
- 314517 words of memory out of 5000000
- 15122 multiletter control sequences out of 15000+600000
- 23003 words of font info for 55 fonts, out of 8000000 for 9000
+ 12152 strings out of 493304
+ 167470 string characters out of 6139872
+ 318128 words of memory out of 5000000
+ 15128 multiletter control sequences out of 15000+600000
+ 23629 words of font info for 57 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  36i,7n,40p,810b,1884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/
-dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-su
-per-ts1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sh
+dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-s
+uper-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 bx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/sha
@@ -1145,10 +1166,10 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc
 1728.pfb>
-Output written on master-thesis.pdf (42 pages, 1015331 bytes).
+Output written on master-thesis.pdf (44 pages, 1021449 bytes).
 PDF statistics:
- 1308 PDF objects out of 1440 (max. 8388607)
- 962 compressed objects within 10 object streams
- 213 named destinations out of 1000 (max. 500000)
- 298 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1328 PDF objects out of 1440 (max. 8388607)
+ 980 compressed objects within 10 object streams
+ 217 named destinations out of 1000 (max. 500000)
+ 314 words of extra memory for PDF output out of 10000 (max. 10000000)
 
