@@ -31,7 +31,7 @@ Il file XML è suddiviso in tre sezioni distinte:
 \item \texttt{Behaviors}
 \item \texttt{System}
 \end{itemize} 
-\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto-forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci.\\
+\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci.\\
 Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza, ovvero \texttt{weight} e \texttt{eWidth}. Il formato GraphML, inoltre, permette di specificare un tipo di default per gli edges come valore dell'attributo \texttt{edgedefault} di Graph.\\
 I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta, quindi avremo \texttt{nx}, \texttt{ny}, \texttt{nWidth}, \texttt{nHeight} e \texttt{nRadius}. All'interno del codice si usa l'attributo \texttt{ntype} per specificare il tipo di nodo e anche in questo caso è possibile specificare un tipo di default settato a \texttt{normal}.\\
 Per quanto riguarda i \texttt{Behaviors} si ha una struttura a grafo in cui ogni nodo rappresenta un behavior di cui viene indicata la tipologia, ovvero \texttt{bType}, l'identificatore e la lista dei nodi di interesse.\\
@@ -91,7 +91,7 @@ La classe Graph è caratterizzata da una composizione di Edge, Node e Behavior. 
 \end{figure}
 Ogni behavior è caratterizzato da un identificatore, attribuitogli dall'XML e da una lista di nodi regolari di interesse che devono essere visitati prima di permettere all'attore di puntare ad una uscita.\\
 Gli edges in questo modello sono aggregazioni di due nodi e presentano un particolare attributo “weight” che verrà usato dalle funzioni NetLogo per la generazione dei percorsi a costo minimo.\\
-Infine ogni classe che implementa l'interfaccia Node definisce, oltre ai metodi per il recupero delle informazioni conservate, un metodo statico per il controllo dei parametri, in modo tale da impedire la costruzione di nodi con informazioni incompatibili con NetLogo.
+Infine ogni classe che implementa l'interfaccia Node, oltre ai metodi per il recupero delle informazioni conservate, implementa anche un metodo statico per il controllo dei parametri, in modo tale da impedire la costruzione di nodi con informazioni incompatibili con NetLogo.
 
 \subsection{Parser XML e Builder}
 Come già accennato, abbiamo scelto il formato JDOM per la rappresentazione del file XML. La scelta di questo formato è stata dettata dalla sua struttura, che si adatta meglio ai nostri fini di sola lettura e non di manipolazione del documento.\\
