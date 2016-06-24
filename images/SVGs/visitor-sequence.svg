@@ -1,1 +1,1541 @@
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="870" height="484"><defs></defs><g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#C0C0C0" stroke="none" x="63" y="47" width="74" height="39" opacity="0.2"></rect></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="56" y="40" width="74" height="39"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 56 40 L 130 40 L 130 79 L 56 79 L 56 40 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="76.5" y="59.5">Client</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 94.5 80 L 94.5 504" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#C0C0C0" stroke="none" x="183" y="47" width="151" height="39" opacity="0.2"></rect></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="176" y="40" width="151" height="39"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 176 40 L 327 40 L 327 79 L 176 79 L 176 40 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="191.5" y="59.5">NetLogoGraphVisitor</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 252.5 80 L 252.5 504" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#C0C0C0" stroke="none" x="383" y="47" width="74" height="39" opacity="0.2"></rect></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="376" y="40" width="74" height="39"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 376 40 L 450 40 L 450 79 L 376 79 L 376 40 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="395.5" y="59.5">Graph</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 414.5 80 L 414.5 504" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#C0C0C0" stroke="none" x="503" y="47" width="119" height="39" opacity="0.2"></rect></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="496" y="40" width="119" height="39"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 496 40 L 615 40 L 615 79 L 496 79 L 496 40 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="511.5" y="59.5">BufferedReader</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 556.5 80 L 556.5 496" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#C0C0C0" stroke="none" x="663" y="47" width="88" height="39" opacity="0.2"></rect></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="656" y="40" width="88" height="39"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 656 40 L 744 40 L 744 79 L 656 79 L 656 40 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="669" y="59.5">PrintWriter</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 701.5 80 L 701.5 496" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#C0C0C0" stroke="none" x="839" y="47" width="74" height="39" opacity="0.2"></rect></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="832" y="40" width="74" height="39"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 832 40 L 906 40 L 906 79 L 832 79 L 832 40 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="bold" text-decoration="none" x="854" y="59.5">Node</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 870.5 80 L 870.5 496" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 94 99 L 407 99" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="#000000" stroke="none" d="M 396.83732514237585 103.20951775601598 L 407 99 L 396.83732514237585 94.79048224398402"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 396.83732514237585 103.20951775601598 L 407 99 L 396.83732514237585 94.79048224398402 L 396.83732514237585 103.20951775601598" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="157" y="96">1 : accept(NetLogoGraphVisitor)</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="407" y="99" width="13" height="381"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 407 99 L 420 99 L 420 480 L 407 480 L 407 99 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 407 120 L 258 120" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="#000000" stroke="none" d="M 268.16267485762415 115.79048224398402 L 258 120 L 268.16267485762415 124.20951775601598"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 268.16267485762415 115.79048224398402 L 258 120 L 268.16267485762415 124.20951775601598 L 268.16267485762415 115.79048224398402" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="289" y="137">2 : visit(Graph)</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="245" y="120" width="13" height="352"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 245 120 L 258 120 L 258 472 L 245 472 L 245 120 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 258 168 L 549 168" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 538.8373251423759 172.209517756016 L 549 168 L 538.8373251423758 163.790482243984" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="369" y="165">3 : readLine</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="549" y="168" width="13" height="28"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 549 168 L 562 168 L 562 196 L 549 196 L 549 168 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 549 184 L 258 184" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 268.16267485762415 179.790482243984 L 258 184 L 268.16267485762415 188.209517756016" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="364" y="201">4 : String line</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 258 224 L 694 224" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 683.8373251423759 228.209517756016 L 694 224 L 683.8373251423758 219.790482243984" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="435" y="221">5 : println(line)</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="694" y="224" width="13" height="28"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 694 224 L 707 224 L 707 252 L 694 252 L 694 224 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 258 272 L 414 272" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="#000000" stroke="none" d="M 403.83732514237585 276.209517756016 L 414 272 L 403.83732514237585 267.790482243984"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 403.83732514237585 276.209517756016 L 414 272 L 403.83732514237585 267.790482243984 L 403.83732514237585 276.209517756016" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="299" y="269">6 : getNodes</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="414" y="272" width="13" height="28"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 414 272 L 427 272 L 427 300 L 414 300 L 414 272 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 414 297 L 258 297" stroke-miterlimit="10" stroke-dasharray="3"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 268.16267485762415 292.790482243984 L 258 297 L 268.16267485762415 301.209517756016" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="308" y="314">7 : nodes</text></g></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 258 338 L 863 338" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="#000000" stroke="none" d="M 852.8373251423759 342.209517756016 L 863 338 L 852.8373251423758 333.790482243984"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 852.8373251423759 342.209517756016 L 863 338 L 852.8373251423758 333.790482243984 L 852.8373251423759 342.209517756016" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="517" y="335">8 : accept(this)</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="863" y="338" width="13" height="126"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 863 338 L 876 338 L 876 464 L 863 464 L 863 338 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 863 360 L 265 360" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="#000000" stroke="none" d="M 275.16267485762415 355.790482243984 L 265 360 L 275.16267485762415 364.209517756016"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 275.16267485762415 355.790482243984 L 265 360 L 275.16267485762415 364.209517756016 L 275.16267485762415 355.790482243984" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="528" y="377">9 : visit(this)</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="252" y="360" width="13" height="64"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 252 360 L 265 360 L 265 424 L 252 424 L 252 360 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 265 391 L 694 391" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="#000000" stroke="none" d="M 683.8373251423759 395.209517756016 L 694 391 L 683.8373251423758 386.790482243984"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 683.8373251423759 395.209517756016 L 694 391 L 683.8373251423758 386.790482243984 L 683.8373251423759 395.209517756016" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="449" y="388">10 : println</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="694" y="391" width="13" height="28"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 694 391 L 707 391 L 707 419 L 694 419 L 694 391 Z Z" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 258 432 L 694 432" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="#000000" stroke="none" d="M 683.8373251423759 436.209517756016 L 694 432 L 683.8373251423758 427.790482243984"></path></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 683.8373251423759 436.209517756016 L 694 432 L 683.8373251423758 427.790482243984 L 683.8373251423759 436.209517756016" stroke-miterlimit="10"></path></g><g transform="translate(-46,-30) scale(1,1)"><g><path fill="none" stroke="none"></path><text fill="#000000" stroke="none" font-family="Arial" font-size="13px" font-style="normal" font-weight="normal" text-decoration="none" x="446" y="429">11 : println</text></g></g><g transform="translate(-46,-30) scale(1,1)"><rect fill="#ffffff" stroke="none" x="694" y="432" width="13" height="28"></rect></g><g transform="translate(-46,-30) scale(1,1)"><path fill="none" stroke="#000000" d="M 694 432 L 707 432 L 707 460 L 694 460 L 694 432 Z Z" stroke-miterlimit="10"></path></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="822"
+   height="596"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="diagramma.svg">
+  <metadata
+     id="metadata546">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1309"
+     inkscape:window-height="744"
+     id="namedview544"
+     showgrid="false"
+     inkscape:object-paths="true"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="293.48368"
+     inkscape:cy="382.06799"
+     inkscape:window-x="57"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6" />
+  <defs
+     id="defs4" />
+  <g
+     id="g6">
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g8">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="367"
+         y="47"
+         width="159"
+         height="39"
+         opacity="0.2"
+         id="rect10" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g12">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="360"
+         y="40"
+         width="159"
+         height="39"
+         id="rect14" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g16">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 360 40 L 519 40 L 519 79 L 360 79 L 360 40 Z Z"
+         stroke-miterlimit="10"
+         id="path18" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g20">
+      <g
+         id="g22">
+        <path
+           fill="none"
+           stroke="none"
+           id="path24" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="376"
+           y="59.5"
+           id="text26">aNetLogoGraphVisitor</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g28">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 440.5 80 L 440.5 616"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path30" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g32">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="71"
+         y="47"
+         width="74"
+         height="39"
+         opacity="0.2"
+         id="rect34" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g36">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="64"
+         y="40"
+         width="74"
+         height="39"
+         id="rect38" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g40">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 64 40 L 138 40 L 138 79 L 64 79 L 64 40 Z Z"
+         stroke-miterlimit="10"
+         id="path42" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g44">
+      <g
+         id="g46">
+        <path
+           fill="none"
+           stroke="none"
+           id="path48" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="81"
+           y="59.5"
+           id="text50">aClient</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g52">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 102.5 80 L 102.5 614"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path54" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g56">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="271"
+         y="47"
+         width="74"
+         height="39"
+         opacity="0.2"
+         id="rect58" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g60">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="264"
+         y="40"
+         width="74"
+         height="39"
+         id="rect62" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g64">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 264 40 L 338 40 L 338 79 L 264 79 L 264 40 Z Z"
+         stroke-miterlimit="10"
+         id="path66" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g68">
+      <g
+         id="g70">
+        <path
+           fill="none"
+           stroke="none"
+           id="path72" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="280"
+           y="59.5"
+           id="text74">aGraph</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g76">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 302.5 80 L 302.5 614"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path78" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g80">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="543"
+         y="47"
+         width="127"
+         height="39"
+         opacity="0.2"
+         id="rect82" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g84">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="536"
+         y="40"
+         width="127"
+         height="39"
+         id="rect86" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g88">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 536 40 L 663 40 L 663 79 L 536 79 L 536 40 Z Z"
+         stroke-miterlimit="10"
+         id="path90" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g92">
+      <g
+         id="g94">
+        <path
+           fill="none"
+           stroke="none"
+           id="path96" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="552"
+           y="59.5"
+           id="text98">aBufferedReader</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g100">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 600.5 80 L 600.5 616"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path102" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g104">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="687"
+         y="47"
+         width="96"
+         height="39"
+         opacity="0.2"
+         id="rect106" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g108">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="680"
+         y="40"
+         width="96"
+         height="39"
+         id="rect110" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g112">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 680 40 L 776 40 L 776 79 L 680 79 L 680 40 Z Z"
+         stroke-miterlimit="10"
+         id="path114" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g116">
+      <g
+         id="g118">
+        <path
+           fill="none"
+           stroke="none"
+           id="path120" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="693.5"
+           y="59.5"
+           id="text122">aPrintWriter</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g124">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 729.5 80 L 729.5 616"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path126" />
+    </g>
+    <g
+       transform="matrix(1.5255523,0,0,1,-473.91632,-30)"
+       id="g128">
+      <rect
+         x="799"
+         y="47"
+         width="74"
+         height="39"
+         id="rect130"
+         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
+    </g>
+    <g
+       transform="matrix(1.4921081,0,0,1,-443.74961,-30)"
+       id="g132">
+      <rect
+         x="792"
+         y="40"
+         width="74"
+         height="39"
+         id="rect134"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="matrix(1.5044028,0,0,1,-453.23485,-30)"
+       id="g136">
+      <path
+         d="m 792,40 74,0 0,39 -74,0 0,-39 z"
+         stroke-miterlimit="10"
+         id="path138"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-58.596194,-30.353553)"
+       id="g140">
+      <g
+         id="g142">
+        <path
+           id="path144"
+           d=""
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="810.5"
+           y="59.5"
+           id="text146"
+           style="font-size:13px;font-style:normal;font-weight:bold;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">aRegularNode</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-35.414214,-31.232233)"
+       id="g148">
+      <path
+         d="m 830.5,80 0,536"
+         stroke-miterlimit="10"
+         id="path150"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g152">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 360 424 L 752 424 L 752 568 L 360 568 L 360 424"
+         stroke-miterlimit="10"
+         id="path154" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g156"
+       style="fill:#f9f9f9">
+      <path
+         d="M 360 424 L 360 446 L 640 446 L 651 435 L 651 424 L 360 424"
+         id="path158"
+         style="fill:#f9f9f9"
+         stroke="none"
+         fill="#ffffff" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g160"
+       style="fill:#ffffff">
+      <path
+         d="M 360 424 L 360 446 L 640 446 L 651 435 L 651 424 L 360 424 L 360 424"
+         stroke-miterlimit="10"
+         id="path162"
+         style="fill:#ffffff"
+         stroke="#000000"
+         fill="none" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g164">
+      <g
+         id="g166">
+        <path
+           fill="none"
+           stroke="none"
+           id="path168" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="395"
+           y="441.5"
+           id="text170">[while(aBufferedReader.readline()  != null)]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g172">
+      <g
+         id="g174">
+        <path
+           fill="none"
+           stroke="none"
+           id="path176" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="365"
+           y="441.5"
+           id="text178">loop</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g180">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="433"
+         y="112"
+         width="13"
+         height="472"
+         id="rect182" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g184">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 433 112 L 446 112 L 446 584 L 433 584 L 433 112 Z Z"
+         stroke-miterlimit="10"
+         id="path186" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g188">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 360 120 L 752 120 L 752 256 L 360 256 L 360 120"
+         stroke-miterlimit="10"
+         id="path190" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g192">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 360 120 L 360 142 L 718 142 L 729 131 L 729 120 L 360 120"
+         id="path194" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g196">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 360 120 L 360 142 L 718 142 L 729 131 L 729 120 L 360 120 L 360 120"
+         stroke-miterlimit="10"
+         id="path198" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g200">
+      <g
+         id="g202">
+        <path
+           fill="none"
+           stroke="none"
+           id="path204" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="395"
+           y="137.5"
+           id="text206"
+           style="font-size:13px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">[while(!a BufferedReader.readline().equals(&quot;;;===start&quot;))]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g208">
+      <g
+         id="g210">
+        <path
+           fill="none"
+           stroke="none"
+           id="path212" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="365"
+           y="137.5"
+           id="text214">loop</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g216">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 102 104 L 295 104"
+         stroke-miterlimit="10"
+         id="path218" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g220">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 284.83732514237585 108.20951775601598 L 295 104 L 284.83732514237585 99.79048224398402"
+         id="path222" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g224">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 284.83732514237585 108.20951775601598 L 295 104 L 284.83732514237585 99.79048224398402 L 284.83732514237585 108.20951775601598"
+         stroke-miterlimit="10"
+         id="path226" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g228">
+      <g
+         id="g230">
+        <path
+           fill="none"
+           stroke="none"
+           id="path232" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="104"
+           y="100"
+           id="text234">1 : accept(aNetLogoGraphVisitor)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g236">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="295"
+         y="104"
+         width="13"
+         height="496"
+         id="rect238" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g240">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 295 104 L 308 104 L 308 600 L 295 600 L 295 104 Z Z"
+         stroke-miterlimit="10"
+         id="path242" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g244">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 308 112 L 433 112"
+         stroke-miterlimit="10"
+         id="path246" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g248">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 422.83732514237585 116.20951775601598 L 433 112 L 422.83732514237585 107.79048224398402"
+         id="path250" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g252">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 422.83732514237585 116.20951775601598 L 433 112 L 422.83732514237585 107.79048224398402 L 422.83732514237585 116.20951775601598"
+         stroke-miterlimit="10"
+         id="path254" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g256">
+      <g
+         id="g258">
+        <path
+           fill="none"
+           stroke="none"
+           id="path260" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="324"
+           y="100"
+           id="text262">2 : visit(aGraph)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g264">
+      <rect
+         x="433"
+         y="112"
+         width="13"
+         height="472"
+         id="rect266"
+         style="fill:#fdfdfd;stroke:none" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g272">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 446 160 L 593 160"
+         stroke-miterlimit="10"
+         id="path274" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g276">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 582.8373251423759 164.209517756016 L 593 160 L 582.8373251423758 155.790482243984"
+         id="path278" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g280">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 582.8373251423759 164.209517756016 L 593 160 L 582.8373251423758 155.790482243984 L 582.8373251423759 164.209517756016"
+         stroke-miterlimit="10"
+         id="path282" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g284">
+      <g
+         id="g286">
+        <path
+           fill="none"
+           stroke="none"
+           id="path288" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="485"
+           y="157"
+           id="text290">3 : readLine</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g292">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="593"
+         y="160"
+         width="13"
+         height="28"
+         id="rect294" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g296">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 593 160 L 606 160 L 606 188 L 593 188 L 593 160 Z Z"
+         stroke-miterlimit="10"
+         id="path298" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g300">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 593 184 L 446 184"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path302" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g304">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 456.16267485762415 179.790482243984 L 446 184 L 456.16267485762415 188.209517756016"
+         stroke-miterlimit="10"
+         id="path306" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g308">
+      <g
+         id="g310">
+        <path
+           fill="none"
+           stroke="none"
+           id="path312" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="488"
+           y="180"
+           id="text314">4 : aString</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g316">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 446 224 L 722 224"
+         stroke-miterlimit="10"
+         id="path318" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g320">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 711.8373251423759 228.209517756016 L 722 224 L 711.8373251423758 219.790482243984"
+         id="path322" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g324">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 711.8373251423759 228.209517756016 L 722 224 L 711.8373251423758 219.790482243984 L 711.8373251423759 228.209517756016"
+         stroke-miterlimit="10"
+         id="path326" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g328">
+      <g
+         id="g330">
+        <path
+           fill="none"
+           stroke="none"
+           id="path332" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="533"
+           y="221"
+           id="text334">5 : println(aString)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g336">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="722"
+         y="224"
+         width="13"
+         height="28"
+         id="rect338" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g340">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 722 224 L 735 224 L 735 252 L 722 252 L 722 224 Z Z"
+         stroke-miterlimit="10"
+         id="path342" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g344">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 433 280 L 315 280"
+         stroke-miterlimit="10"
+         id="path346" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g348">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 325.16267485762415 275.790482243984 L 315 280 L 325.16267485762415 284.209517756016"
+         id="path350" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g352">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 325.16267485762415 275.790482243984 L 315 280 L 325.16267485762415 284.209517756016 L 325.16267485762415 275.790482243984"
+         stroke-miterlimit="10"
+         id="path354" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g356">
+      <g
+         id="g358">
+        <path
+           fill="none"
+           stroke="none"
+           id="path360" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="334"
+           y="276"
+           id="text362">6 : getNodes</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g364">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="302"
+         y="280"
+         width="13"
+         height="28"
+         id="rect366" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g368">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 302 280 L 315 280 L 315 308 L 302 308 L 302 280 Z Z"
+         stroke-miterlimit="10"
+         id="path370" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g372">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 315 304 L 433 304"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path374" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g376">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 422.83732514237585 308.209517756016 L 433 304 L 422.83732514237585 299.790482243984"
+         stroke-miterlimit="10"
+         id="path378" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g380">
+      <g
+         id="g382">
+        <path
+           fill="none"
+           stroke="none"
+           id="path384" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="339"
+           y="299"
+           id="text386">7 : nodes</text>
+      </g>
+    </g>
+    <g
+       transform="matrix(1.0228175,0,0,1,-64.165179,-30)"
+       id="g388">
+      <path
+         d="m 446,320 377,0"
+         stroke-miterlimit="10"
+         id="path390"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-35.25,-30.25)"
+       id="g392">
+      <path
+         d="M 812.83733,324.20952 823,320 812.83733,315.79048"
+         id="path394"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;stroke:none" />
+    </g>
+    <g
+       transform="translate(-34.875,-30.25)"
+       id="g396"
+       inkscape:transform-center-x="1.875">
+      <path
+         d="M 812.83733,324.20952 823,320 l -10.16267,-4.20952 0,8.41904"
+         stroke-miterlimit="10"
+         id="path398"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g400">
+      <g
+         id="g402">
+        <path
+           fill="none"
+           stroke="none"
+           id="path404" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="516"
+           y="316"
+           id="text406">8 : accept(aNetLogoGraphVisitor)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-34.125,-30.75)"
+       id="g408">
+      <rect
+         x="823"
+         y="320"
+         width="13"
+         height="80"
+         id="rect410"
+         style="fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       transform="translate(-34,-31)"
+       id="g412">
+      <path
+         d="m 823,320 13,0 0,80 -13,0 0,-80 z"
+         stroke-miterlimit="10"
+         id="path414"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="matrix(1.0525606,0,0,1,-77.783693,-30)"
+       id="g416">
+      <path
+         d="m 823,344 -370,0"
+         stroke-miterlimit="10"
+         id="path418"
+         inkscape:connector-curvature="0"
+         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g420">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 463.16267485762415 339.790482243984 L 453 344 L 463.16267485762415 348.209517756016"
+         id="path422" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g424">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 463.16267485762415 339.790482243984 L 453 344 L 463.16267485762415 348.209517756016 L 463.16267485762415 339.790482243984"
+         stroke-miterlimit="10"
+         id="path426" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g428">
+      <g
+         id="g430">
+        <path
+           fill="none"
+           stroke="none"
+           id="path432" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="627"
+           y="341"
+           id="text434"
+           style="font-size:13px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">9 : visit(aRegularNode)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g436">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="440"
+         y="344"
+         width="13"
+         height="56"
+         id="rect438" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g440">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 440 344 L 453 344 L 453 400 L 440 400 L 440 344 Z Z"
+         stroke-miterlimit="10"
+         id="path442" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g444">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 453 368 L 722 368"
+         stroke-miterlimit="10"
+         id="path446" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g448">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 711.8373251423759 372.209517756016 L 722 368 L 711.8373251423758 363.790482243984"
+         id="path450" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g452">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 711.8373251423759 372.209517756016 L 722 368 L 711.8373251423758 363.790482243984 L 711.8373251423759 372.209517756016"
+         stroke-miterlimit="10"
+         id="path454" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g456">
+      <g
+         id="g458">
+        <path
+           fill="none"
+           stroke="none"
+           id="path460" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="523"
+           y="364"
+           id="text462">10 : println(aString)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g464">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="722"
+         y="368"
+         width="13"
+         height="28"
+         id="rect466" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g468">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 722 368 L 735 368 L 735 396 L 722 396 L 722 368 Z Z"
+         stroke-miterlimit="10"
+         id="path470" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g472">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 446 480 L 593 480"
+         stroke-miterlimit="10"
+         id="path474" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g476">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 582.8373251423759 484.209517756016 L 593 480 L 582.8373251423758 475.790482243984"
+         id="path478" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g480">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 582.8373251423759 484.209517756016 L 593 480 L 582.8373251423758 475.790482243984 L 582.8373251423759 484.209517756016"
+         stroke-miterlimit="10"
+         id="path482" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g484">
+      <g
+         id="g486">
+        <path
+           fill="none"
+           stroke="none"
+           id="path488" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="476"
+           y="473"
+           id="text490">11 : readLine</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g492">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="593"
+         y="480"
+         width="13"
+         height="28"
+         id="rect494" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g496">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 593 480 L 606 480 L 606 508 L 593 508 L 593 480 Z Z"
+         stroke-miterlimit="10"
+         id="path498" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g500">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 593 504 L 446 504"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path502" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g504">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 456.16267485762415 499.790482243984 L 446 504 L 456.16267485762415 508.209517756016"
+         stroke-miterlimit="10"
+         id="path506" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g508">
+      <g
+         id="g510">
+        <path
+           fill="none"
+           stroke="none"
+           id="path512" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="484"
+           y="500"
+           id="text514">12 : aString</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g516">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 446 536 L 722 536"
+         stroke-miterlimit="10"
+         id="path518" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g520">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 711.8373251423759 540.209517756016 L 722 536 L 711.8373251423758 531.790482243984"
+         id="path522" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g524">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 711.8373251423759 540.209517756016 L 722 536 L 711.8373251423758 531.790482243984 L 711.8373251423759 540.209517756016"
+         stroke-miterlimit="10"
+         id="path526" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g528">
+      <g
+         id="g530">
+        <path
+           fill="none"
+           stroke="none"
+           id="path532" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="511"
+           y="532"
+           id="text534">13 : println(aString)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g536">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="722"
+         y="536"
+         width="13"
+         height="28"
+         id="rect538" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g540">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 722 536 L 735 536 L 735 564 L 722 564 L 722 536 Z Z"
+         stroke-miterlimit="10"
+         id="path542" />
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 378.51774,89.956249 13.75524,-0.08286 z"
+       id="path3529"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 378.51774,112.16351 13.92097,-0.0829 z"
+       id="path3531"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:13.03632545px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="353.20447"
+       y="115.42415"
+       id="text3533"
+       sodipodi:linespacing="125%"
+       transform="scale(1.0730329,0.93193788)"><tspan
+         sodipodi:role="line"
+         id="tspan3535"
+         x="353.20447"
+         y="115.42415">!a</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 378.74464,393.97161 c 13.30059,0.29296 13.71074,0.0586 13.71074,0.0586 z"
+       id="path3551"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 378.74464,416.00255 13.41778,0 z"
+       id="path3553"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3565"
+       width="0.51043224"
+       height="21.016506"
+       x="378.49738"
+       y="394.48145" />
+    <rect
+       style="fill:#ffffff"
+       id="rect3567"
+       width="0.54370016"
+       height="20.886993"
+       x="392"
+       y="394.61819" />
+    <text
+       xml:space="preserve"
+       style="font-size:12.43137264px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="391.66907"
+       y="398.52551"
+       id="text3569"
+       sodipodi:linespacing="125%"
+       transform="scale(0.96767358,1.0334063)"><tspan
+         sodipodi:role="line"
+         id="tspan3571"
+         x="391.66907"
+         y="398.52551">aB</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.97778147px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 378.96107,226.01562 c 35.57361,0 0,0 0,0 z"
+       id="path3573"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 378.59375,538 13.71875,0 z"
+       id="path3577"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
