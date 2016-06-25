@@ -24,11 +24,11 @@
 \contentsline {section}{\numberline {3.1}Struttura centrale}{19}{section.3.1}
 \contentsline {section}{\numberline {3.2}Parser XML}{20}{section.3.2}
 \contentsline {section}{\numberline {3.3}Builder}{21}{section.3.3}
-\contentsline {section}{\numberline {3.4}Visitor}{22}{section.3.4}
-\contentsline {section}{\numberline {3.5}Documento XML}{28}{section.3.5}
+\contentsline {section}{\numberline {3.4}Visitor}{24}{section.3.4}
+\contentsline {section}{\numberline {3.5}Documento XML}{26}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Esempio}{29}{subsection.3.5.1}
 \contentsline {section}{\numberline {3.6}Modello NetLogo}{32}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}Ambiente}{33}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Behaviors e stato iniziale}{33}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}Requisiti}{35}{section.3.7}
+\contentsline {section}{\numberline {3.7}Requisiti}{36}{section.3.7}
 \contentsline {chapter}{Bibliografia}{38}{section.3.7}
