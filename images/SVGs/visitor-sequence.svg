@@ -8,20 +8,19 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="822"
-   height="596"
+   width="842"
+   height="794"
    id="svg2"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="diagramma.svg">
+   sodipodi:docname="visitor-sequence.svg">
   <metadata
-     id="metadata546">
+     id="metadata622">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -36,12 +35,11 @@
      inkscape:pageshadow="2"
      inkscape:window-width="1309"
      inkscape:window-height="744"
-     id="namedview544"
+     id="namedview620"
      showgrid="false"
-     inkscape:object-paths="true"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="293.48368"
-     inkscape:cy="382.06799"
+     inkscape:zoom="0.84069119"
+     inkscape:cx="368.8666"
+     inkscape:cy="399.36433"
      inkscape:window-x="57"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -56,7 +54,7 @@
       <rect
          fill="#C0C0C0"
          stroke="none"
-         x="367"
+         x="359"
          y="47"
          width="159"
          height="39"
@@ -69,7 +67,7 @@
       <rect
          fill="#ffffff"
          stroke="none"
-         x="360"
+         x="352"
          y="40"
          width="159"
          height="39"
@@ -81,7 +79,7 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 360 40 L 519 40 L 519 79 L 360 79 L 360 40 Z Z"
+         d="M 352 40 L 511 40 L 511 79 L 352 79 L 352 40 Z Z"
          stroke-miterlimit="10"
          id="path18" />
     </g>
@@ -102,7 +100,7 @@
            font-style="normal"
            font-weight="bold"
            text-decoration="none"
-           x="376"
+           x="368"
            y="59.5"
            id="text26">aNetLogoGraphVisitor</text>
       </g>
@@ -113,7 +111,7 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 440.5 80 L 440.5 616"
+         d="M 432.5 80 L 432.5 806"
          stroke-miterlimit="10"
          stroke-dasharray="3"
          id="path30" />
@@ -121,47 +119,57 @@
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g32">
-      <rect
-         fill="#C0C0C0"
-         stroke="none"
-         x="71"
-         y="47"
-         width="74"
-         height="39"
-         opacity="0.2"
-         id="rect34" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g36">
-      <rect
-         fill="#ffffff"
-         stroke="none"
-         x="64"
-         y="40"
-         width="74"
-         height="39"
-         id="rect38" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g40">
       <path
          fill="none"
          stroke="#000000"
-         d="M 64 40 L 138 40 L 138 79 L 64 79 L 64 40 Z Z"
+         d="M 368 600 L 760 600 L 760 744 L 368 744 L 368 600"
          stroke-miterlimit="10"
-         id="path42" />
+         id="path34" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g44">
+       id="g60">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="783"
+         y="47"
+         width="110"
+         height="39"
+         opacity="0.2"
+         id="rect62" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g64">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="776"
+         y="40"
+         width="110"
+         height="39"
+         id="rect66" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g68">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 776 40 L 886 40 L 886 79 L 776 79 L 776 40 Z Z"
+         stroke-miterlimit="10"
+         id="path70" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g72">
       <g
-         id="g46">
+         id="g74">
         <path
            fill="none"
            stroke="none"
-           id="path48" />
+           id="path76" />
         <text
            fill="#000000"
            stroke="none"
@@ -170,25 +178,161 @@
            font-style="normal"
            font-weight="bold"
            text-decoration="none"
-           x="81"
+           x="790.5"
            y="59.5"
-           id="text50">aClient</text>
+           id="text78">aRegularNode</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g52">
+       id="g80">
       <path
          fill="none"
          stroke="#000000"
-         d="M 102.5 80 L 102.5 614"
+         d="M 832.5 80 L 832.5 784"
          stroke-miterlimit="10"
          stroke-dasharray="3"
-         id="path54" />
+         id="path82" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g56">
+       id="g84">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="679"
+         y="47"
+         width="96"
+         height="39"
+         opacity="0.2"
+         id="rect86" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g88">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="672"
+         y="40"
+         width="96"
+         height="39"
+         id="rect90" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g92">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 672 40 L 768 40 L 768 79 L 672 79 L 672 40 Z Z"
+         stroke-miterlimit="10"
+         id="path94" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g96">
+      <g
+         id="g98">
+        <path
+           fill="none"
+           stroke="none"
+           id="path100" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="685.5"
+           y="59.5"
+           id="text102">aPrintWriter</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g104">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 721.5 80 L 721.5 786"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path106" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g108">
+      <rect
+         fill="#C0C0C0"
+         stroke="none"
+         x="535"
+         y="47"
+         width="127"
+         height="39"
+         opacity="0.2"
+         id="rect110" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g112">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="528"
+         y="40"
+         width="127"
+         height="39"
+         id="rect114" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g116">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 528 40 L 655 40 L 655 79 L 528 79 L 528 40 Z Z"
+         stroke-miterlimit="10"
+         id="path118" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g120">
+      <g
+         id="g122">
+        <path
+           fill="none"
+           stroke="none"
+           id="path124" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="544"
+           y="59.5"
+           id="text126">aBufferedReader</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g128">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 592.5 80 L 592.5 738"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path130" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g132">
       <rect
          fill="#C0C0C0"
          stroke="none"
@@ -197,11 +341,11 @@
          width="74"
          height="39"
          opacity="0.2"
-         id="rect58" />
+         id="rect134" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g60">
+       id="g136">
       <rect
          fill="#ffffff"
          stroke="none"
@@ -209,27 +353,27 @@
          y="40"
          width="74"
          height="39"
-         id="rect62" />
+         id="rect138" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g64">
+       id="g140">
       <path
          fill="none"
          stroke="#000000"
          d="M 264 40 L 338 40 L 338 79 L 264 79 L 264 40 Z Z"
          stroke-miterlimit="10"
-         id="path66" />
+         id="path142" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g68">
+       id="g144">
       <g
-         id="g70">
+         id="g146">
         <path
            fill="none"
            stroke="none"
-           id="path72" />
+           id="path148" />
         <text
            fill="#000000"
            stroke="none"
@@ -240,218 +384,8 @@
            text-decoration="none"
            x="280"
            y="59.5"
-           id="text74">aGraph</text>
+           id="text150">aGraph</text>
       </g>
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g76">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 302.5 80 L 302.5 614"
-         stroke-miterlimit="10"
-         stroke-dasharray="3"
-         id="path78" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g80">
-      <rect
-         fill="#C0C0C0"
-         stroke="none"
-         x="543"
-         y="47"
-         width="127"
-         height="39"
-         opacity="0.2"
-         id="rect82" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g84">
-      <rect
-         fill="#ffffff"
-         stroke="none"
-         x="536"
-         y="40"
-         width="127"
-         height="39"
-         id="rect86" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g88">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 536 40 L 663 40 L 663 79 L 536 79 L 536 40 Z Z"
-         stroke-miterlimit="10"
-         id="path90" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g92">
-      <g
-         id="g94">
-        <path
-           fill="none"
-           stroke="none"
-           id="path96" />
-        <text
-           fill="#000000"
-           stroke="none"
-           font-family="Arial"
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="552"
-           y="59.5"
-           id="text98">aBufferedReader</text>
-      </g>
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g100">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 600.5 80 L 600.5 616"
-         stroke-miterlimit="10"
-         stroke-dasharray="3"
-         id="path102" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g104">
-      <rect
-         fill="#C0C0C0"
-         stroke="none"
-         x="687"
-         y="47"
-         width="96"
-         height="39"
-         opacity="0.2"
-         id="rect106" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g108">
-      <rect
-         fill="#ffffff"
-         stroke="none"
-         x="680"
-         y="40"
-         width="96"
-         height="39"
-         id="rect110" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g112">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 680 40 L 776 40 L 776 79 L 680 79 L 680 40 Z Z"
-         stroke-miterlimit="10"
-         id="path114" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g116">
-      <g
-         id="g118">
-        <path
-           fill="none"
-           stroke="none"
-           id="path120" />
-        <text
-           fill="#000000"
-           stroke="none"
-           font-family="Arial"
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="693.5"
-           y="59.5"
-           id="text122">aPrintWriter</text>
-      </g>
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g124">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 729.5 80 L 729.5 616"
-         stroke-miterlimit="10"
-         stroke-dasharray="3"
-         id="path126" />
-    </g>
-    <g
-       transform="matrix(1.5255523,0,0,1,-473.91632,-30)"
-       id="g128">
-      <rect
-         x="799"
-         y="47"
-         width="74"
-         height="39"
-         id="rect130"
-         style="opacity:0.2;fill:#c0c0c0;stroke:none" />
-    </g>
-    <g
-       transform="matrix(1.4921081,0,0,1,-443.74961,-30)"
-       id="g132">
-      <rect
-         x="792"
-         y="40"
-         width="74"
-         height="39"
-         id="rect134"
-         style="fill:#ffffff;stroke:none" />
-    </g>
-    <g
-       transform="matrix(1.5044028,0,0,1,-453.23485,-30)"
-       id="g136">
-      <path
-         d="m 792,40 74,0 0,39 -74,0 0,-39 z"
-         stroke-miterlimit="10"
-         id="path138"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
-    </g>
-    <g
-       transform="translate(-58.596194,-30.353553)"
-       id="g140">
-      <g
-         id="g142">
-        <path
-           id="path144"
-           d=""
-           inkscape:connector-curvature="0"
-           style="fill:none;stroke:none" />
-        <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="810.5"
-           y="59.5"
-           id="text146"
-           style="font-size:13px;font-style:normal;font-weight:bold;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">aRegularNode</text>
-      </g>
-    </g>
-    <g
-       transform="translate(-35.414214,-31.232233)"
-       id="g148">
-      <path
-         d="m 830.5,80 0,536"
-         stroke-miterlimit="10"
-         id="path150"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10;stroke-dasharray:3" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
@@ -459,64 +393,55 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 360 424 L 752 424 L 752 568 L 360 568 L 360 424"
+         d="M 302.5 80 L 302.5 814"
          stroke-miterlimit="10"
+         stroke-dasharray="3"
          id="path154" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g156"
-       style="fill:#f9f9f9">
-      <path
-         d="M 360 424 L 360 446 L 640 446 L 651 435 L 651 424 L 360 424"
-         id="path158"
-         style="fill:#f9f9f9"
+       id="g156">
+      <rect
+         fill="#C0C0C0"
          stroke="none"
-         fill="#ffffff" />
+         x="71"
+         y="47"
+         width="74"
+         height="39"
+         opacity="0.2"
+         id="rect158" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g160"
-       style="fill:#ffffff">
-      <path
-         d="M 360 424 L 360 446 L 640 446 L 651 435 L 651 424 L 360 424 L 360 424"
-         stroke-miterlimit="10"
-         id="path162"
-         style="fill:#ffffff"
-         stroke="#000000"
-         fill="none" />
+       id="g160">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="64"
+         y="40"
+         width="74"
+         height="39"
+         id="rect162" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g164">
-      <g
-         id="g166">
-        <path
-           fill="none"
-           stroke="none"
-           id="path168" />
-        <text
-           fill="#000000"
-           stroke="none"
-           font-family="Arial"
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="395"
-           y="441.5"
-           id="text170">[while(aBufferedReader.readline()  != null)]</text>
-      </g>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 64 40 L 138 40 L 138 79 L 64 79 L 64 40 Z Z"
+         stroke-miterlimit="10"
+         id="path166" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g172">
+       id="g168">
       <g
-         id="g174">
+         id="g170">
         <path
            fill="none"
            stroke="none"
-           id="path176" />
+           id="path172" />
         <text
            fill="#000000"
            stroke="none"
@@ -525,103 +450,50 @@
            font-style="normal"
            font-weight="bold"
            text-decoration="none"
-           x="365"
-           y="441.5"
-           id="text178">loop</text>
+           x="81"
+           y="59.5"
+           id="text174">aClient</text>
       </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g176">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 102.5 80 L 102.5 814"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path178" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g180">
-      <rect
-         fill="#ffffff"
-         stroke="none"
-         x="433"
-         y="112"
-         width="13"
-         height="472"
-         id="rect182" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g184">
       <path
          fill="none"
          stroke="#000000"
-         d="M 433 112 L 446 112 L 446 584 L 433 584 L 433 112 Z Z"
+         d="M 368 120 L 765.5 120 L 765.5 255 L 368 255 L 368 120"
          stroke-miterlimit="10"
-         id="path186" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g188">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 360 120 L 752 120 L 752 256 L 360 256 L 360 120"
-         stroke-miterlimit="10"
-         id="path190" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g192">
-      <path
-         fill="#ffffff"
-         stroke="none"
-         d="M 360 120 L 360 142 L 718 142 L 729 131 L 729 120 L 360 120"
-         id="path194" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g196">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 360 120 L 360 142 L 718 142 L 729 131 L 729 120 L 360 120 L 360 120"
-         stroke-miterlimit="10"
-         id="path198" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g200">
-      <g
-         id="g202">
-        <path
-           fill="none"
-           stroke="none"
-           id="path204" />
-        <text
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="395"
-           y="137.5"
-           id="text206"
-           style="font-size:13px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">[while(!a BufferedReader.readline().equals(&quot;;;===start&quot;))]</text>
-      </g>
+         id="path182" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g208">
-      <g
-         id="g210">
-        <path
-           fill="none"
-           stroke="none"
-           id="path212" />
-        <text
-           fill="#000000"
-           stroke="none"
-           font-family="Arial"
-           font-size="13px"
-           font-style="normal"
-           font-weight="bold"
-           text-decoration="none"
-           x="365"
-           y="137.5"
-           id="text214">loop</text>
-      </g>
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 308 112 L 425 112"
+         stroke-miterlimit="10"
+         id="path210" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g212">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 414.83732514237585 116.20951775601598 L 425 112 L 414.83732514237585 107.79048224398402"
+         id="path214" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
@@ -629,38 +501,92 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 102 104 L 295 104"
+         d="M 414.83732514237585 116.20951775601598 L 425 112 L 414.83732514237585 107.79048224398402 L 414.83732514237585 116.20951775601598"
          stroke-miterlimit="10"
          id="path218" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g220">
+      <g
+         id="g222">
+        <path
+           fill="none"
+           stroke="none"
+           id="path224" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="321"
+           y="109"
+           id="text226">2 : visit(aGraph)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g228">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="425"
+         y="112"
+         width="13"
+         height="680"
+         id="rect230" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g232">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 425 112 L 438 112 L 438 792 L 425 792 L 425 112 Z Z"
+         stroke-miterlimit="10"
+         id="path234" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g236">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 102 104 L 295 104"
+         stroke-miterlimit="10"
+         id="path238" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g240">
       <path
          fill="#000000"
          stroke="none"
          d="M 284.83732514237585 108.20951775601598 L 295 104 L 284.83732514237585 99.79048224398402"
-         id="path222" />
+         id="path242" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g224">
+       id="g244">
       <path
          fill="none"
          stroke="#000000"
          d="M 284.83732514237585 108.20951775601598 L 295 104 L 284.83732514237585 99.79048224398402 L 284.83732514237585 108.20951775601598"
          stroke-miterlimit="10"
-         id="path226" />
+         id="path246" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g228">
+       id="g248">
       <g
-         id="g230">
+         id="g250">
         <path
            fill="none"
            stroke="none"
-           id="path232" />
+           id="path252" />
         <text
            fill="#000000"
            stroke="none"
@@ -671,92 +597,49 @@
            text-decoration="none"
            x="104"
            y="100"
-           id="text234">1 : accept(aNetLogoGraphVisitor)</text>
+           id="text254">1 : accept(aNetLogoGraphVisitor)</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g236">
+       id="g256">
       <rect
          fill="#ffffff"
          stroke="none"
          x="295"
          y="104"
          width="13"
-         height="496"
-         id="rect238" />
+         height="696"
+         id="rect258" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g240">
+       id="g260">
       <path
          fill="none"
          stroke="#000000"
-         d="M 295 104 L 308 104 L 308 600 L 295 600 L 295 104 Z Z"
+         d="M 295 104 L 308 104 L 308 800 L 295 800 L 295 104 Z Z"
          stroke-miterlimit="10"
-         id="path242" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g244">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 308 112 L 433 112"
-         stroke-miterlimit="10"
-         id="path246" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g248">
-      <path
-         fill="#000000"
-         stroke="none"
-         d="M 422.83732514237585 116.20951775601598 L 433 112 L 422.83732514237585 107.79048224398402"
-         id="path250" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g252">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 422.83732514237585 116.20951775601598 L 433 112 L 422.83732514237585 107.79048224398402 L 422.83732514237585 116.20951775601598"
-         stroke-miterlimit="10"
-         id="path254" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g256">
-      <g
-         id="g258">
-        <path
-           fill="none"
-           stroke="none"
-           id="path260" />
-        <text
-           fill="#000000"
-           stroke="none"
-           font-family="Arial"
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="324"
-           y="100"
-           id="text262">2 : visit(aGraph)</text>
-      </g>
+         id="path262" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g264">
-      <rect
-         x="433"
-         y="112"
-         width="13"
-         height="472"
-         id="rect266"
-         style="fill:#fdfdfd;stroke:none" />
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 438 160 L 585 160"
+         stroke-miterlimit="10"
+         id="path266" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g268">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 574.8373251423759 164.209517756016 L 585 160 L 574.8373251423758 155.790482243984"
+         id="path270" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
@@ -764,38 +647,19 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 446 160 L 593 160"
+         d="M 574.8373251423759 164.209517756016 L 585 160 L 574.8373251423758 155.790482243984 L 574.8373251423759 164.209517756016"
          stroke-miterlimit="10"
          id="path274" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g276">
-      <path
-         fill="#000000"
-         stroke="none"
-         d="M 582.8373251423759 164.209517756016 L 593 160 L 582.8373251423758 155.790482243984"
-         id="path278" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g280">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 582.8373251423759 164.209517756016 L 593 160 L 582.8373251423758 155.790482243984 L 582.8373251423759 164.209517756016"
-         stroke-miterlimit="10"
-         id="path282" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g284">
       <g
-         id="g286">
+         id="g278">
         <path
            fill="none"
            stroke="none"
-           id="path288" />
+           id="path280" />
         <text
            fill="#000000"
            stroke="none"
@@ -804,22 +668,43 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="485"
+           x="477"
            y="157"
-           id="text290">3 : readLine</text>
+           id="text282">3 : readLine</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g292">
+       id="g284">
       <rect
          fill="#ffffff"
          stroke="none"
-         x="593"
+         x="585"
          y="160"
          width="13"
          height="28"
-         id="rect294" />
+         id="rect286" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g288">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 585 160 L 598 160 L 598 188 L 585 188 L 585 160 Z Z"
+         stroke-miterlimit="10"
+         id="path290" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g292">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 585 184 L 438 184"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path294" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
@@ -827,40 +712,19 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 593 160 L 606 160 L 606 188 L 593 188 L 593 160 Z Z"
+         d="M 448.16267485762415 179.790482243984 L 438 184 L 448.16267485762415 188.209517756016"
          stroke-miterlimit="10"
          id="path298" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g300">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 593 184 L 446 184"
-         stroke-miterlimit="10"
-         stroke-dasharray="3"
-         id="path302" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g304">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 456.16267485762415 179.790482243984 L 446 184 L 456.16267485762415 188.209517756016"
-         stroke-miterlimit="10"
-         id="path306" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g308">
       <g
-         id="g310">
+         id="g302">
         <path
            fill="none"
            stroke="none"
-           id="path312" />
+           id="path304" />
         <text
            fill="#000000"
            stroke="none"
@@ -869,10 +733,29 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="488"
+           x="480"
            y="180"
-           id="text314">4 : aString</text>
+           id="text306">4 : aString</text>
       </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g308">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 438 224 L 714 224"
+         stroke-miterlimit="10"
+         id="path310" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g312">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 703.8373251423759 228.209517756016 L 714 224 L 703.8373251423758 219.790482243984"
+         id="path314" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
@@ -880,38 +763,19 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 446 224 L 722 224"
+         d="M 703.8373251423759 228.209517756016 L 714 224 L 703.8373251423758 219.790482243984 L 703.8373251423759 228.209517756016"
          stroke-miterlimit="10"
          id="path318" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g320">
-      <path
-         fill="#000000"
-         stroke="none"
-         d="M 711.8373251423759 228.209517756016 L 722 224 L 711.8373251423758 219.790482243984"
-         id="path322" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g324">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 711.8373251423759 228.209517756016 L 722 224 L 711.8373251423758 219.790482243984 L 711.8373251423759 228.209517756016"
-         stroke-miterlimit="10"
-         id="path326" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g328">
       <g
-         id="g330">
+         id="g322">
         <path
            fill="none"
            stroke="none"
-           id="path332" />
+           id="path324" />
         <text
            fill="#000000"
            stroke="none"
@@ -920,31 +784,50 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="533"
+           x="525"
            y="221"
-           id="text334">5 : println(aString)</text>
+           id="text326">5 : println(aString)</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g336">
+       id="g328">
       <rect
          fill="#ffffff"
          stroke="none"
-         x="722"
+         x="714"
          y="224"
          width="13"
          height="28"
-         id="rect338" />
+         id="rect330" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g332">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 714 224 L 727 224 L 727 252 L 714 252 L 714 224 Z Z"
+         stroke-miterlimit="10"
+         id="path334" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g336">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 438 264 L 468 264 L 468 284 L 445 284"
+         stroke-miterlimit="10"
+         id="path338" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g340">
       <path
-         fill="none"
-         stroke="#000000"
-         d="M 722 224 L 735 224 L 735 252 L 722 252 L 722 224 Z Z"
-         stroke-miterlimit="10"
+         fill="#000000"
+         stroke="none"
+         d="M 455.16267485762415 279.790482243984 L 445 284 L 455.16267485762415 288.209517756016"
          id="path342" />
     </g>
     <g
@@ -953,38 +836,19 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 433 280 L 315 280"
+         d="M 455.16267485762415 279.790482243984 L 445 284 L 455.16267485762415 288.209517756016 L 455.16267485762415 279.790482243984"
          stroke-miterlimit="10"
          id="path346" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g348">
-      <path
-         fill="#000000"
-         stroke="none"
-         d="M 325.16267485762415 275.790482243984 L 315 280 L 325.16267485762415 284.209517756016"
-         id="path350" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g352">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 325.16267485762415 275.790482243984 L 315 280 L 325.16267485762415 284.209517756016 L 325.16267485762415 275.790482243984"
-         stroke-miterlimit="10"
-         id="path354" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g356">
       <g
-         id="g358">
+         id="g350">
         <path
            fill="none"
            stroke="none"
-           id="path360" />
+           id="path352" />
         <text
            fill="#000000"
            stroke="none"
@@ -993,31 +857,50 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="334"
-           y="276"
-           id="text362">6 : getNodes</text>
+           x="398"
+           y="280"
+           id="text354">6 : getMaxEastCoordinate()</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g364">
+       id="g356">
       <rect
          fill="#ffffff"
          stroke="none"
-         x="302"
-         y="280"
+         x="432"
+         y="284"
          width="13"
          height="28"
-         id="rect366" />
+         id="rect358" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g360">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 432 284 L 445 284 L 445 312 L 432 312 L 432 284 Z Z"
+         stroke-miterlimit="10"
+         id="path362" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g364">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 438 320 L 468 320 L 468 340 L 445 340"
+         stroke-miterlimit="10"
+         id="path366" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g368">
       <path
-         fill="none"
-         stroke="#000000"
-         d="M 302 280 L 315 280 L 315 308 L 302 308 L 302 280 Z Z"
-         stroke-miterlimit="10"
+         fill="#000000"
+         stroke="none"
+         d="M 455.16267485762415 335.790482243984 L 445 340 L 455.16267485762415 344.209517756016"
          id="path370" />
     </g>
     <g
@@ -1026,30 +909,19 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 315 304 L 433 304"
+         d="M 455.16267485762415 335.790482243984 L 445 340 L 455.16267485762415 344.209517756016 L 455.16267485762415 335.790482243984"
          stroke-miterlimit="10"
-         stroke-dasharray="3"
          id="path374" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g376">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 422.83732514237585 308.209517756016 L 433 304 L 422.83732514237585 299.790482243984"
-         stroke-miterlimit="10"
-         id="path378" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g380">
       <g
-         id="g382">
+         id="g378">
         <path
            fill="none"
            stroke="none"
-           id="path384" />
+           id="path380" />
         <text
            fill="#000000"
            stroke="none"
@@ -1058,50 +930,71 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="339"
-           y="299"
-           id="text386">7 : nodes</text>
+           x="396"
+           y="336"
+           id="text382">7 : getMaxNorthCoordinate()</text>
       </g>
     </g>
     <g
-       transform="matrix(1.0228175,0,0,1,-64.165179,-30)"
+       transform="translate(-54,-30) scale(1,1)"
+       id="g384">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="432"
+         y="340"
+         width="13"
+         height="28"
+         id="rect386" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
        id="g388">
       <path
-         d="m 446,320 377,0"
+         fill="none"
+         stroke="#000000"
+         d="M 432 340 L 445 340 L 445 368 L 432 368 L 432 340 Z Z"
          stroke-miterlimit="10"
-         id="path390"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         id="path390" />
     </g>
     <g
-       transform="translate(-35.25,-30.25)"
+       transform="translate(-54,-30) scale(1,1)"
        id="g392">
       <path
-         d="M 812.83733,324.20952 823,320 812.83733,315.79048"
-         id="path394"
-         inkscape:connector-curvature="0"
-         style="fill:#000000;stroke:none" />
+         fill="none"
+         stroke="#000000"
+         d="M 438 392 L 714 392"
+         stroke-miterlimit="10"
+         id="path394" />
     </g>
     <g
-       transform="translate(-34.875,-30.25)"
-       id="g396"
-       inkscape:transform-center-x="1.875">
+       transform="translate(-54,-30) scale(1,1)"
+       id="g396">
       <path
-         d="M 812.83733,324.20952 823,320 l -10.16267,-4.20952 0,8.41904"
-         stroke-miterlimit="10"
-         id="path398"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         fill="#000000"
+         stroke="none"
+         d="M 703.8373251423759 396.209517756016 L 714 392 L 703.8373251423758 387.790482243984"
+         id="path398" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g400">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 703.8373251423759 396.209517756016 L 714 392 L 703.8373251423758 387.790482243984 L 703.8373251423759 396.209517756016"
+         stroke-miterlimit="10"
+         id="path402" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g404">
       <g
-         id="g402">
+         id="g406">
         <path
            fill="none"
            stroke="none"
-           id="path404" />
+           id="path408" />
         <text
            fill="#000000"
            stroke="none"
@@ -1110,102 +1003,95 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="516"
-           y="316"
-           id="text406">8 : accept(aNetLogoGraphVisitor)</text>
+           x="525"
+           y="389"
+           id="text410">8 : println(aString)</text>
       </g>
     </g>
     <g
-       transform="translate(-34.125,-30.75)"
-       id="g408">
-      <rect
-         x="823"
-         y="320"
-         width="13"
-         height="80"
-         id="rect410"
-         style="fill:#ffffff;stroke:none" />
-    </g>
-    <g
-       transform="translate(-34,-31)"
+       transform="translate(-54,-30) scale(1,1)"
        id="g412">
-      <path
-         d="m 823,320 13,0 0,80 -13,0 0,-80 z"
-         stroke-miterlimit="10"
-         id="path414"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="714"
+         y="392"
+         width="13"
+         height="28"
+         id="rect414" />
     </g>
     <g
-       transform="matrix(1.0525606,0,0,1,-77.783693,-30)"
+       transform="translate(-54,-30) scale(1,1)"
        id="g416">
       <path
-         d="m 823,344 -370,0"
+         fill="none"
+         stroke="#000000"
+         d="M 714 392 L 727 392 L 727 420 L 714 420 L 714 392 Z Z"
          stroke-miterlimit="10"
-         id="path418"
-         inkscape:connector-curvature="0"
-         style="fill:none;stroke:#000000;stroke-miterlimit:10" />
+         id="path418" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g420">
       <path
-         fill="#000000"
-         stroke="none"
-         d="M 463.16267485762415 339.790482243984 L 453 344 L 463.16267485762415 348.209517756016"
+         fill="none"
+         stroke="#000000"
+         d="M 425 448 L 315 448"
+         stroke-miterlimit="10"
          id="path422" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g424">
       <path
-         fill="none"
-         stroke="#000000"
-         d="M 463.16267485762415 339.790482243984 L 453 344 L 463.16267485762415 348.209517756016 L 463.16267485762415 339.790482243984"
-         stroke-miterlimit="10"
+         fill="#000000"
+         stroke="none"
+         d="M 325.16267485762415 443.790482243984 L 315 448 L 325.16267485762415 452.209517756016"
          id="path426" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g428">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 325.16267485762415 443.790482243984 L 315 448 L 325.16267485762415 452.209517756016 L 325.16267485762415 443.790482243984"
+         stroke-miterlimit="10"
+         id="path430" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g432">
       <g
-         id="g430">
+         id="g434">
         <path
            fill="none"
            stroke="none"
-           id="path432" />
+           id="path436" />
         <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
            font-size="13px"
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="627"
-           y="341"
-           id="text434"
-           style="font-size:13px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">9 : visit(aRegularNode)</text>
+           x="330"
+           y="444"
+           id="text438">9 : getNodes</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g436">
+       id="g440">
       <rect
          fill="#ffffff"
          stroke="none"
-         x="440"
-         y="344"
+         x="302"
+         y="448"
          width="13"
-         height="56"
-         id="rect438" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g440">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 440 344 L 453 344 L 453 400 L 440 400 L 440 344 Z Z"
-         stroke-miterlimit="10"
-         id="path442" />
+         height="28"
+         id="rect442" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
@@ -1213,7 +1099,7 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 453 368 L 722 368"
+         d="M 302 448 L 315 448 L 315 476 L 302 476 L 302 448 Z Z"
          stroke-miterlimit="10"
          id="path446" />
     </g>
@@ -1221,9 +1107,11 @@
        transform="translate(-54,-30) scale(1,1)"
        id="g448">
       <path
-         fill="#000000"
-         stroke="none"
-         d="M 711.8373251423759 372.209517756016 L 722 368 L 711.8373251423758 363.790482243984"
+         fill="none"
+         stroke="#000000"
+         d="M 315 472 L 425 472"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
          id="path450" />
     </g>
     <g
@@ -1232,7 +1120,7 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 711.8373251423759 372.209517756016 L 722 368 L 711.8373251423758 363.790482243984 L 711.8373251423759 372.209517756016"
+         d="M 414.83732514237585 476.209517756016 L 425 472 L 414.83732514237585 467.790482243984"
          stroke-miterlimit="10"
          id="path454" />
     </g>
@@ -1253,31 +1141,28 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="523"
-           y="364"
-           id="text462">10 : println(aString)</text>
+           x="332"
+           y="467"
+           id="text462">10 : nodes</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g464">
-      <rect
-         fill="#ffffff"
-         stroke="none"
-         x="722"
-         y="368"
-         width="13"
-         height="28"
-         id="rect466" />
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 438 496 L 825 496"
+         stroke-miterlimit="10"
+         id="path466" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g468">
       <path
-         fill="none"
-         stroke="#000000"
-         d="M 722 368 L 735 368 L 735 396 L 722 396 L 722 368 Z Z"
-         stroke-miterlimit="10"
+         fill="#000000"
+         stroke="none"
+         d="M 814.8373251423759 500.209517756016 L 825 496 L 814.8373251423758 491.790482243984"
          id="path470" />
     </g>
     <g
@@ -1286,38 +1171,303 @@
       <path
          fill="none"
          stroke="#000000"
-         d="M 446 480 L 593 480"
+         d="M 814.8373251423759 500.209517756016 L 825 496 L 814.8373251423758 491.790482243984 L 814.8373251423759 500.209517756016"
          stroke-miterlimit="10"
          id="path474" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g476">
-      <path
-         fill="#000000"
-         stroke="none"
-         d="M 582.8373251423759 484.209517756016 L 593 480 L 582.8373251423758 475.790482243984"
-         id="path478" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g480">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 582.8373251423759 484.209517756016 L 593 480 L 582.8373251423758 475.790482243984 L 582.8373251423759 484.209517756016"
-         stroke-miterlimit="10"
-         id="path482" />
+      <g
+         id="g478">
+        <path
+           fill="none"
+           stroke="none"
+           id="path480" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="503"
+           y="492"
+           id="text482">11 : accept(aNetLogoGraphVisitor)</text>
+      </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
        id="g484">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="825"
+         y="496"
+         width="13"
+         height="88"
+         id="rect486" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g488">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 825 496 L 838 496 L 838 584 L 825 584 L 825 496 Z Z"
+         stroke-miterlimit="10"
+         id="path490" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g492">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 825 520 L 445 520"
+         stroke-miterlimit="10"
+         id="path494" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g496">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 455.16267485762415 515.790482243984 L 445 520 L 455.16267485762415 524.209517756016"
+         id="path498" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g500">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 455.16267485762415 515.790482243984 L 445 520 L 455.16267485762415 524.209517756016 L 455.16267485762415 515.790482243984"
+         stroke-miterlimit="10"
+         id="path502" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g504">
       <g
-         id="g486">
+         id="g506">
         <path
            fill="none"
            stroke="none"
-           id="path488" />
+           id="path508" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="599"
+           y="517"
+           id="text510">12 : visit(aRegularNode)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g512">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="432"
+         y="520"
+         width="13"
+         height="56"
+         id="rect514" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g516">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 432 520 L 445 520 L 445 576 L 432 576 L 432 520 Z Z"
+         stroke-miterlimit="10"
+         id="path518" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g520">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 445 544 L 714 544"
+         stroke-miterlimit="10"
+         id="path522" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g524">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 703.8373251423759 548.209517756016 L 714 544 L 703.8373251423758 539.790482243984"
+         id="path526" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g528">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 703.8373251423759 548.209517756016 L 714 544 L 703.8373251423758 539.790482243984 L 703.8373251423759 548.209517756016"
+         stroke-miterlimit="10"
+         id="path530" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g532">
+      <g
+         id="g534">
+        <path
+           fill="none"
+           stroke="none"
+           id="path536" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="515"
+           y="540"
+           id="text538">13 : println(aString)</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g540">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="714"
+         y="544"
+         width="13"
+         height="28"
+         id="rect542" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g544">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 714 544 L 727 544 L 727 572 L 714 572 L 714 544 Z Z"
+         stroke-miterlimit="10"
+         id="path546" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g548">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 438 648 L 585 648"
+         stroke-miterlimit="10"
+         id="path550" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g552">
+      <path
+         fill="#000000"
+         stroke="none"
+         d="M 574.8373251423759 652.209517756016 L 585 648 L 574.8373251423758 643.790482243984"
+         id="path554" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g556">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 574.8373251423759 652.209517756016 L 585 648 L 574.8373251423758 643.790482243984 L 574.8373251423759 652.209517756016"
+         stroke-miterlimit="10"
+         id="path558" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g560">
+      <g
+         id="g562">
+        <path
+           fill="none"
+           stroke="none"
+           id="path564" />
+        <text
+           fill="#000000"
+           stroke="none"
+           font-family="Arial"
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="468"
+           y="641"
+           id="text566">14 : readLine</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g568">
+      <rect
+         fill="#ffffff"
+         stroke="none"
+         x="585"
+         y="648"
+         width="13"
+         height="28"
+         id="rect570" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g572">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 585 648 L 598 648 L 598 676 L 585 676 L 585 648 Z Z"
+         stroke-miterlimit="10"
+         id="path574" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g576">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 585 672 L 438 672"
+         stroke-miterlimit="10"
+         stroke-dasharray="3"
+         id="path578" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g580">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 448.16267485762415 667.790482243984 L 438 672 L 448.16267485762415 676.209517756016"
+         stroke-miterlimit="10"
+         id="path582" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g584">
+      <g
+         id="g586">
+        <path
+           fill="none"
+           stroke="none"
+           id="path588" />
         <text
            fill="#000000"
            stroke="none"
@@ -1327,113 +1477,48 @@
            font-weight="normal"
            text-decoration="none"
            x="476"
-           y="473"
-           id="text490">11 : readLine</text>
+           y="668"
+           id="text590">15 : aString</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g492">
-      <rect
-         fill="#ffffff"
-         stroke="none"
-         x="593"
-         y="480"
-         width="13"
-         height="28"
-         id="rect494" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g496">
+       id="g592">
       <path
          fill="none"
          stroke="#000000"
-         d="M 593 480 L 606 480 L 606 508 L 593 508 L 593 480 Z Z"
+         d="M 438 704 L 714 704"
          stroke-miterlimit="10"
-         id="path498" />
+         id="path594" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g500">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 593 504 L 446 504"
-         stroke-miterlimit="10"
-         stroke-dasharray="3"
-         id="path502" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g504">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 456.16267485762415 499.790482243984 L 446 504 L 456.16267485762415 508.209517756016"
-         stroke-miterlimit="10"
-         id="path506" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g508">
-      <g
-         id="g510">
-        <path
-           fill="none"
-           stroke="none"
-           id="path512" />
-        <text
-           fill="#000000"
-           stroke="none"
-           font-family="Arial"
-           font-size="13px"
-           font-style="normal"
-           font-weight="normal"
-           text-decoration="none"
-           x="484"
-           y="500"
-           id="text514">12 : aString</text>
-      </g>
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g516">
-      <path
-         fill="none"
-         stroke="#000000"
-         d="M 446 536 L 722 536"
-         stroke-miterlimit="10"
-         id="path518" />
-    </g>
-    <g
-       transform="translate(-54,-30) scale(1,1)"
-       id="g520">
+       id="g596">
       <path
          fill="#000000"
          stroke="none"
-         d="M 711.8373251423759 540.209517756016 L 722 536 L 711.8373251423758 531.790482243984"
-         id="path522" />
+         d="M 703.8373251423759 708.209517756016 L 714 704 L 703.8373251423758 699.790482243984"
+         id="path598" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g524">
+       id="g600">
       <path
          fill="none"
          stroke="#000000"
-         d="M 711.8373251423759 540.209517756016 L 722 536 L 711.8373251423758 531.790482243984 L 711.8373251423759 540.209517756016"
+         d="M 703.8373251423759 708.209517756016 L 714 704 L 703.8373251423758 699.790482243984 L 703.8373251423759 708.209517756016"
          stroke-miterlimit="10"
-         id="path526" />
+         id="path602" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g528">
+       id="g604">
       <g
-         id="g530">
+         id="g606">
         <path
            fill="none"
            stroke="none"
-           id="path532" />
+           id="path608" />
         <text
            fill="#000000"
            stroke="none"
@@ -1442,100 +1527,153 @@
            font-style="normal"
            font-weight="normal"
            text-decoration="none"
-           x="511"
-           y="532"
-           id="text534">13 : println(aString)</text>
+           x="503"
+           y="700"
+           id="text610">16 : println(aString)</text>
       </g>
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g536">
+       id="g612">
       <rect
          fill="#ffffff"
          stroke="none"
-         x="722"
-         y="536"
+         x="714"
+         y="704"
          width="13"
          height="28"
-         id="rect538" />
+         id="rect614" />
     </g>
     <g
        transform="translate(-54,-30) scale(1,1)"
-       id="g540">
+       id="g616">
       <path
          fill="none"
          stroke="#000000"
-         d="M 722 536 L 735 536 L 735 564 L 722 564 L 722 536 Z Z"
+         d="M 714 704 L 727 704 L 727 732 L 714 732 L 714 704 Z Z"
          stroke-miterlimit="10"
-         id="path542" />
+         id="path618" />
     </g>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 378.51774,89.956249 13.75524,-0.08286 z"
-       id="path3529"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 378.51774,112.16351 13.92097,-0.0829 z"
-       id="path3531"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-size:13.03632545px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="353.20447"
-       y="115.42415"
-       id="text3533"
-       sodipodi:linespacing="125%"
-       transform="scale(1.0730329,0.93193788)"><tspan
-         sodipodi:role="line"
-         id="tspan3535"
-         x="353.20447"
-         y="115.42415">!a</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 378.74464,393.97161 c 13.30059,0.29296 13.71074,0.0586 13.71074,0.0586 z"
-       id="path3551"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 378.74464,416.00255 13.41778,0 z"
-       id="path3553"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:#ffffff"
-       id="rect3565"
-       width="0.51043224"
-       height="21.016506"
-       x="378.49738"
-       y="394.48145" />
-    <rect
-       style="fill:#ffffff"
-       id="rect3567"
-       width="0.54370016"
-       height="20.886993"
-       x="392"
-       y="394.61819" />
-    <text
-       xml:space="preserve"
-       style="font-size:12.43137264px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="391.66907"
-       y="398.52551"
-       id="text3569"
-       sodipodi:linespacing="125%"
-       transform="scale(0.96767358,1.0334063)"><tspan
-         sodipodi:role="line"
-         id="tspan3571"
-         x="391.66907"
-         y="398.52551">aB</tspan></text>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.97778147px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 378.96107,226.01562 c 35.57361,0 0,0 0,0 z"
-       id="path3573"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 378.59375,538 13.71875,0 z"
-       id="path3577"
-       inkscape:connector-curvature="0" />
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g184">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 368 120 L 368 142 L 744 142 L 755 131 L 755 120 L 368 120"
+         id="path186" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g188">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 368 120 L 368 142 L 744 142 L 755 131 L 755 120 L 368 120 L 368 120"
+         stroke-miterlimit="10"
+         id="path190" />
+    </g>
+    <g
+       transform="translate(-53.948978,-32.628443)"
+       id="g200">
+      <g
+         id="g202">
+        <path
+           id="path204"
+           d=""
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="373"
+           y="137.5"
+           id="text206"
+           style="font-size:13px;font-style:normal;font-weight:bold;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">loop</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-52.041555,-32.015656)"
+       id="g192">
+      <g
+         id="g194">
+        <path
+           id="path196"
+           d=""
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="403"
+           y="137.5"
+           id="text198"
+           style="font-size:13px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">[while (!((l = inputStream.readLine()).equals(&quot;;;===start&quot;)))]</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g36">
+      <path
+         fill="#ffffff"
+         stroke="none"
+         d="M 368 600 L 368 622 L 648 622 L 659 611 L 659 600 L 368 600"
+         id="path38" />
+    </g>
+    <g
+       transform="translate(-54,-30) scale(1,1)"
+       id="g40">
+      <path
+         fill="none"
+         stroke="#000000"
+         d="M 368 600 L 368 622 L 648 622 L 659 611 L 659 600 L 368 600 L 368 600"
+         stroke-miterlimit="10"
+         id="path42" />
+    </g>
+    <g
+       transform="translate(-53.523144,-32.657204)"
+       id="g52">
+      <g
+         id="g54">
+        <path
+           id="path56"
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="bold"
+           text-decoration="none"
+           x="373"
+           y="617.5"
+           id="text58"
+           style="font-size:13px;font-style:normal;font-weight:bold;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">loop</text>
+      </g>
+    </g>
+    <g
+       transform="translate(-52.977228,-33.300785)"
+       id="g44">
+      <g
+         id="g46">
+        <path
+           id="path48"
+           d=""
+           inkscape:connector-curvature="0"
+           style="fill:none;stroke:none" />
+        <text
+           font-size="13px"
+           font-style="normal"
+           font-weight="normal"
+           text-decoration="none"
+           x="403"
+           y="617.5"
+           id="text50"
+           style="font-size:13px;font-style:normal;font-weight:normal;text-decoration:none;fill:#000000;stroke:none;font-family:Arial">[while(aBufferedReader.readline() != null)]</text>
+      </g>
+    </g>
   </g>
 </svg>
