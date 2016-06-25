@@ -53,9 +53,17 @@ L'interfaccia Parser rende il progetto aperto ad estensioni future, come il supp
 \label{fig:builder-sequence}
 \end{figure}
 %Come si vede in Figura \ref{fig:builder-diagram} il parser esercita il ruolo di Director per il builder. Il processo di analisi del documento e costruzione degli oggetti Java è descritto nel sequence diagram in Figura \ref{fig:builder-sequence}.\\
-In Figura \ref{fig:builder-diagram} si può osservare la struttura delle classi che implementano questo pattern, mentre in Figura \ref{fig:builder-sequence} è mostrato il processo di costruzione di un semplicissimo modello.\\
-La classe \texttt{XMLParser} svolge il ruolo di \textit{Director} all'interno del pattern e, durante la visita della struttura JDOM creata, chiama i metodi del \textit{ConcreteBuilder} \texttt{NetLogoGraphBuilder} per la costruzione dei vari oggetti e la loro composizione a formare la struttura centrale. Quest'ultimo, prima di procedere alla costruzione dell'oggetto e al suo inserimento nella struttura, esegue controlli sulla correttezza delle informazioni estratte dal parser, ad esempio controlla che le dimensioni fisiche e le coordinate spaziali dell'incrocio non siano negative.\\
-Quando la visita da parte del parser è conclusa viene recuperato il \textit{Product}, che non è altro che un oggetto di tipo \texttt{Graph}.
+In Figura \ref{fig:builder-diagram} si può osservare la struttura delle classi che implementano questo pattern.\\
+
+\subsection{Funzionamento}
+La classe \texttt{XMLParser} svolge il ruolo di \textit{Director} all'interno del pattern e, durante la visita della struttura JDOM creata, chiama i metodi del \textit{ConcreteBuilder} \texttt{NetLogoGraphBuilder} per la costruzione dei vari oggetti e la loro composizione a formare la struttura centrale.\\
+Quando la visita da parte del parser è conclusa viene recuperato il \textit{Product}, che non è altro che un oggetto di tipo \texttt{Graph}.\\
+In Figura \ref{fig:builder-sequence} si può seguire il processo di costruzione di un semplice modello.\\
+Come prima cosa vengono costruite le classi relative ai nodi. \texttt{XMLParser} estrae le informazioni dalla struttura JDOM e controlla che non vi siano mancanze, quindi chiama lo specifico metodo di costruzione del builder.\\
+Il \texttt{NetLogoGraphBuilder}, prima di procedere alla messa in vita dell'oggetto, verifica, tramite un metodo statico della relativa classe, che le informazioni da inserire siano corrette, ad esempio si controll che le dimensioni fisiche dell'incrocio non siano negative. Una volta costruito l'oggetto il builder chiama la funzione della classe \texttt{Graph} per aggiungere il nodo alla struttura, questa operazione è preceduta da un controllo sui nodi già presenti per evitare sovrapposizioni.\\
+In modo analogo vengono costruiti e aggiunti alla struttura anche gli archi. Si costruisce l'arco e si delega a \texttt{Graph} la responsabilità di evitare l'inserimento di grafi con estremi uguali.\\
+Infine si costruiscono i behaviors sui quali poi si aggiungono i riferimenti ai nodi di interesse sfruttando i metodi esposti dalla classe \texttt{Graph}.\\
+L'operazione finale eseguita dal \texttt{NetLogoGraphBuilder} è quella di restituzione del prodotto costruito tramite il metodo \texttt{getProduct()}.
 
 \section{Visitor}
 \label{subsec:visitor}
