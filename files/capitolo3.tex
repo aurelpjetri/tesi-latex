@@ -219,7 +219,7 @@ La sezione \texttt{System} descrive lo stato iniziale dell'ambiente. Per questa 
 \section{Parser XML}
 \label{subsec:parser-builder}
 
-Come come verrà spiegato nella Sezione \ref{sec:requisiti}, abbiamo scelto il formato JDOM per la rappresentazione del file XML. La scelta di questo formato è stata dettata dalla sua struttura, che si adatta meglio ai nostri fini di sola lettura e non di manipolazione del documento.
+Come come verrà spiegato nella Sezione \ref{sec:librerie}, abbiamo scelto il formato JDOM per la rappresentazione del file XML. La scelta di questo formato è stata dettata dalla sua struttura, che si adatta meglio ai nostri fini di sola lettura e non di manipolazione del documento.
 
 La struttura ad albero del modello generato rispecchia il documento XML. Ogni nodo dell'albero è di tipo \texttt{Element} e conserva una lista dei figli e un riferimento al padre, espone inoltre una ricca interfaccia con cui si possono estrarre tutte le informazioni di interesse come gli attributi associati al tag rappresentato, oppure il testo sottostante.
 
@@ -246,12 +246,14 @@ Gli archi sono rappresentati da due tipologie diverse di turtles dette \texttt{s
 Per i beacons di ingresso e di uscita vengono anche impostati i relativi parametri, ovvero tasso di generazione o eliminazione degli attori e percentuali relative ai behavior da attribuire ad essi. In particolare per gli entry points si imposta anche un limite massimo del numero di attori che possono essere generati.
 
 Grazie a questi parametri il sistema è predisposto per lo studio di simulazioni in ambienti comunicanti, in cui quindi gli attori possono uscire da un ambiente e entrare in un altro. 
+
 \subsection{Behaviors e stato iniziale}
 Abbiamo scelto di caratterizzare i behaviors degli attori con un identificatore intero e una lista di nodi di interesse che l'attore deve raggiungere prima di uscire dall'ambiente.
 
 Sono state inoltre inserite due possibili modalità di raggiungimento dei beacons di interesse: ”\texttt{minDistance}” e “\texttt{orderedList}”. Nella prima l'attore punta al nodo più vicino a quello precedentemente raggiunto tra quelli di interesse, nella seconda invece la lista viene rigidamente percorsa rispettandone l'ordine.
 
-Lo stato iniziale del sistema è contenuto in una semplice lista \texttt{initial-state} che viene percorsa da una apposita funzione per la corretta generazione degli attori sui vari nodi. 
+Lo stato iniziale del sistema è contenuto in una semplice lista \texttt{initial-state} che viene percorsa da una apposita funzione per la corretta generazione degli attori sui vari nodi.
+ 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/movers-screen.png}

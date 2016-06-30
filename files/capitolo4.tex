@@ -9,8 +9,22 @@ La medesima mappa è stata usata dal gruppo di ricerca del Software Science and 
 \section{Modello monolitico}
 La struttura del modello monolitico è rappresentata in figura X. Lo stato iniziale del sistema è di 10000 agenti distribuiti uniformemente in tutto lo spazio disponibile. Quindi le regioni con maggiore densità di strade saranno popolate anche da un numero maggiore di attori. 
 
-Il gruppo di ricerca del STLAB in \cite{esperimenti-sandro} ha usato le simulazioni eseguite su questo modello come riferimento realistico con cui sono confrontate le approssimazioni generate a partire dai diversi scenari introdotti. Sono state eseguite 8 simulazioni del medesimo modello in modo da avere una buona approssimazione del tempo medio di evacuazione. Attraverso i dati raccolti i ricercatori hanno generato il grafico in Figura X in cui si mostra la ECDF della probabilità di aver evacuato l'ambiente al tempo t.
+Per avere una stima sufficientemente rappresentativa del tempo di evacuazione di un ambiente è solitamente necessario eseguire almeno 10 simulazioni dello stesso modello. Nel nostro caso il tempo medio ad eseguire una singola simulazione è 55:58 minuti, quindi per ottenere la stima desiderata sono necessarie circa 9:19:40 ore di simulazioni.
 
-Lo strumento sviluppato in questo progetto di tesi è stato utilizzato dal gruppo di ricerca del Software Science and Technology Laboratory nelle attività di sperimentazione in \cite{esperimenti-sandro} per la raccolta dei tempi di soggiorno degli attori nelle singole regioni. Questi dati sono stati utilizzati per il calcolo delle probabilità di transizione delle Catene di Markov che astraggono il comportamento dell'attore attraverso le varie regioni in cui il modello è stato diviso.
+Il gruppo di ricerca del STLAB in \cite{esperimenti-sandro} ha usato le simulazioni eseguite su questo modello come riferimento realistico con cui confrontare le approssimazioni generate a partire dai diversi scenari introdotti. Sono state eseguite 8 simulazioni del medesimo modello in modo da avere una buona approssimazione del tempo medio di evacuazione. Attraverso i dati raccolti i ricercatori hanno generato il grafico in Figura X in cui si mostra la ECDF della probabilità di aver evacuato l'ambiente al tempo t.
+
+\section{Scenari con macro regioni}
+
+Nei due scenari la mappa è suddivisa in 6 e 12 sezioni indipendenti in cui i punti di uscita sono punti di connessione con le regioni confinanti. Per ognuna di queste zone sono eseguite simulazioni con 3 diversi stati iniziali, ovvero con densità di affollamento alta, media e bassa. 
+
+Abbiamo inoltre lanciato le simulazioni in due modalità diverse: rigenerativa e non rigenerativa o transitiva (transiente?). La modalità transitiva è la più semplice e rapida delle due, infatti non prevede la generazione di alcun attore, quindi si registrano solo i dati relativi agli agenti che costituiscono lo stato iniziale della regione. La modalità rigenerativa, invece, consiste nel mantenere costante la densità di attori all'interno della regione generando un nuovo agente ogni volta che qualcuno raggiunge l'uscita ed eseguendo il modello per un numero prefissato di unità temporali. In questo modo si ottengono informazioni sui tempi di transizione del sistema che si trova in uno stato stabile di affollamento.
+
+In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli rigenerativi sono usati per calcolare le probabilità di transizione della Catena di Markov che astrae il comportamento dell'attore attraverso le varie regioni come spiegato nella Sezione \ref{sec:approccio-gerarchico}.
+
+
+
+\section{Risultati}
+
+Dagli esperimenti condotti abbiamo estratto i tempi necessari ad eseguire un numero consistente di simulazioni dalle quale estrarre i tempi di transizione dei vari attori. Nella tabella X sono confrontati il modello monolitico con 
 
  

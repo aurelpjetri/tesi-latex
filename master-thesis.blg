@@ -22,7 +22,6 @@ Warning--to sort, need author or key in graphml
 Warning--to sort, need author or key in sax-builder
 Warning--to sort, need author or key in buffered-reader
 Warning--to sort, need author or key in print-writer
-Warning--to sort, need author or key in esperimenti-sandro
 Warning--empty author in buffered-reader
 Warning--empty journal in buffered-reader
 Warning--empty year in buffered-reader
@@ -38,38 +37,37 @@ Warning--empty year in print-writer
 Warning--empty author in sax-builder
 Warning--empty journal in sax-builder
 Warning--empty year in sax-builder
-Warning--empty author in esperimenti-sandro
-Warning--empty journal in esperimenti-sandro
 Warning--empty year in starlisp
+Warning--empty journal in esperimenti-sandro
 Warning--empty year in logo
 You've used 17 entries,
             2118 wiz_defined-function locations,
-            575 strings with 6304 characters,
-and the built_in function-call counts, 3838 in all, are:
-= -- 355
-> -- 144
+            576 strings with 6356 characters,
+and the built_in function-call counts, 3945 in all, are:
+= -- 364
+> -- 161
 < -- 1
-+ -- 65
-- -- 44
-* -- 232
-:= -- 645
-add.period$ -- 48
++ -- 71
+- -- 50
+* -- 238
+:= -- 674
+add.period$ -- 49
 call.type$ -- 17
-change.case$ -- 71
+change.case$ -- 74
 chr.to.int$ -- 0
-cite$ -- 42
+cite$ -- 40
 duplicate$ -- 183
-empty$ -- 325
-format.name$ -- 44
-if$ -- 786
+empty$ -- 324
+format.name$ -- 50
+if$ -- 803
 int.to.chr$ -- 0
 int.to.str$ -- 17
 missing$ -- 19
-newline$ -- 84
-num.names$ -- 22
-pop$ -- 108
+newline$ -- 85
+num.names$ -- 24
+pop$ -- 110
 preamble$ -- 1
-purify$ -- 56
+purify$ -- 59
 quote$ -- 0
 skip$ -- 117
 stack$ -- 0
@@ -79,8 +77,8 @@ text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 64
-warning$ -- 25
-while$ -- 24
+warning$ -- 23
+while$ -- 26
 width$ -- 19
-write$ -- 158
+write$ -- 160
 (There were 2 error messages)

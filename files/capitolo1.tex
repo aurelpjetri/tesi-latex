@@ -8,9 +8,11 @@ Descriviamo brevemente gli approcci più diffusi e riconosciuti per la simulazio
 
 \section{Stato dell'arte}
 \label{sec:stato-dell-arte}
+
 Nella modellazione delle masse il maggior problema è la dimensione del modello da studiare. Le risposte ideate per risolvere questa criticità sono state molte e possono essere divise in due categorie sulla base del loro approccio: su scala microscopica e su scala macroscopica.\\
 
 \subsection{Approccio su scala microscopica}
+
 L'approccio su su scala microscopica si basa sull'idea di rappresentare ogni persona come agente o macchina a stati finiti. I quattro approcci più usati sono: \textit{social force model}, \textit{cellular automata}, \textit{magnetic force model} e \textit{rule-based model}.\\
 Il social force model \cite{helbing} si fonda sul concetto che le forze sociali possono essere rappresentate come forze meccaniche che agiscono tra le persone. Le forze prese in considerazione sono repulsione, attrito e dissipazione. Solitamente questi modelli arrivano ad essere molto espressivi permettendo di descrivere comportamenti sia fisici che sociali nel modello.\\
 Il magnetic force model \cite{okazaki} è simile al precedente approccio, questo infatti introduce il concetto di forze magnetiche per modellare i comportamenti degli individui. Persone e ostacoli vengono modellati come poli positivi, mentre i punti di interesse, come ad esempio le uscite, sono rappresentati come poli negativi. In questo modo gli agenti sono attratti dai punti di interesse e respingono ostacoli e altre persone evitando le collisioni.\\
@@ -18,6 +20,7 @@ L'approccio cellular automata \cite{dijkstra} è caratterizzato da una griglia b
 Infine il rule-based model \cite{reynolds} presenta una modellazione dello spazio e del tempo continui e prevede che velocità e  direzione di un attore vengano modificate sulla base di determinate regole, come conformismo, anticonformismo e coesione.\\
 
 \subsection{Approccio su scala macroscopica}
+
 L'approccio su macro-scala basa il proprio studio sull'analisi di caratteristiche macroscopiche della massa come la densità media e la velocità. Questa analisi viene condotta attraverso lo studio di equazioni differenziali che descrivono l'evoluzione della massa, oppure attraverso algoritmi di apprendimento e regressione applicati su dati esistenti. \\
 Gli approcci più diffusi su scala macroscopica sono: \textit{regression model}, \textit{queuing model}, \textit{fluid dynamics}.\\
 I regression models si basano su dati empirici dai quali cercano di estrapolare una funzione in grado di descrivere l'evoluzione della folla.\\
@@ -27,6 +30,7 @@ Molti modelli per eseguire queste simulazioni aggregano singoli agenti in gruppi
 
 \section{Approccio gerarchico}
 \label{sec:approccio-gerarchico}
+
 L'approccio proposto da E. Vicario, S. Mehic e M. Paolieri  in \cite{hierarchical-report} per affrontare il problema della simulazione delle masse, rispetto alle tipologie precedentemente esposte, è di tipo ibrido. Si scompone la simulazione in tre livelli di scala diversi in modo da ottenere una soluzione analitica indipendente dal numero di agenti.\\
 Al primo livello si usa una modellazione di tipo microscopico basata su agenti (Agent Based Modeling, ABM). In questa fase della ricerca si rende piuttosto utile il presente progetto, che facilita la generazione dei modelli NetLogo per l'esecuzione delle simulazioni e l'estrazione di parametri come tempo medio di soggiorno e probabilità di transizione.\\
 L'agent-based modeling, oltre alle strategie di movimento fisico, permette l'inclusione di una serie di altri aspetti, in particolare quello sociale della folla.\\
