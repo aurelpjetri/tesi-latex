@@ -1,10 +1,16 @@
-\chapter{Esperimenti}
-Nella fase di sperimentazione del componente ci siamo posti come obiettivo quello di mettere a confronto la simulazione di un modello monolitico e completo con le simulazioni localizzate su specifiche sezioni in cui quest'ultimo è stato diviso. In particolare abbiamo deciso di confrontare il modello completo con due scenari diversi in cui quest'ultimo è stato diviso in 6 e 12 macro regioni adiacenti.\\
-La mappa usata per gli esperimenti è tratta da un blocco residenziale della città di Firenze, in cui abbiamo cercato di inserire diverse topologie in modo da rappresentare zone con strade brevi e strette come il centro storico e strade di dimensioni maggiori come nelle moderne metropoli.\\
+\chapter{Esperimenti e risultati}
+
+Nella fase di sperimentazione del componente ci siamo posti come obiettivo quello di mettere a confronto la simulazione di un modello monolitico e completo con le simulazioni localizzate su specifiche sezioni in cui quest'ultimo è stato diviso. In particolare abbiamo deciso di confrontare il modello completo con due scenari diversi in cui quest'ultimo è stato diviso in 6 e 12 macro regioni adiacenti.
+
+La mappa usata per gli esperimenti è tratta da un blocco residenziale della città di Firenze, in cui abbiamo cercato di inserire topologie diverse, in modo da rappresentare zone come il centro storico, con strade brevi e strette, e i quartieri delle metropoli moderne, con strade di dimensioni maggiori.
+
+La medesima mappa è stata usata dal gruppo di ricerca del Software Science and Technology Laboratory in \cite{esperimenti-sandro} durante la fase di sperimentazione, in cui, inoltre, si è reso utile il componente sviluppato in questo progetto.
+
 \section{Modello monolitico}
-La struttura del modello monolitico è rappresentata in figura. %ref{figura modello monolitico} 
+La struttura del modello monolitico è rappresentata in figura X. Lo stato iniziale del sistema è di 10000 agenti distribuiti uniformemente in tutto lo spazio disponibile. Quindi le regioni con maggiore densità di strade saranno popolate anche da un numero maggiore di attori. 
 
-Lo strumento sviluppato in questo progetto di tesi è stato utilizzato dal dottor Sandro Mehic nelle attività di sperimentazione in \cite{esperimenti-sandro} per la raccolta dei tempi di soggiorno degli attori nelle singole regioni. Questi dati sono stati utilizzati per il calcolo delle probabilità di transizione delle Catene di Markov che astraggono il comportamento dell'attore attraverso le varie regioni in cui il modello è stato diviso.
+Il gruppo di ricerca del STLAB in \cite{esperimenti-sandro} ha usato le simulazioni eseguite su questo modello come riferimento realistico con cui sono confrontate le approssimazioni generate a partire dai diversi scenari introdotti. Sono state eseguite 8 simulazioni del medesimo modello in modo da avere una buona approssimazione del tempo medio di evacuazione. Attraverso i dati raccolti i ricercatori hanno generato il grafico in Figura X in cui si mostra la ECDF della probabilità di aver evacuato l'ambiente al tempo t.
 
-dfghjkl
+Lo strumento sviluppato in questo progetto di tesi è stato utilizzato dal gruppo di ricerca del Software Science and Technology Laboratory nelle attività di sperimentazione in \cite{esperimenti-sandro} per la raccolta dei tempi di soggiorno degli attori nelle singole regioni. Questi dati sono stati utilizzati per il calcolo delle probabilità di transizione delle Catene di Markov che astraggono il comportamento dell'attore attraverso le varie regioni in cui il modello è stato diviso.
+
  

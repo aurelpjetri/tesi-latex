@@ -114,47 +114,22 @@ Quindi vengono estratte dal grafo informazioni riguardanti le dimensioni globali
 
 Il visitor estrae dal grafo le liste dei nodi e degli archi che lo costituiscono e procede alla loro visita.
 
-Trattandosi del visitor per la generazione dell'ambiente fisico, vengono estratte solo le informazioni riguardanti le dimensioni fisiche delle entità rappresentate dagli oggetti. In particolare per i nodi di ingresso e uscita vengono anche impostate le variabili relative al tasso di generazione o eliminazione e le liste sulle percentuali relative ad ogni behavior.
-
-Si noti che questo visitor non aggiunge alcun tipo di funzionalità alle classi che rappresentano i comportamenti.
+Trattandosi del visitor per la generazione dell'ambiente fisico, vengono estratte solo le informazioni riguardanti le dimensioni fisiche delle entità rappresentate dagli oggetti. In particolare per i nodi di ingresso e uscita vengono anche impostate le variabili relative al tasso di generazione o eliminazione e le liste sulle percentuali relative ad ogni behavior. Si noti che questo visitor non aggiunge alcun tipo di funzionalità alle classi che rappresentano i comportamenti.
 
 In modo analogo \texttt{NetLogoBehaviorVisitor} trascrive parte del codice dal file di testo fino ad arrivare alla stringa “\texttt{;;===behaviors}”.\\
 Il visitor quindi esegue una visita su tutti i behaviors presenti nel modello Java andando a scrivere in NetLogo le procedure per la creazione di una apposita tabella in cui si indicizzano tutti i comportamenti con i loro punti di interesse.
 
 A questo punto si trascrive un'altra porzione di codice dal file di testo fino ad arrivare alla stringa “\texttt{;;===system}” che indica il punto all'interno del file in cui devono essere inserite le procedure per l'impostazione dello stato iniziale.
 
-Vengono visitati nuovamente tutti i nodi da cui, ora, si estraggono informazioni sulla quantità di attori presenti e i loro comportamenti. Queste informazioni vengono usate dal visitor per popolare una specifica lista del modello NetLogo in cui si è conservato lo stato.
-
-Anche in questo caso, si può osservare che \texttt{NetLogoBehaviorVisitor} non aggiunge funzionalità agli archi del grafo. 
+Vengono visitati nuovamente tutti i nodi da cui, ora, si estraggono informazioni sulla quantità di attori presenti e i loro comportamenti. Queste informazioni vengono usate dal visitor per popolare una specifica lista del modello NetLogo in cui si è conservato lo stato. Anche in questo caso, si può osservare che \texttt{NetLogoBehaviorVisitor} non aggiunge funzionalità agli archi del grafo. 
 
 \section{Documento XML}
 \label{sec:doc-xml}
 
-La struttura del documento XML prevista per il funzionamento del nostro strumento si attiene il più possibile allo standard di formato GraphML \cite{graphml} (approvato dal W3C) in modo da evitare inconsistenze e incomprensioni, soprattutto per la parte in cui è descritta la topologia dell'ambiente, per la quale questo formato è pienamente adatto.
-
-Il file XML è suddiviso in tre sezioni distinte:
-\begin{itemize}
-\item \texttt{Graph}
-\item \texttt{Behaviors}
-\item \texttt{System}
-\end{itemize} 
-\texttt{Graph} rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci.
-
-Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza, ovvero \texttt{weight} e \texttt{eWidth}. Il formato GraphML, inoltre, permette di specificare un tipo di default per gli edges come valore dell'attributo \texttt{edgedefault} di Graph.
-
-I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta, quindi avremo \texttt{nx}, \texttt{ny}, \texttt{nWidth}, \texttt{nHeight} e \texttt{nRadius}. All'interno del codice si usa l'attributo \texttt{ntype} per specificare il tipo di nodo e anche in questo caso è possibile specificare un tipo di default settato a \texttt{normal}.
-
-Per quanto riguarda i \texttt{Behaviors} si ha una struttura a grafo in cui ogni nodo rappresenta un behavior di cui viene indicata la tipologia, ovvero \texttt{bType}, l'identificatore e la lista dei nodi di interesse.
-
-La sezione \texttt{System} descrive lo stato iniziale dell'ambiente. Per questa parte del modello si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni nodo, sotto il tag “\texttt{graph}” con identificatore \texttt{state}, viene indicato il comportamento e la quantità degli attori presenti. In particolare, nei nodi contrassegnati come entry o exit, vi è un ulteriore tag “\texttt{graph}” con identificatore \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili (\texttt{entry-limit}), che può essere messo negativo nel caso in cui, invece, non si vogliano porre limiti.
-
-\subsection{Esempio}
-Di seguito è riportato un XML in cui si mostra la definizione di ogni tipo di entità coinvolta: attributi, tutti i tipi di nodi, tutti i tipi di archi, behavior e stato associato ai nodi.
-
 \definecolor{darkgreen}{rgb}{0,0.5,0}
 
 \lstdefinelanguage{XML}{
-  basicstyle=\linespread{1.1}\ttfamily,
+  basicstyle=\linespread{0.9}\ttfamily,
   morestring=[s]{"}{"},
   morecomment=[s]{!--}{--},
   commentstyle=\color{blue},
@@ -167,29 +142,79 @@ Di seguito è riportato un XML in cui si mostra la definizione di ogni tipo di e
   breakatwhitespace=true
 }
 
-%\lstinputlisting[language=XML, firstline=0, lastline=6]{images/example.xml}
-%\[\textbf{[...]}\]
-%\lstinputlisting[language=XML, firstline=30, lastline=45]{images/example.xml}
-%\[\textbf{[...]}\]
-%\lstinputlisting[language=XML, firstline=53, lastline=69]{images/example.xml}
-%\[\textbf{[...]}\]
-%\lstinputlisting[language=XML, firstline=77, lastline=124]{images/example.xml}
-%\[\textbf{[...]}\]
-%\lstinputlisting[language=XML, firstline=135, lastline=155]{images/example.xml}
+La struttura del documento XML prevista per il funzionamento del nostro strumento si attiene il più possibile allo standard di formato GraphML \cite{graphml} (approvato dal W3C) in modo da evitare inconsistenze e incomprensioni, soprattutto per la parte in cui è descritta la topologia dell'ambiente, per la quale questo formato è pienamente adatto. Il file XML è suddiviso in tre sezioni distinte: \texttt{Graph}, \texttt{Behaviors}, \texttt{System}.
 
-\lstinputlisting[language=XML, firstline=0, lastline=6]{images/example.xml} %attributi
-\[\texttt{[...]}\]
-\lstinputlisting[language=XML, firstline=30, lastline=38]{images/example.xml} %nodo regolare
-\[\textbf{[...]}\]
-\lstinputlisting[language=XML, firstline=152, lastline=169]{images/example.xml} %entry e exit node
-\[\textbf{[...]}\]
+\subsection{Graph} 
+
+Rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci.
+
+Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza, ovvero \texttt{weight} e \texttt{eWidth} come mostrato in Figura \ref{fig:xml-edges}. Il formato GraphML, inoltre, permette di specificare un tipo di default per gli edges come valore dell'attributo \texttt{edgedefault} di Graph.
+\begin{figure}[htbp]
+\centering
+\label{fig:xml-edges}
 \lstinputlisting[language=XML, firstline=178, lastline=188]{images/example.xml} %edges
-\[\textbf{[...]}\]
-\lstinputlisting[language=XML, firstline=297, lastline=318]{images/example.xml} %behavior e stato nodo regolare
-\[\textbf{[...]}\]
+\caption{Esempio XML di definizione delle due tipologie di archi}
+\end{figure}
+
+I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta, quindi avremo \texttt{nx}, \texttt{ny}, \texttt{nWidth}, \texttt{nHeight} e \texttt{nRadius}. All'interno del codice si usa l'attributo \texttt{ntype} per specificare il tipo di nodo e anche in questo caso è possibile specificare un tipo di default settato a \texttt{normal}.
+\begin{figure}[htbp]
+\centering
+\label{fig:xml-nodes}
+\lstinputlisting[language=XML, firstline=32, lastline=38]{images/example.xml} %nodo regolare
+
+\lstinputlisting[language=XML, firstline=152, lastline=169]{images/example.xml} %entry e exit node
+\caption{Esempio XML di definizione delle tre tipologie di nodi}
+\end{figure}
+
+
+\subsection{Behaviors}
+
+Per quanto riguarda i \texttt{Behaviors} si ha una struttura a grafo in cui ogni nodo rappresenta un behavior di cui viene indicata la tipologia, ovvero \texttt{bType}, l'identificatore e la lista dei nodi di interesse.
+
+\begin{figure}[htbp]
+\centering
+\label{fig:xml-behaviors}
+\lstinputlisting[language=XML, firstline=299, lastline=308]{images/example.xml} %behavior 
+\caption{Esempio XML di definizione di un behavior}
+\end{figure}
+
+\subsection{System}
+
+La sezione \texttt{System} descrive lo stato iniziale dell'ambiente. Per questa parte del modello si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni nodo, sotto il tag “\texttt{graph}” con identificatore \texttt{state}, viene indicato il comportamento e la quantità degli attori presenti. In particolare, nei nodi contrassegnati come entry o exit, vi è un ulteriore tag “\texttt{graph}” con identificatore \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili (\texttt{entry-limit}), che può essere messo negativo nel caso in cui, invece, non si vogliano porre limiti.
+
+\begin{figure}[htbp]
+\centering
+\label{fig:xml-system}
+\lstinputlisting[language=XML, firstline=310, lastline=318]{images/example.xml} %stato nodo regolare
 \lstinputlisting[language=XML, firstline=439, lastline=469]{images/example.xml} %stato entry e exit
-\[\textbf{[...]}\]
+
 \lstinputlisting[language=XML, firstline=484, lastline=485]{images/example.xml} %chiusura tag
+\caption{Esempio XML di definizione dello stato iniziale per ogni tipologia di nodo}
+\end{figure}
+
+%\subsection{Esempio}
+%Di seguito è riportato un XML in cui si mostra la definizione di ogni tipo di entità coinvolta: attributi, tutti i tipi di nodi, tutti i tipi di archi, behavior e stato associato ai nodi.
+%
+%
+%\lstinputlisting[language=XML, firstline=0, lastline=6]{images/example.xml} %attributi
+%\[\texttt{[...]}\]
+%\lstinputlisting[language=XML, firstline=30, lastline=38]{images/example.xml} %nodo regolare
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=152, lastline=169]{images/example.xml} %entry e exit node
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=178, lastline=188]{images/example.xml} %edges
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=297, lastline=297]{images/example.xml} %chiusa graph
+%
+%
+%\lstinputlisting[language=XML, firstline=299, lastline=308]{images/example.xml} %behavior 
+%
+%
+%\lstinputlisting[language=XML, firstline=310, lastline=318]{images/example.xml} %stato nodo regolare
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=439, lastline=469]{images/example.xml} %stato entry e exit
+%\[\textbf{[...]}\]
+%\lstinputlisting[language=XML, firstline=484, lastline=485]{images/example.xml} %chiusura tag
 
 \section{Parser XML}
 \label{subsec:parser-builder}
