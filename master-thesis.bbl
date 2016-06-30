@@ -23,6 +23,11 @@ Sax{B}uilder.
 \newblock
   \url{http://www.jdom.org/docs/apidocs/org/jdom2/input/SAXBuilder.html}.
 
+\bibitem{esperimenti-sandro}
+Combinig simulation and field analysis in quantitative evaluation of crows
+  evacuation scenarios.
+\newblock 2016.
+
 \bibitem{dijkstra}
 Jan Dijkstra, Harry~JP Timmermans, and AJ~Jessurun.
 \newblock A multi-agent cellular automata system for visualising simulated

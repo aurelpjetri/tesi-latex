@@ -4,6 +4,8 @@ The top-level auxiliary file: master-thesis.aux
 A level-1 auxiliary file: files/introduzione.aux
 A level-1 auxiliary file: files/capitolo1.aux
 A level-1 auxiliary file: files/capitolo2.aux
+A level-1 auxiliary file: files/capitolo3.aux
+A level-1 auxiliary file: files/capitolo4.aux
 A level-1 auxiliary file: files/bibliography.aux
 The style file: plain.bst
 Database file #1: files/bibliography.bib
@@ -16,10 +18,11 @@ I was expecting a `,' or a `}'---line 79 of file files/bibliography.bib
  :                        ;
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in jdom
+Warning--to sort, need author or key in graphml
 Warning--to sort, need author or key in sax-builder
 Warning--to sort, need author or key in buffered-reader
 Warning--to sort, need author or key in print-writer
-Warning--to sort, need author or key in graphml
+Warning--to sort, need author or key in esperimenti-sandro
 Warning--empty author in buffered-reader
 Warning--empty journal in buffered-reader
 Warning--empty year in buffered-reader
@@ -35,47 +38,49 @@ Warning--empty year in print-writer
 Warning--empty author in sax-builder
 Warning--empty journal in sax-builder
 Warning--empty year in sax-builder
+Warning--empty author in esperimenti-sandro
+Warning--empty journal in esperimenti-sandro
 Warning--empty year in starlisp
 Warning--empty year in logo
-You've used 16 entries,
+You've used 17 entries,
             2118 wiz_defined-function locations,
-            570 strings with 6149 characters,
-and the built_in function-call counts, 3675 in all, are:
-= -- 340
-> -- 143
+            575 strings with 6304 characters,
+and the built_in function-call counts, 3838 in all, are:
+= -- 355
+> -- 144
 < -- 1
-+ -- 64
++ -- 65
 - -- 44
-* -- 221
-:= -- 624
-add.period$ -- 46
-call.type$ -- 16
-change.case$ -- 68
+* -- 232
+:= -- 645
+add.period$ -- 48
+call.type$ -- 17
+change.case$ -- 71
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 173
-empty$ -- 307
+cite$ -- 42
+duplicate$ -- 183
+empty$ -- 325
 format.name$ -- 44
-if$ -- 751
+if$ -- 786
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 18
-newline$ -- 80
+int.to.str$ -- 17
+missing$ -- 19
+newline$ -- 84
 num.names$ -- 22
-pop$ -- 102
+pop$ -- 108
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 56
 quote$ -- 0
-skip$ -- 110
+skip$ -- 117
 stack$ -- 0
-substring$ -- 99
+substring$ -- 104
 swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
-warning$ -- 22
+type$ -- 64
+warning$ -- 25
 while$ -- 24
-width$ -- 18
-write$ -- 151
+width$ -- 19
+write$ -- 158
 (There were 2 error messages)
