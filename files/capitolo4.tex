@@ -18,11 +18,27 @@ La struttura del modello monolitico è rappresentata in Figura \ref{fig:immagine
 
 Per avere una stima sufficientemente rappresentativa del tempo di evacuazione di un ambiente è solitamente necessario eseguire almeno 10 simulazioni dello stesso modello. Nel nostro caso il tempo medio ad eseguire una singola simulazione è 55:58 minuti, quindi per ottenere la stima desiderata sono necessarie circa 9:19:40 ore di simulazioni.
 
-Il gruppo di ricerca del STLAB in \cite{esperimenti-sandro} ha usato le simulazioni eseguite su questo modello come riferimento realistico con cui confrontare le approssimazioni generate a partire dai diversi scenari introdotti. Sono state eseguite 8 simulazioni del medesimo modello in modo da avere una buona approssimazione del tempo medio di evacuazione. Attraverso i dati raccolti i ricercatori hanno generato il grafico in Figura X in cui si mostra la ECDF della probabilità di aver evacuato l'ambiente al tempo t.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/meancdf.pdf}
+\caption{Media delle funzioni di distribuzione empiriche della probabilità di aver raggiunto l'uscita al tempo t nel modello monolitico}
+\label{fig:ecdf}
+\end{figure}
+
+Il gruppo di ricerca del STLAB in \cite{esperimenti-sandro} ha usato le simulazioni eseguite su questo modello come riferimento realistico con cui confrontare le approssimazioni generate a partire dai diversi scenari introdotti. Sono state eseguite 8 simulazioni del medesimo modello in modo da avere una buona approssimazione del tempo medio di evacuazione. Attraverso i dati raccolti i ricercatori hanno generato il grafico in Figura \ref{fig:ecdf} in cui si mostra la ECDF della probabilità di aver evacuato l'ambiente al tempo t.
 
 \section{Scenari con macro regioni}
 
-Nei due scenari la mappa è suddivisa in 6 e 12 sezioni indipendenti in cui i punti di uscita sono punti di connessione con le regioni confinanti. Per ognuna di queste zone sono eseguite simulazioni con 3 diversi stati iniziali, ovvero con densità di affollamento alta, media e bassa. 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/mappa-scenario-A.png}
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/mappa-scenario-D.png}
+\caption{Mappe dei due scenari}
+\label{fig:immagine-mappa-completo}
+\end{figure}
+
+
+Nei due scenari, denominati rispettivamente A e D, la mappa è suddivisa in 6 e 12 sezioni indipendenti in cui i punti di uscita sono punti di connessione con le regioni confinanti. Per ognuna di queste zone sono eseguite simulazioni con 3 diversi stati iniziali, ovvero con densità di affollamento alta, media e bassa. 
 
 Abbiamo inoltre lanciato le simulazioni in due modalità diverse: rigenerativa e non rigenerativa o transitiva (transiente?). La modalità transitiva è la più semplice e rapida delle due, infatti non prevede la generazione di alcun attore, quindi si registrano solo i dati relativi agli agenti che costituiscono lo stato iniziale della regione. La modalità rigenerativa, invece, consiste nel mantenere costante la densità di attori all'interno della regione generando un nuovo agente ogni volta che qualcuno raggiunge l'uscita ed eseguendo il modello per un numero prefissato di unità temporali. In questo modo si ottengono informazioni sui tempi di transizione del sistema che si trova in uno stato stabile di affollamento.
 
@@ -34,6 +50,20 @@ In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli rigener
 
 Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella tabella X sono confrontati il modello monolitico e i due scenari sia con approccio rigenerativo che senza. La prima cosa da osservare è che in generale il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico devono essere eseguite nuovamente tutte le simulazioni, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Quindi la natura modulare del modello nei due scenari ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
 
-I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura X in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione di campo medio ottenuta dai due scenari. Inoltre in Figura X è mostrato l'errore commesso dalle approssimazioni rispetto al sistema completo. Da questi risultati si osserva che le approssimazioni introdotte hanno un comportamento simile al modello monolitico, con una accuratezza diversa al variare degli scenari.
+I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura \ref{fig:scenariosAD} in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione di campo medio ottenuta dai due scenari. Inoltre in Figura \ref{fig:errorsplotAD} è mostrato l'errore commesso dalle approssimazioni rispetto al sistema completo. Da questi risultati si osserva che le approssimazioni introdotte hanno un comportamento simile al modello monolitico, con una accuratezza diversa al variare degli scenari.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/scenariosAD.pdf}
+\caption{probabilità di aver raggiunto l'uscita al tempo t per i due scenari}
+\label{fig:scenariosAD}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/errorplotAD.pdf}
+\caption{Errore delle approssimazioni introdotte dagli scenari rispetto al modello monolitico}
+\label{fig:errorsplotAD}
+\end{figure}
 
  
