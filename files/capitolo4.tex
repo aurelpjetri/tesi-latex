@@ -7,7 +7,14 @@ La mappa usata per gli esperimenti è tratta da un blocco residenziale della cit
 La medesima mappa è stata usata dal gruppo di ricerca del Software Science and Technology Laboratory in \cite{esperimenti-sandro} durante la fase di sperimentazione, in cui, inoltre, si è reso utile il componente sviluppato in questo progetto.
 
 \section{Modello monolitico}
-La struttura del modello monolitico è rappresentata in figura X. Lo stato iniziale del sistema è di 10000 agenti distribuiti uniformemente in tutto lo spazio disponibile. Quindi le regioni con maggiore densità di strade saranno popolate anche da un numero maggiore di attori. 
+La struttura del modello monolitico è rappresentata in Figura \ref{fig:immagine-mappa-completo}. Lo stato iniziale del sistema è di 10000 agenti distribuiti uniformemente in tutto lo spazio disponibile. Quindi le regioni con maggiore densità di strade saranno popolate anche da un numero maggiore di attori. 
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/mappa-completo.png}
+\caption{Mappa del modello monolitico}
+\label{fig:immagine-mappa-completo}
+\end{figure}
 
 Per avere una stima sufficientemente rappresentativa del tempo di evacuazione di un ambiente è solitamente necessario eseguire almeno 10 simulazioni dello stesso modello. Nel nostro caso il tempo medio ad eseguire una singola simulazione è 55:58 minuti, quindi per ottenere la stima desiderata sono necessarie circa 9:19:40 ore di simulazioni.
 
@@ -25,6 +32,8 @@ In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli rigener
 
 \section{Risultati}
 
-Dagli esperimenti condotti abbiamo estratto i tempi necessari ad eseguire un numero consistente di simulazioni dalle quale estrarre i tempi di transizione dei vari attori. Nella tabella X sono confrontati il modello monolitico con 
+Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella tabella X sono confrontati il modello monolitico e i due scenari sia con approccio rigenerativo che senza. La prima cosa da osservare è che in generale il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico devono essere eseguite nuovamente tutte le simulazioni, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Quindi la natura modulare del modello nei due scenari ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
+
+I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura X in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione di campo medio ottenuta dai due scenari. Inoltre in Figura X è mostrato l'errore commesso dalle approssimazioni rispetto al sistema completo. Da questi risultati si osserva che le approssimazioni introdotte hanno un comportamento simile al modello monolitico, con una accuratezza diversa al variare degli scenari.
 
  
