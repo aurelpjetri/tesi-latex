@@ -81,7 +81,7 @@ Abbiamo inoltre scelto di separare il modello NetLogo finale in due parti, mante
 \caption{Class Diagram del Visitor}
 \label{fig:visitor-diagram}
 \end{figure}
-Si hanno quindi due classi visitor distinte per ognuno dei due modelli NetLogo da creare: \texttt{NetLogoGraphVisitor} e \texttt{NetLogoBehaviorVisitor} ( Figura \ref{fig:visitor-diagram} ). Il primo effettua una visitita su nodi e archi del grafo per scrivere i comandi necessari a mettere in vita l'ambiente corretto. Il secondo, invece, effettua una visita sui behaviors in modo da definire i comportamenti che gli attori potranno avere nella simulazione e sui nodi per impostare lo stato iniziale del sistema. In questo modo le interfacce delle classi del grafo, rimangono inalterate ma le operazioni effettuate variano al variare del visitor concreto, rendendolo un pattern ancora più adatto a questo specifico caso.
+Si hanno quindi due classi visitor distinte per ognuno dei due modelli NetLogo da creare: \texttt{NetLogoGraphVisitor} e \texttt{NetLogoBehaviorVisitor} ( Figura \ref{fig:visitor-diagram} ). Il primo effettua una visita su nodi e archi del grafo per scrivere i comandi necessari a mettere in vita l'ambiente corretto. Il secondo, invece, effettua una visita sui behaviors in modo da definire i comportamenti che gli attori potranno avere nella simulazione e sui nodi per impostare lo stato iniziale del sistema. In questo modo le interfacce delle classi del grafo, rimangono inalterate ma le operazioni effettuate variano al variare del visitor concreto, rendendolo un pattern ancora più adatto a questo specifico caso.
 
 \begin{figure}[htbp]
 \centering
@@ -89,7 +89,7 @@ Si hanno quindi due classi visitor distinte per ognuno dei due modelli NetLogo d
 \caption{Sequence Diagram del NetLogoGraphVisitor su un grafo con un unico nodo}
 \label{fig:visitor-sequence}
 \end{figure}
-NetLogoBehaviorVisitor, in modo analogo, eseguirà operazioni di lettura e scrittura alternate per generare un un secondo file \texttt{.nlogo} in cui si esegue la simulazione e si esportano i dati di interesse.
+NetLogoBehaviorVisitor, in modo analogo, eseguirà operazioni di lettura e scrittura alternate per generare un secondo file \texttt{.nlogo} in cui si esegue la simulazione e si esportano i dati di interesse.
 
 \subsection{Funzionamento}
 
@@ -203,7 +203,7 @@ Il parser XML inoltre esegue controlli mirati a verificare che siano fornite tut
 \section{Modello NetLogo}
 \label{sec:modello-netlogo}
 
-Come già accennato in precedenza abbiamo scelto di dividere il modello NetLogo generato dal nostro programma in due parti con lo scopo di mantenere le funzioni necessarie per la costruzione dell'ambiente separate da quelle che modellano i movimenti degli attori e raccolgono le informazioni sulla simulazione eseguita. In questo modo il codice è più facile da gestire e manutenere. Questa scelta porta, inoltre, il vantaggio di eseguire il primo modello una vola sola e di sfruttare, invece, il file di stato che esso genera nel caso in cui si vogliano simulare le interazioni di diversi comportamenti nello stesso ambiente.
+Come già accennato in precedenza abbiamo scelto di dividere il modello NetLogo generato dal nostro programma in due parti con lo scopo di mantenere le funzioni necessarie per la costruzione dell'ambiente separate da quelle che modellano i movimenti degli attori e raccolgono le informazioni sulla simulazione eseguita. In questo modo il codice è più facile da gestire e manutenere. Questa scelta porta, inoltre, il vantaggio di eseguire il primo modello una volta sola e di sfruttare, invece, il file di stato che esso genera nel caso in cui si vogliano simulare le interazioni di diversi comportamenti nello stesso ambiente.
 \subsection{Ambiente}
 L'ambiente in cui gli attori si muoveranno è modellato sotto forma di grafo con specifiche tipologie di turtles dette \texttt{beacons} che fanno da nodi e rappresentano quindi gli incroci tra le vie percorribili.
 
