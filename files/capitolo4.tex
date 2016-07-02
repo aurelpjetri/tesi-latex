@@ -38,9 +38,9 @@ Il gruppo di ricerca del STLAB in \cite{esperimenti-sandro} ha usato le simulazi
 \end{figure}
 
 
-Nei due scenari, denominati rispettivamente A e D, la mappa è suddivisa in 6 e 12 sezioni indipendenti in cui i punti di uscita sono punti di connessione con le regioni confinanti. Per ognuna di queste zone sono eseguite simulazioni con 3 diversi stati iniziali, ovvero con densità di affollamento alta, media e bassa. 
+Nei due scenari A e D la mappa è suddivisa rispettivamente in 6 e 12 sezioni indipendenti in cui i punti di uscita sono punti di connessione con le regioni confinanti. Per ognuna di queste zone sono eseguite simulazioni con 3 diversi stati iniziali, ovvero con densità di affollamento alta, media e bassa. 
 
-Abbiamo inoltre lanciato le simulazioni in due modalità diverse: rigenerativa e non rigenerativa o transitiva (transiente?). La modalità transitiva è la più semplice e rapida delle due, infatti non prevede la generazione di alcun attore, quindi si registrano solo i dati relativi agli agenti che costituiscono lo stato iniziale della regione. La modalità rigenerativa, invece, consiste nel mantenere costante la densità di attori all'interno della regione generando un nuovo agente ogni volta che qualcuno raggiunge l'uscita ed eseguendo il modello per un numero prefissato di unità temporali. In questo modo si ottengono informazioni sui tempi di transizione del sistema che si trova in uno stato stabile di affollamento.
+Abbiamo inoltre lanciato le simulazioni in due modalità diverse: rigenerativa e non rigenerativa o transitiva (transiente?). La modalità rigenerativa consiste nel mantenere costante la densità di attori all'interno della regione generando un nuovo agente ogni volta che qualcuno raggiunge l'uscita ed eseguendo il modello per un numero prefissato di unità temporali. In questo modo si ottengono informazioni sui tempi di transizione del sistema che si trova in uno stato stabile di affollamento. La modalità transitiva, invece, è la più semplice e rapida delle due, infatti non prevede la generazione di alcun attore, quindi si registrano solo i dati relativi agli agenti che costituiscono lo stato iniziale della regione.
 
 In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli rigenerativi sono usati per calcolare le probabilità di transizione della Catena di Markov che astrae il comportamento dell'attore attraverso le varie regioni come spiegato nella Sezione \ref{sec:approccio-gerarchico}.
 
@@ -48,17 +48,17 @@ In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli rigener
 
 \section{Risultati}
 
-Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella Tabella \ref{tab:tabella-confronto} sono confrontati il modello monolitico e i due scenari sia con approccio rigenerativo che senza. La prima cosa da osservare è che in generale il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico devono essere eseguite nuovamente tutte le simulazioni, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Quindi la natura modulare del modello nei due scenari ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
+Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella Tabella \ref{tab:tabella-confronto} sono confrontati il modello monolitico e i due scenari sia con approccio rigenerativo che senza. 
 
 \begin{table}[h]
   \centering
   \resizebox{0.7\textwidth}{!} {
   \begin{tabular}{ |l|l|l| }
 	\hline
-\textbf{Scenario}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
-\textbf{Monolitico} &		 						&		9:19:40		\\ \hline
-\textbf{A}			 &		21:33:36 				&		0:21:51		\\ \hline
-\textbf{D}			 &		4:49:27 				&		0:23:13		\\ \hline
+	\textbf{Scenario}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
+	\textbf{Monolitico} &		 						&		9:19:40		\\ \hline
+	\textbf{A}			 &		21:33:36 				&		0:21:51		\\ \hline
+	\textbf{D}			 &		4:49:27 				&		0:23:13		\\ \hline
 
   \end{tabular}
   }
@@ -66,59 +66,66 @@ Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un num
   \label{tab:tabella-confronto}
 \end{table}
 
+La prima cosa da osservare è che il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni dello scenario A con metodo rigenerativo. Nello scenario D invece il tempo totale delle simulazioni rigenerative è comunque minore di quello di riferimento del modello monolitico. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico si devono eseguire nuovamente le simulazioni su tutto l'ambiente, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Ad esempio se volessimo valutare i tempi di evacuazione del modello eliminando alcune strade della zona A2, nel caso del modello monolitico, per ottenere nuovamente tutti i dati sarebbero necessarie sempre circa 9 ore, al contrario nello scenario A potremmo lanciare simulazioni solo per la zona interessata e quindi impiegare solo circa 2 ore per l'ottenimento dei nuovi dati.
+ 
 \begin{table}[h]
   \centering
   \resizebox{\textwidth}{!} {
-  \begin{tabular}{ |l|l|l| }
+  \begin{tabular}[t]{ |l|l|l| }
 	\hline
-\textbf{Regione}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
-\textbf{A1} 		&		3:16:25					&		0:3:6.6			\\ \hline
-\textbf{A2}			 &		2:13:11 				&		0:2:40.2		\\ \hline
-\textbf{A3}			 &		5:12:48 				&		0:3:40.2		\\ \hline
-\textbf{A4}			 &		6:20:39 				&		0:6:8.4			\\ \hline
-\textbf{A5}			 &		2:36:25 				&		0:3:29.4		\\ \hline
-\textbf{A6}			 &		1:46:20 				&		0:2:46.8		\\ \hline
-
+	\textbf{Regione}	&		\textbf{Rigenerativo}	&		\textbf{Non Rigenerativo}	\\ \hline
+	\textbf{A1} 		&		3:16:25					&		0:03:06.6			\\ \hline
+	\textbf{A2}			 &		2:13:11 				&		0:02:40.2		\\ \hline
+	\textbf{A3}			 &		5:12:48 				&		0:03:40.2		\\ \hline
+	\textbf{A4}			 &		6:20:39 				&		0:06:08.4			\\ \hline
+	\textbf{A5}			 &		2:36:25 				&		0:03:29.4		\\ \hline
+	\textbf{A6}			 &		1:46:20 				&		0:02:46.8		\\ \hline
 
   \end{tabular}
   
-	\begin{tabular}{ |l|l|l| }
+  \begin{tabular}[t]{ |l|l|l| }
 	 	\hline
-	\textbf{Regione}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
+	\textbf{Regione}	&		\textbf{Rigenerativo}	&		\textbf{Non Rigenerativo}	\\ \hline
 	\textbf{D1} 		&		27:26.40				&		0:1:56.4			\\ \hline
-	\textbf{D2}		&		29:15.90 				&		0:2:3.3		\\ \hline
-	\textbf{D3}		 &		49:46.37 				&		0:1:58.8		\\ \hline
-	\textbf{D4}		 &		29:48.04 				&		0:2:00.0			\\ \hline
-	\textbf{D5}		 &		42:43.85 				&		0:1:51.6		\\ \hline
-	\textbf{D6}		 &		37:23.94 				&		0:1:40.2		\\ \hline
-	\textbf{D7}		 &		12:58.50 				&		0:1:58.8		\\ \hline
-	\textbf{D8}		 &		11:20.55 				&		0:2:7.8		\\ \hline
-	\textbf{D9}		 &		23:57.05 				&		0:1:58.8		\\ \hline
-	\textbf{D10}		 &		21:52.79 				&		0:2:06.0		\\ \hline
-	\textbf{D11}		 &		2:08.55 				&		0:1:43.8		\\ \hline
-	\textbf{D12}		 &		0:52.59 				&		0:1:48.0		\\ \hline
+	\textbf{D2}		&		29:15.90 				&		0:02:03.3		\\ \hline
+	\textbf{D3}		 &		49:46.37 				&		0:01:58.8		\\ \hline
+	\textbf{D4}		 &		29:48.04 				&		0:02:00.0			\\ \hline
+	\textbf{D5}		 &		42:43.85 				&		0:01:51.6		\\ \hline
+	\textbf{D6}		 &		37:23.94 				&		0:01:40.2		\\ \hline
+	\textbf{D7}		 &		12:58.50 				&		0:01:58.8		\\ \hline
+	\textbf{D8}		 &		11:20.55 				&		0:02:07.8		\\ \hline
+	\textbf{D9}		 &		23:57.05 				&		0:01:58.8		\\ \hline
+	\textbf{D10}	 &		21:52.79 				&		0:02:06.0		\\ \hline
+	\textbf{D11}	 &		2:08.55 				&		0:01:43.8		\\ \hline
+	\textbf{D12}	 &		0:52.59 				&		0:01:48.0		\\ \hline
 	
 	
-	\end{tabular}
+  \end{tabular}
   }
   \caption{Tempi di simulazione relativi alle singole regioni con metodo rigenerativo e non rigenerativo}
   \label{tab:tabelle-dati-simulazioni}
 \end{table}
+ 
+La natura modulare del modello nei due scenari, quindi, ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
 
-I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura \ref{fig:scenariosAD} in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione di campo medio ottenuta dai due scenari. Inoltre in Figura \ref{fig:errorsplotAD} è mostrato l'errore commesso dalle approssimazioni rispetto al sistema completo. Da questi risultati si osserva che le approssimazioni introdotte hanno un comportamento simile al modello monolitico, con una accuratezza diversa al variare degli scenari.
+I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura \ref{fig:scenariosAD} in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione di campo medio ottenuta dai due scenari.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/scenariosAD.pdf}
-\caption{probabilità di aver raggiunto l'uscita al tempo t per i due scenari}
+\includegraphics[width=.8\textwidth,height=\textheight,keepaspectratio]{images/scenariosAD.pdf}
+\caption{Probabilità di aver raggiunto l'uscita al tempo t per i due scenari}
 \label{fig:scenariosAD}
 \end{figure}
 
+Inoltre in Figura \ref{fig:errorsplotAD} è mostrato l'errore commesso dalle approssimazioni rispetto al sistema completo. Da questi risultati si osserva che le approssimazioni introdotte hanno un comportamento simile al modello monolitico, con una accuratezza diversa al variare degli scenari.
+
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/errorplotAD.pdf}
+\includegraphics[width=.8\textwidth,height=\textheight,keepaspectratio]{images/errorplotAD.pdf}
 \caption{Errore delle approssimazioni introdotte dagli scenari rispetto al modello monolitico}
 \label{fig:errorsplotAD}
 \end{figure}
+
+
 
  
