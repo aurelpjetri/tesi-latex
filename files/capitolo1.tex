@@ -1,45 +1,55 @@
 \chapter{Simulazione delle masse}
+
 In questo capitolo si descrive il contesto di ricerca in cui si inserisce questo progetto di tesi, andando a descrivere, nella Sezione \ref{sec:stato-dell-arte}, lo stato dell'arte della simulazione delle masse e, nella Sezione \ref{sec:approccio-gerarchico}, l'approccio di ricerca in cui questo progetto di tesi si è reso necessario.
 
 \label{sec:simulazione-masse}
-Come già accennato nell'introduzione, la simulazione delle masse è un ambito di ricerca che negli ultimi anni ha guadagnato molta rilevanza. Questo grazie a un miglioramento delle capacità computazionali e dei metodi utilizzati, ma anche a causa di eventi sociali sempre più frequenti e di dimensioni sempre maggiori. Quindi diventa sempre più importante la capacità di prevedere i movimenti delle masse in modo da garantire la sicurezza delle persone in ogni tipo di situazione.\\
-Le criticità che rendono la modellazione delle masse un problema complesso sono le grandi dimensioni dei modelli e i comportamenti individuali, sia sociali che fisici, che devono essere presi in considerazione.\\
-Descriviamo brevemente gli approcci più diffusi e riconosciuti per la simulazione delle masse per andare poi a soffermarci sull'approccio gerarchico in cui si inserisce questo progetto di tesi.
+Come già accennato nell'introduzione, la simulazione delle masse è un ambito di ricerca che negli ultimi anni ha guadagnato molta rilevanza. Questo grazie a un miglioramento delle capacità computazionali e dei metodi utilizzati, ma anche a causa di eventi sociali sempre più frequenti e di dimensioni sempre maggiori. Quindi diventa sempre più importante la capacità di prevedere i movimenti delle masse in modo da garantire la sicurezza delle persone in ogni tipo di situazione.
+
+Le criticità che rendono la modellazione delle masse un problema complesso sono le grandi dimensioni dei modelli e i comportamenti individuali, sia sociali che fisici, che devono essere presi in considerazione. Descriviamo brevemente gli approcci più diffusi e riconosciuti per la simulazione delle masse per andare poi a soffermarci sull'approccio gerarchico in cui si inserisce questo progetto di tesi.
 
 \section{Stato dell'arte}
 \label{sec:stato-dell-arte}
 
-Nella modellazione delle masse il maggior problema è la dimensione del modello da studiare. Le risposte ideate per risolvere questa criticità sono state molte e possono essere divise in due categorie sulla base del loro approccio: su scala microscopica e su scala macroscopica.\\
+Nella modellazione delle masse il maggior problema è la dimensione del modello da studiare. Le risposte ideate per risolvere questa criticità sono state molte e possono essere divise in due categorie sulla base del loro approccio: su scala microscopica e su scala macroscopica.
 
 \subsection{Approccio su scala microscopica}
 
-L'approccio su su scala microscopica si basa sull'idea di rappresentare ogni persona come agente o macchina a stati finiti. I quattro approcci più usati sono: \textit{social force model}, \textit{cellular automata}, \textit{magnetic force model} e \textit{rule-based model}.\\
-Il social force model \cite{helbing} si fonda sul concetto che le forze sociali possono essere rappresentate come forze meccaniche che agiscono tra le persone. Le forze prese in considerazione sono repulsione, attrito e dissipazione. Solitamente questi modelli arrivano ad essere molto espressivi permettendo di descrivere comportamenti sia fisici che sociali nel modello.\\
-Il magnetic force model \cite{okazaki} è simile al precedente approccio, questo infatti introduce il concetto di forze magnetiche per modellare i comportamenti degli individui. Persone e ostacoli vengono modellati come poli positivi, mentre i punti di interesse, come ad esempio le uscite, sono rappresentati come poli negativi. In questo modo gli agenti sono attratti dai punti di interesse e respingono ostacoli e altre persone evitando le collisioni.\\
-L'approccio cellular automata \cite{dijkstra} è caratterizzato da una griglia bidimensionale dove una cellula è definita dal proprio stato, che evolve nel tempo sulla base del proprio valore e dello stato delle cellule adiacenti. Modificando il numero di cellule che influenzano lo stato si possono rappresentare comportamenti diversi, ad esempio per il contatto fisico si usa un insieme molto ristretto di cellule, al contrario per il campo visivo si usa un numero maggiore di cellule.\\
-Infine il rule-based model \cite{reynolds} presenta una modellazione dello spazio e del tempo continui e prevede che velocità e  direzione di un attore vengano modificate sulla base di determinate regole, come conformismo, anticonformismo e coesione.\\
+L'approccio su su scala microscopica si basa sull'idea di rappresentare ogni persona come agente o macchina a stati finiti. I quattro approcci più usati sono: \textit{social force model}, \textit{cellular automata}, \textit{magnetic force model} e \textit{rule-based model}.
+
+Il social force model \cite{helbing} si fonda sul concetto che le forze sociali possono essere rappresentate come forze meccaniche che agiscono tra le persone. Le forze prese in considerazione sono repulsione, attrito e dissipazione. Solitamente questi modelli arrivano ad essere molto espressivi permettendo di descrivere comportamenti sia fisici che sociali nel modello.
+
+Il magnetic force model \cite{okazaki} è simile al precedente approccio, questo infatti introduce il concetto di forze magnetiche per modellare i comportamenti degli individui. Persone e ostacoli vengono modellati come poli positivi, mentre i punti di interesse, come ad esempio le uscite, sono rappresentati come poli negativi. In questo modo gli agenti sono attratti dai punti di interesse e respingono ostacoli e altre persone evitando le collisioni.
+
+L'approccio cellular automata \cite{dijkstra} è caratterizzato da una griglia bidimensionale dove una cellula è definita dal proprio stato, che evolve nel tempo sulla base del proprio valore e dello stato delle cellule adiacenti. Modificando il numero di cellule che influenzano lo stato si possono rappresentare comportamenti diversi, ad esempio per il contatto fisico si usa un insieme molto ristretto di cellule, al contrario per il campo visivo si usa un numero maggiore di cellule.
+
+Infine il rule-based model \cite{reynolds} presenta una modellazione dello spazio e del tempo continui e prevede che velocità e  direzione di un attore vengano modificate sulla base di determinate regole, come conformismo, anticonformismo e coesione.
 
 \subsection{Approccio su scala macroscopica}
 
-L'approccio su macro-scala basa il proprio studio sull'analisi di caratteristiche macroscopiche della massa come la densità media e la velocità. Questa analisi viene condotta attraverso lo studio di equazioni differenziali che descrivono l'evoluzione della massa, oppure attraverso algoritmi di apprendimento e regressione applicati su dati esistenti. \\
-Gli approcci più diffusi su scala macroscopica sono: \textit{regression model}, \textit{queuing model}, \textit{fluid dynamics}.\\
-I regression models si basano su dati empirici dai quali cercano di estrapolare una funzione in grado di descrivere l'evoluzione della folla.\\
-L'approccio fluid dynamics, invece, rappresenta gli agenti come particelle di un fluido e studia quindi le equazioni differenziali che ne descrivono i cambiamenti nel tempo.\\
-Oltre al problema della definizione di modelli scalabili, esiste un ulteriore punto critico rappresentato dalla mancanza di dati empirici e dalla difficoltà di condurre esperimenti su scale macroscopiche.\\
+L'approccio su macro-scala basa il proprio studio sull'analisi di caratteristiche macroscopiche della massa come la densità media e la velocità. Questa analisi viene condotta attraverso lo studio di equazioni differenziali che descrivono l'evoluzione della massa, oppure attraverso algoritmi di apprendimento e regressione applicati su dati esistenti. 
+
+Gli approcci più diffusi su scala macroscopica sono: \textit{regression model}, \textit{queuing model}, \textit{fluid dynamics}. I regression models si basano su dati empirici dai quali cercano di estrapolare una funzione in grado di descrivere l'evoluzione della folla. L'approccio fluid dynamics, invece, rappresenta gli agenti come particelle di un fluido e studia quindi le equazioni differenziali che ne descrivono i cambiamenti nel tempo.
+
+Oltre al problema della definizione di modelli scalabili, esiste un ulteriore punto critico rappresentato dalla mancanza di dati empirici e dalla difficoltà di condurre esperimenti su scale macroscopiche.
+
 Molti modelli per eseguire queste simulazioni aggregano singoli agenti in gruppi dallo stesso comportamento, introducendo quindi comportamenti collettivi e riducendo il numero di agenti da modellare. Questa soluzione però non elimina la dipendenza del costo computazionale dal numero di attori, quindi, nonostante questi modelli siano in grado di lavorare con un numero elevato di attori, non sono ottimali per lo studio di intere città, che coinvolge milioni di agenti.
 
 \section{Approccio gerarchico}
 \label{sec:approccio-gerarchico}
 
 L'approccio proposto da E. Vicario, S. Mehic e M. Paolieri  in \cite{hierarchical-report} per affrontare il problema della simulazione delle masse, rispetto alle tipologie precedentemente esposte, è di tipo ibrido. Si scompone la simulazione in tre livelli di scala diversi in modo da ottenere una soluzione analitica indipendente dal numero di agenti.\\
-Al primo livello si usa una modellazione di tipo microscopico basata su agenti (Agent Based Modeling, ABM). In questa fase della ricerca si rende piuttosto utile il presente progetto, che facilita la generazione dei modelli NetLogo per l'esecuzione delle simulazioni e l'estrazione di parametri come tempo medio di soggiorno e probabilità di transizione.\\
-L'agent-based modeling, oltre alle strategie di movimento fisico, permette l'inclusione di una serie di altri aspetti, in particolare quello sociale della folla.\\
-Un comportamento di particolare interesse è l'altruismo, ovvero la probabilità che un attore aiuti un altro attore con una capacità di movimento minore della sua. \'E stato dimostrato infatti che questo risulta essere un aspetto caratteristico delle masse.\\
-Un altro behavior che risulta interessante è il conformismo, ovvero quanto questo attore tenderà ad unirsi alla massa oppure a cambiare percorso di fronte a una strada affollata.\\
-La strategia di movimento rappresenta l'aspetto fisico dell'attore e consiste nell'individuazione e raggiungimento dei punti di interesse e dell'uscita più vicina.\\
-Attraverso la combinazione di questi due aspetti si riescono ad ottenere comportamenti molto complessi che rispecchiano l'andamento della folla nella realtà.\\
-Il secondo livello di questo approccio, ovvero il livello mesoscopico, consiste nell'astrazione dei singoli agenti delle precedenti simulazioni (\textit{Agent Based Simulations}, ABS) in catene di Markov tempo-discrete modellate usando i dati raccolti dalle ABS.\\
-Ogni catena di Markov tempo-discreta, quindi, rappresenta un singolo agente in una particolare regione dello spazio e i comportamenti precedentemente osservati vengono usati per definire le probabilità di transizione nella catena individuale.\\
-Nel terzo ed ultimo livello, quello macroscopico, si compongono le N catene di Markov parallele e le M regioni spaziali adiacenti. Quindi il macroscopico spazio fisico ottenuto non è altro che un grafo con le varie regioni come nodi e i loro collegamenti come archi.\\
-Come spiegato nel report di ricerca \cite{hierarchical-report}, il passo più importante di questa fase è l'approssimazione di campo medio. Usando infatti la \textit{fast simulation technique} presentata in \cite{mean-field} si è in grado di rimuovere la dipendenza del costo computazionale delle simulazioni dal numero di agenti coinvolti, permettendo, quindi, di ottenere una soluzione analitica per la simulazione di una massa che è indipendente dalle sue dimensioni.\\
+Al primo livello si usa una modellazione di tipo microscopico basata su agenti (Agent Based Modeling, ABM). In questa fase della ricerca si rende piuttosto utile il presente progetto, che facilita la generazione dei modelli NetLogo per l'esecuzione delle simulazioni e l'estrazione di parametri come tempo medio di soggiorno e probabilità di transizione.
+
+L'agent-based modeling, oltre alle strategie di movimento fisico, permette l'inclusione di una serie di altri aspetti, in particolare quello sociale della folla. Un comportamento di particolare interesse è l'altruismo, ovvero la probabilità che un attore aiuti un altro attore con una capacità di movimento minore della sua. \'E stato dimostrato infatti che questo risulta essere un aspetto caratteristico delle masse. Un altro behavior che risulta interessante è il conformismo, ovvero quanto questo attore tenderà ad unirsi alla massa oppure a cambiare percorso di fronte a una strada affollata.
+
+La strategia di movimento rappresenta l'aspetto fisico dell'attore e consiste nell'individuazione e raggiungimento dei punti di interesse e dell'uscita più vicina.
+
+Attraverso la combinazione di questi due aspetti si riescono ad ottenere comportamenti molto complessi che rispecchiano l'andamento della folla nella realtà.
+
+Il secondo livello di questo approccio, ovvero il livello mesoscopico, consiste nell'astrazione dei singoli agenti delle precedenti simulazioni (\textit{Agent Based Simulations}, ABS) in catene di Markov tempo-discrete modellate usando i dati raccolti dalle ABS. Ogni catena di Markov tempo-discreta, quindi, rappresenta un singolo agente in una particolare regione dello spazio e i comportamenti precedentemente osservati vengono usati per definire le probabilità di transizione nella catena individuale.
+
+Nel terzo ed ultimo livello, quello macroscopico, si compongono le N catene di Markov parallele e le M regioni spaziali adiacenti. Quindi il macroscopico spazio fisico ottenuto non è altro che un grafo con le varie regioni come nodi e i loro collegamenti come archi.
+
+Come spiegato nel report di ricerca \cite{hierarchical-report}, il passo più importante di questa fase è l'approssimazione di campo medio. Usando infatti la \textit{fast simulation technique} presentata in \cite{mean-field} si è in grado di rimuovere la dipendenza del costo computazionale delle simulazioni dal numero di agenti coinvolti, permettendo, quindi, di ottenere una soluzione analitica per la simulazione di una massa che è indipendente dalle sue dimensioni.
+
 In conclusione il problema del costo computazionale è risolto con l'introduzione dell'approssimazione di campo medio e la dipendenza dal numero di agenti è risolta con l'uso delle catene di Markov che li sostituisce. Inoltre il numero degli stati di queste catene è mantenuto basso grazie all'approccio gerarchico impostato.

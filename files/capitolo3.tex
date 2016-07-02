@@ -3,9 +3,7 @@
 
 L'obiettivo di questa tesi è realizzare un programma in linguaggio Java che sia in grado di ricevere in ingresso la struttura del modello descritta in linguaggio XML e di scrivere in modo automatico il codice NetLogo che possa eseguire la simulazione di interesse, rendendo, quindi, trasparente il processo di scrittura del codice.
 
-Questo progetto è costituito da una struttura composita centrale di classi in cui vengono conservate tutte le informazioni necessarie per l'esecuzione della simulazione. Come mostrato nella Sezione \ref{sec:strttura-interna} l'oggetto di tipo Graph che rappresenta la struttura è composto da classi che modellano la topologia dell'ambiente e da classi che rappresentano i comportamenti da simulare.
-
-L'informazione conservata in questa struttura viene estratta da un apposito parser che implementa il pattern Builder per la costruzione e composizione degli oggetti.
+Questo progetto è costituito da una struttura composita centrale di classi in cui vengono conservate tutte le informazioni necessarie per l'esecuzione della simulazione. Come mostrato nella Sezione \ref{sec:strttura-interna} l'oggetto di tipo Graph che rappresenta la struttura è composto da classi che modellano la topologia dell'ambiente e da classi che rappresentano i comportamenti da simulare. L'informazione conservata in questa struttura viene estratta da un apposito parser che implementa il pattern Builder per la costruzione e composizione degli oggetti.
 
 Infine si è implementato il pattern Visitor per visitare gli oggetti della struttura e generare il relativo codice NetLogo.
 
@@ -43,11 +41,9 @@ Infine ogni classe che implementa l'interfaccia Node, oltre ai metodi per il rec
 \label{sec:builder}
 Per la costruzione delle classi abbiamo usato il pattern Builder, in modo da mantenere il processo di costruzione della struttura interna dell'oggetto di tipo Grafo trasparente all'utente di questo strumento. In particolare l'interfaccia del Builder aiuta a mantenere l'algoritmo di interpretazione dell'XML separato dal processo di costruzione e rappresentazione del suo contenuto in classi Java.
 
-Il pattern Builder, inoltre, porta il grande beneficio di migliorare la modularizzazione derivante dall'incapsulamento di tutta la procedura di manipolazione della struttura interna dell'oggetto costruito, in questo modo il Client non ha necessità di conoscere la sua composizione interna.
+Il pattern Builder, inoltre, porta il grande beneficio di migliorare la modularizzazione derivante dall'incapsulamento di tutta la procedura di manipolazione della struttura interna dell'oggetto costruito, in questo modo il Client non ha necessità di conoscere la sua composizione interna. 
 
-Una conseguenza che rende il pattern ancora più adatto al nostro caso è il miglioramento del controllo sul processo di costruzione del prodotto. Al contrario di altri pattern creazionali, i quali costruiscono e restituiscono il prodotto in un'unica funzione, il Builder separa queste due operazioni mettendo a disposizione un'interfaccia più completa.
-
-Grazie a questo noi siamo in grado di esercitare un maggiore controllo sulla correttezza delle operazioni eseguite e delle informazioni inserite durante questa prima fase.
+Una conseguenza che rende il pattern ancora più adatto al nostro caso è il miglioramento del controllo sul processo di costruzione del prodotto. Al contrario di altri pattern creazionali, i quali costruiscono e restituiscono il prodotto in un'unica funzione, il Builder separa queste due operazioni mettendo a disposizione un'interfaccia più completa. Grazie a questo noi siamo in grado di esercitare un maggiore controllo sulla correttezza delle operazioni eseguite e delle informazioni inserite durante questa prima fase.
 
 L'interfaccia Parser rende il progetto aperto ad estensioni future, come il supporto di linguaggi alternativi all'XML.
 
@@ -61,27 +57,17 @@ L'interfaccia Parser rende il progetto aperto ad estensioni future, come il supp
 In Figura \ref{fig:builder-diagram} si può osservare la struttura delle classi che implementano questo pattern.
 
 \subsection{Funzionamento}
-La classe \texttt{XMLParser} svolge il ruolo di \textit{Director} all'interno del pattern e, durante la visita della struttura JDOM \cite{jdom} creata, chiama i metodi del \textit{ConcreteBuilder} \texttt{NetLogoGraphBuilder} per la costruzione dei vari oggetti e la loro composizione a formare la struttura centrale.
-
-Quando la visita da parte del parser è conclusa viene recuperato il \textit{Product}, che non è altro che un oggetto di tipo \texttt{Graph}, in Figura \ref{fig:builder-sequence} si può seguire il processo di costruzione di un semplice modello.
+La classe \texttt{XMLParser} svolge il ruolo di \textit{Director} all'interno del pattern e, durante la visita della struttura JDOM \cite{jdom} creata, chiama i metodi del \textit{ConcreteBuilder} \texttt{NetLogoGraphBuilder} per la costruzione dei vari oggetti e la loro composizione a formare la struttura centrale. Quando la visita da parte del parser è conclusa viene recuperato il \textit{Product}, che non è altro che un oggetto di tipo \texttt{Graph}, in Figura \ref{fig:builder-sequence} si può seguire il processo di costruzione di un semplice modello.
 
 Come prima cosa vengono costruite le classi relative ai nodi, \texttt{XMLParser} estrae le informazioni dalla struttura JDOM e controlla che non vi siano mancanze, quindi chiama lo specifico metodo di costruzione del builder.
 
-Il \texttt{NetLogoGraphBuilder}, prima di procedere alla messa in vita dell'oggetto, verifica, tramite un metodo statico della relativa classe, che le informazioni da inserire siano corrette, ad esempio si controlla che le dimensioni fisiche dell'incrocio non siano negative. Una volta costruito l'oggetto il builder chiama la funzione della classe \texttt{Graph} per aggiungere il nodo alla struttura, questa operazione è preceduta da un controllo sui nodi già presenti per evitare sovrapposizioni.
-
-In modo analogo vengono costruiti e aggiunti alla struttura anche gli archi. Si costruisce l'arco e si delega a \texttt{Graph} la responsabilità di evitare l'inserimento di grafi con estremi uguali.
-
-Infine si costruiscono i behaviors sui quali poi si aggiungono i riferimenti ai nodi di interesse sfruttando i metodi esposti dalla classe \texttt{Graph}.
+Il \texttt{NetLogoGraphBuilder}, prima di procedere alla messa in vita dell'oggetto, verifica, tramite un metodo statico della relativa classe, che le informazioni da inserire siano corrette, ad esempio si controlla che le dimensioni fisiche dell'incrocio non siano negative. Una volta costruito l'oggetto il builder chiama la funzione della classe \texttt{Graph} per aggiungere il nodo alla struttura, questa operazione è preceduta da un controllo sui nodi già presenti per evitare sovrapposizioni. In modo analogo vengono costruiti e aggiunti alla struttura anche gli archi. Si costruisce l'arco e si delega a \texttt{Graph} la responsabilità di evitare l'inserimento di grafi con estremi uguali. Infine si costruiscono i behaviors sui quali poi si aggiungono i riferimenti ai nodi di interesse sfruttando i metodi esposti dalla classe \texttt{Graph}.
 
 L'operazione finale eseguita dal \texttt{NetLogoGraphBuilder} è quella di restituzione del prodotto costruito tramite il metodo \texttt{getProduct()}.
 
 \section{Visitor}
 \label{subsec:visitor}
-Per l'operazione di scrittura del codice NetLogo si ha la necessità di estrapolare dagli oggetti che costituiscono la struttura del grafo diverse informazioni. Al variare della classe concreta varieranno anche le informazioni specifiche da estrarre.
-
-Il grafo inoltre presenta una struttura di classi con interfacce diverse che devono, quindi, essere modificate per poter eseguire l'operazione necessaria.
-
-In questo contesto, quindi, il pattern Visitor si rivela molto utile permettendo di eseguire operazioni specifiche al variare della classe concreta senza inquinare le diverse interfacce all'interno della struttura.
+Per l'operazione di scrittura del codice NetLogo si ha la necessità di estrapolare dagli oggetti che costituiscono la struttura del grafo diverse informazioni. Al variare della classe concreta varieranno anche le informazioni specifiche da estrarre. Il grafo inoltre presenta una struttura di classi con interfacce diverse che devono, quindi, essere modificate per poter eseguire l'operazione necessaria. In questo contesto, quindi, il pattern Visitor si rivela molto utile permettendo di eseguire operazioni specifiche al variare della classe concreta senza inquinare le diverse interfacce all'interno della struttura.
 
 Un ulteriore vantaggio presentato dal Visitor è quello di concentrare le funzioni per la scrittura del codice NetLogo in classi specifiche rendendo il sistema più facile da manutenére ed eventualmente estendere.
 
@@ -95,9 +81,7 @@ Abbiamo inoltre scelto di separare il modello NetLogo finale in due parti, mante
 \caption{Class Diagram del Visitor}
 \label{fig:visitor-diagram}
 \end{figure}
-Si hanno quindi due classi visitor distinte per ognuno dei due modelli NetLogo da creare: \texttt{NetLogoGraphVisitor} e \texttt{NetLogoBehaviorVisitor} ( Figura \ref{fig:visitor-diagram} ). Il primo effettua una visitita su nodi e archi del grafo per scrivere i comandi necessari a mettere in vita l'ambiente corretto. Il secondo, invece, effettua una visita sui behaviors in modo da definire i comportamenti che gli attori potranno avere nella simulazione e sui nodi per impostare lo stato iniziale del sistema.
-
-In questo modo le interfacce delle classi del grafo, rimangono inalterate ma le operazioni effettuate variano al variare del visitor concreto, rendendolo un pattern ancora più adatto a questo specifico caso.
+Si hanno quindi due classi visitor distinte per ognuno dei due modelli NetLogo da creare: \texttt{NetLogoGraphVisitor} e \texttt{NetLogoBehaviorVisitor} ( Figura \ref{fig:visitor-diagram} ). Il primo effettua una visitita su nodi e archi del grafo per scrivere i comandi necessari a mettere in vita l'ambiente corretto. Il secondo, invece, effettua una visita sui behaviors in modo da definire i comportamenti che gli attori potranno avere nella simulazione e sui nodi per impostare lo stato iniziale del sistema. In questo modo le interfacce delle classi del grafo, rimangono inalterate ma le operazioni effettuate variano al variare del visitor concreto, rendendolo un pattern ancora più adatto a questo specifico caso.
 
 \begin{figure}[htbp]
 \centering
@@ -108,20 +92,10 @@ In questo modo le interfacce delle classi del grafo, rimangono inalterate ma le 
 NetLogoBehaviorVisitor, in modo analogo, eseguirà operazioni di lettura e scrittura alternate per generare un un secondo file \texttt{.nlogo} in cui si esegue la simulazione e si esportano i dati di interesse.
 
 \subsection{Funzionamento}
-In Figura \ref{fig:visitor-sequence} è mostrato il funzionamento di un \texttt{NetLogoGraphVisitor}.Come prima cosa si trascrive una parte del codice contenuto nel file di testo fino alla specifica stringa di flag “\texttt{;;===start}”.
 
-Quindi vengono estratte dal grafo informazioni riguardanti le dimensioni globali dell'ambiente che deve essere generato e vengono scritte le relative procedure NetLogo per la sua impostazione.
+In Figura \ref{fig:visitor-sequence} è mostrato il funzionamento di un \texttt{NetLogoGraphVisitor}.Come prima cosa si trascrive una parte del codice contenuto nel file di testo fino alla specifica stringa di flag “\texttt{;;===start}”. Quindi vengono estratte dal grafo informazioni riguardanti le dimensioni globali dell'ambiente che deve essere generato e vengono scritte le relative procedure NetLogo per la sua impostazione. Il visitor estrae dal grafo le liste dei nodi e degli archi che lo costituiscono e procede alla loro visita. Trattandosi del visitor per la generazione dell'ambiente fisico, vengono estratte solo le informazioni riguardanti le dimensioni fisiche delle entità rappresentate dagli oggetti. In particolare per i nodi di ingresso e uscita vengono anche impostate le variabili relative al tasso di generazione o eliminazione e le liste sulle percentuali relative ad ogni behavior. Si noti che questo visitor non aggiunge alcun tipo di funzionalità alle classi che rappresentano i comportamenti.
 
-Il visitor estrae dal grafo le liste dei nodi e degli archi che lo costituiscono e procede alla loro visita.
-
-Trattandosi del visitor per la generazione dell'ambiente fisico, vengono estratte solo le informazioni riguardanti le dimensioni fisiche delle entità rappresentate dagli oggetti. In particolare per i nodi di ingresso e uscita vengono anche impostate le variabili relative al tasso di generazione o eliminazione e le liste sulle percentuali relative ad ogni behavior. Si noti che questo visitor non aggiunge alcun tipo di funzionalità alle classi che rappresentano i comportamenti.
-
-In modo analogo \texttt{NetLogoBehaviorVisitor} trascrive parte del codice dal file di testo fino ad arrivare alla stringa “\texttt{;;===behaviors}”.\\
-Il visitor quindi esegue una visita su tutti i behaviors presenti nel modello Java andando a scrivere in NetLogo le procedure per la creazione di una apposita tabella in cui si indicizzano tutti i comportamenti con i loro punti di interesse.
-
-A questo punto si trascrive un'altra porzione di codice dal file di testo fino ad arrivare alla stringa “\texttt{;;===system}” che indica il punto all'interno del file in cui devono essere inserite le procedure per l'impostazione dello stato iniziale.
-
-Vengono visitati nuovamente tutti i nodi da cui, ora, si estraggono informazioni sulla quantità di attori presenti e i loro comportamenti. Queste informazioni vengono usate dal visitor per popolare una specifica lista del modello NetLogo in cui si è conservato lo stato. Anche in questo caso, si può osservare che \texttt{NetLogoBehaviorVisitor} non aggiunge funzionalità agli archi del grafo. 
+In modo analogo \texttt{NetLogoBehaviorVisitor} trascrive parte del codice dal file di testo fino ad arrivare alla stringa “\texttt{;;===behaviors}”. Il visitor quindi esegue una visita su tutti i behaviors presenti nel modello Java andando a scrivere in NetLogo le procedure per la creazione di una apposita tabella in cui si indicizzano tutti i comportamenti con i loro punti di interesse. A questo punto si trascrive un'altra porzione di codice dal file di testo fino ad arrivare alla stringa “\texttt{;;===system}” che indica il punto all'interno del file in cui devono essere inserite le procedure per l'impostazione dello stato iniziale. Vengono visitati nuovamente tutti i nodi da cui, ora, si estraggono informazioni sulla quantità di attori presenti e i loro comportamenti. Queste informazioni vengono usate dal visitor per popolare una specifica lista del modello NetLogo in cui si è conservato lo stato. Anche in questo caso, si può osservare che \texttt{NetLogoBehaviorVisitor} non aggiunge funzionalità agli archi del grafo. 
 
 \section{Documento XML}
 \label{sec:doc-xml}
@@ -229,9 +203,7 @@ Il parser XML inoltre esegue controlli mirati a verificare che siano fornite tut
 \section{Modello NetLogo}
 \label{sec:modello-netlogo}
 
-Come già accennato in precedenza abbiamo scelto di dividere il modello NetLogo generato dal nostro programma in due parti con lo scopo di mantenere le funzioni necessarie per la costruzione dell'ambiente separate da quelle che modellano i movimenti degli attori e raccolgono le informazioni sulla simulazione eseguita. In questo modo il codice è più facile da gestire e manutenere.
-
-Questa scelta porta, inoltre, il vantaggio di eseguire il primo modello una vola sola e di sfruttare, invece, il file di stato che esso genera nel caso in cui si vogliano simulare le interazioni di diversi comportamenti nello stesso ambiente.
+Come già accennato in precedenza abbiamo scelto di dividere il modello NetLogo generato dal nostro programma in due parti con lo scopo di mantenere le funzioni necessarie per la costruzione dell'ambiente separate da quelle che modellano i movimenti degli attori e raccolgono le informazioni sulla simulazione eseguita. In questo modo il codice è più facile da gestire e manutenere. Questa scelta porta, inoltre, il vantaggio di eseguire il primo modello una vola sola e di sfruttare, invece, il file di stato che esso genera nel caso in cui si vogliano simulare le interazioni di diversi comportamenti nello stesso ambiente.
 \subsection{Ambiente}
 L'ambiente in cui gli attori si muoveranno è modellato sotto forma di grafo con specifiche tipologie di turtles dette \texttt{beacons} che fanno da nodi e rappresentano quindi gli incroci tra le vie percorribili.
 
@@ -239,7 +211,7 @@ Gli archi sono rappresentati da due tipologie diverse di turtles dette \texttt{s
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/ambiente-screen.png}
+\includegraphics[width=.8\textwidth,height=\textheight,keepaspectratio]{images/ambiente-screen.png}
 \caption{Esempio di ambiente generato. In questo caso i beacons di ingresso sono di colore blu e i beacons di uscita di colore rosso.}
 \label{fig:ambiente-screen}
 \end{figure}
@@ -256,7 +228,7 @@ Lo stato iniziale del sistema è contenuto in una semplice lista \texttt{initial
  
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{images/movers-screen.png}
+\includegraphics[width=.8\textwidth,height=\textheight,keepaspectratio]{images/movers-screen.png}
 \caption{Esempio di ambiente popolato con attori nello stato iniziale. Gli attori hanno assunto il colore del beacon che hanno come obiettivo, in questo caso abbiamo un unico behavior che ha come interest point il beacon di colore verde.}
 \label{fig:movers-screen}
 \end{figure}
@@ -271,9 +243,7 @@ DOM (Document Object Model) è uno standard cross-platform e language-indipenden
 
 La tecnologia SAX (Simple Api for Xml) rappresenta un'alternativa veloce e potente nel caso in cui si voglia gestire il documento con un approccio event-driven.
 
-JDOM \cite{jdom}, infine, è un formato open-source disegnato appositamente per Java che completa DOM e SAX semplificando la manipolazione dei documenti XML. Questo al contrario delle due alternative non è incluso nel JDK, ma è ampiamente accettato dalla comunità.
-
-Il metodo più rapido e semplice per analizzare un documento XML e costruire un modello JDOM è attraverso le API SAX, che JDOM, grazie alla sua natura open source, può sfruttare.
+JDOM \cite{jdom}, infine, è un formato open-source disegnato appositamente per Java che completa DOM e SAX semplificando la manipolazione dei documenti XML. Questo al contrario delle due alternative non è incluso nel JDK, ma è ampiamente accettato dalla comunità. Il metodo più rapido e semplice per analizzare un documento XML e costruire un modello JDOM è attraverso le API SAX, che JDOM, grazie alla sua natura open source, può sfruttare.
 
 La API JDOM2 associata al formato, quindi, usa la classe \texttt{SAXBuilder} \cite{sax-builder} per costruire il modello JDOM sotto forma di albero che rispecchia la struttura del documento da cui è stato estratto. 
 

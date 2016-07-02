@@ -6,38 +6,38 @@
 \contentsline {subsection}{\numberline {1.1.1}Approccio su scala microscopica}{2}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Approccio su scala macroscopica}{3}{subsection.1.1.2}
 \contentsline {section}{\numberline {1.2}Approccio gerarchico}{4}{section.1.2}
-\contentsline {chapter}{\numberline {2}NetLogo e DesignPattern}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}NetLogo}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Storia}{8}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Linguaggio}{9}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Pattern Builder}{10}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Applicabilit\IeC {\`a}}{11}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Partecipanti}{11}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Collaborazioni}{12}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Conseguenze}{12}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Pattern Visitor}{14}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Applicabilit\IeC {\`a}}{15}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Partecipanti}{15}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Collaborazioni}{16}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Conseguenze}{16}{subsection.2.3.4}
-\contentsline {chapter}{\numberline {3}Sviluppo del progetto}{18}{chapter.3}
-\contentsline {section}{\numberline {3.1}Struttura centrale}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}Builder}{21}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Funzionamento}{22}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Visitor}{24}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Funzionamento}{26}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Documento XML}{29}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Graph}{29}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Behaviors}{31}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}System}{31}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Parser XML}{33}{section.3.5}
-\contentsline {section}{\numberline {3.6}Modello NetLogo}{33}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Ambiente}{34}{subsection.3.6.1}
+\contentsline {chapter}{\numberline {2}NetLogo e DesignPattern}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}NetLogo}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Storia}{7}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Linguaggio}{8}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Pattern Builder}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Applicabilit\IeC {\`a}}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Partecipanti}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Collaborazioni}{11}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Conseguenze}{11}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}Pattern Visitor}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Applicabilit\IeC {\`a}}{14}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Partecipanti}{14}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Collaborazioni}{15}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Conseguenze}{15}{subsection.2.3.4}
+\contentsline {chapter}{\numberline {3}Sviluppo del progetto}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Struttura centrale}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Builder}{20}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Funzionamento}{21}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Visitor}{23}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Funzionamento}{25}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Documento XML}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Graph}{28}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Behaviors}{30}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}System}{30}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Parser XML}{32}{section.3.5}
+\contentsline {section}{\numberline {3.6}Modello NetLogo}{32}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Ambiente}{33}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}Behaviors e stato iniziale}{34}{subsection.3.6.2}
-\contentsline {section}{\numberline {3.7}Librerie usate}{37}{section.3.7}
-\contentsline {chapter}{\numberline {4}Esperimenti e risultati}{40}{chapter.4}
-\contentsline {section}{\numberline {4.1}Modello monolitico}{41}{section.4.1}
-\contentsline {section}{\numberline {4.2}Scenari con macro regioni}{42}{section.4.2}
-\contentsline {section}{\numberline {4.3}Risultati}{44}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{48}{chapter.5}
-\contentsline {chapter}{Bibliografia}{49}{chapter.5}
+\contentsline {section}{\numberline {3.7}Librerie usate}{34}{section.3.7}
+\contentsline {chapter}{\numberline {4}Esperimenti e risultati}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modello monolitico}{40}{section.4.1}
+\contentsline {section}{\numberline {4.2}Scenari con macro regioni}{41}{section.4.2}
+\contentsline {section}{\numberline {4.3}Risultati}{43}{section.4.3}
+\contentsline {chapter}{\numberline {5}Conclusioni e sviluppi futuri}{47}{chapter.5}
+\contentsline {chapter}{Bibliografia}{48}{chapter.5}

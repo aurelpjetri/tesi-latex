@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  3 JUL 2016 00:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  3 JUL 2016 01:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -936,7 +936,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.22 ... {2.3.4}Conseguenze}{16}{subsection.2.3.4}
+l.22 ... {2.3.4}Conseguenze}{15}{subsection.2.3.4}
                                                    [1
 
 ])
@@ -947,17 +947,12 @@ l.22 ... {2.3.4}Conseguenze}{16}{subsection.2.3.4}
 \openout2 = `files/introduzione.aux'.
 
 
-(./files/introduzione.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--10
-
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
+(./files/introduzione.texpdfTeX warning (ext4): destination with the same ident
+ifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 
-      [1
+l.8 
+     [1
 
 
 
@@ -965,229 +960,216 @@ l.10
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.10 
-      [2]) [3]
+l.17 I
+      l presente progetto Ã¨ stato sviluppato presso il Software Science and...
+[2]) [3]
 \openout2 = `files/capitolo1.aux'.
 
  (./files/capitolo1.tex
 Capitolo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
-
- []
-
 [1
 
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 16--21
-
- []
-
-[2] [3]) [4] [5] [6]
+] [2] [3] [4]) [5]
 \openout2 = `files/capitolo2.aux'.
 
  (./files/capitolo2.tex
 Capitolo 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--12
-
- []
-
-[7
+[6
 
 
 
-] [8]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 19.
+] [7]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 28.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 19.
- [9]
-<images/builder-design-pattern.pdf, id=313, 442.8545pt x 160.1985pt>
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 28.
+ [8]
+<images/builder-design-pattern.pdf, id=309, 442.8545pt x 160.1985pt>
 File: images/builder-design-pattern.pdf Graphic file (type pdf)
 
 <use images/builder-design-pattern.pdf>
-Package pdftex.def Info: images/builder-design-pattern.pdf used on input line 3
-4.
+Package pdftex.def Info: images/builder-design-pattern.pdf used on input line 4
+6.
 (pdftex.def)             Requested size: 390.00374pt x 141.08022pt.
- [10] [11 <./images/builder-design-pattern.pdf>]
-<images/builder-pattern-sequence.pdf, id=373, 367.3725pt x 265.3915pt>
+ [9] [10 <./images/builder-design-pattern.pdf>] <images/builder-pattern-sequenc
+e.pdf, id=369, 367.3725pt x 265.3915pt>
 File: images/builder-pattern-sequence.pdf Graphic file (type pdf)
 
 <use images/builder-pattern-sequence.pdf>
 Package pdftex.def Info: images/builder-pattern-sequence.pdf used on input line
- 67.
+ 85.
 (pdftex.def)             Requested size: 390.02399pt x 281.75504pt.
- [12] [13 <./images/builder-pattern-sequence.pdf>]
-<images/visitor-design-pattern.pdf, id=420, 700.79314pt x 404.31049pt>
+ [11] [12 <./images/builder-pattern-sequence.pdf>]
+<images/visitor-design-pattern.pdf, id=415, 700.79314pt x 404.31049pt>
 File: images/visitor-design-pattern.pdf Graphic file (type pdf)
 
 <use images/visitor-design-pattern.pdf>
-Package pdftex.def Info: images/visitor-design-pattern.pdf used on input line 8
-6.
+Package pdftex.def Info: images/visitor-design-pattern.pdf used on input line 1
+05.
 (pdftex.def)             Requested size: 390.00342pt x 225.00572pt.
- [14 <./images/visitor-design-pattern.pdf>] [15]
-<images/visitor-pattern-sequence.pdf, id=516, 529.57848pt x 197.9395pt>
+ [13 <./images/visitor-design-pattern.pdf>] [14]
+<images/visitor-pattern-sequence.pdf, id=512, 529.57848pt x 197.9395pt>
 File: images/visitor-pattern-sequence.pdf Graphic file (type pdf)
 
 <use images/visitor-pattern-sequence.pdf>
 Package pdftex.def Info: images/visitor-pattern-sequence.pdf used on input line
- 117.
+ 141.
 (pdftex.def)             Requested size: 390.0072pt x 145.7722pt.
- [16 <./images/visitor-pattern-sequence.pdf>]) [17]
+ [15 <./images/visitor-pattern-sequence.pdf>]) [16]
 \openout2 = `files/capitolo3.aux'.
 
  (./files/capitolo3.tex
 Capitolo 3.
-[18
+[17
 
 
 
-] <images/graph-diagram.pdf, id=584, 796.17451pt x 899.76152pt>
+] <images/graph-diagram.pdf, id=580, 796.17451pt x 899.76152pt>
 File: images/graph-diagram.pdf Graphic file (type pdf)
 
 <use images/graph-diagram.pdf>
-Package pdftex.def Info: images/graph-diagram.pdf used on input line 25.
+Package pdftex.def Info: images/graph-diagram.pdf used on input line 23.
 (pdftex.def)             Requested size: 390.00745pt x 440.74971pt.
- [19] [20 <./images/graph-diagram.pdf>]
-<images/builder-diagram.pdf, id=693, 526.36653pt x 380.22049pt>
+ [18] [19 <./images/graph-diagram.pdf>]
+<images/builder-diagram.pdf, id=689, 526.36653pt x 380.22049pt>
 File: images/builder-diagram.pdf Graphic file (type pdf)
 
 <use images/builder-diagram.pdf>
-Package pdftex.def Info: images/builder-diagram.pdf used on input line 38.
+Package pdftex.def Info: images/builder-diagram.pdf used on input line 36.
 (pdftex.def)             Requested size: 390.01114pt x 281.72424pt.
- [21 <./images/builder-diagram.pdf>]
-<images/builder-sequence.pdf, id=754, 768.06952pt x 858.80847pt>
+ [20 <./images/builder-diagram.pdf>]
+<images/builder-sequence.pdf, id=750, 768.06952pt x 858.80847pt>
 File: images/builder-sequence.pdf Graphic file (type pdf)
 
 <use images/builder-sequence.pdf>
-Package pdftex.def Info: images/builder-sequence.pdf used on input line 56.
+Package pdftex.def Info: images/builder-sequence.pdf used on input line 52.
 (pdftex.def)             Requested size: 389.99918pt x 436.07329pt.
- [22] [23 <./images/builder-sequence.pdf>]
-[24] <images/visitor-class-diagram.pdf, id=843, 341.6765pt x 255.75551pt>
+ [21] [22 <./images/builder-sequence.pdf>]
+[23] <images/visitor-class-diagram.pdf, id=839, 341.6765pt x 255.75551pt>
 File: images/visitor-class-diagram.pdf Graphic file (type pdf)
 
 <use images/visitor-class-diagram.pdf>
-Package pdftex.def Info: images/visitor-class-diagram.pdf used on input line 94
+Package pdftex.def Info: images/visitor-class-diagram.pdf used on input line 80
 .
 (pdftex.def)             Requested size: 390.02097pt x 291.94283pt.
 
-<images/visitor-sequence.pdf, id=845, 666.08847pt x 621.92348pt>
+<images/visitor-sequence.pdf, id=841, 666.08847pt x 621.92348pt>
 File: images/visitor-sequence.pdf Graphic file (type pdf)
 
 <use images/visitor-sequence.pdf>
-Package pdftex.def Info: images/visitor-sequence.pdf used on input line 104.
+Package pdftex.def Info: images/visitor-sequence.pdf used on input line 88.
 (pdftex.def)             Requested size: 390.01083pt x 364.15117pt.
- [25]
-Overfull \hbox (15.98pt too wide) in paragraph at lines 111--112
+
+Overfull \hbox (15.98pt too wide) in paragraph at lines 96--97
 []\T1/cmr/m/n/12 In Fi-gu-ra []3.5[] è mo-stra-to il fun-zio-na-men-to di un \T
 1/cmtt/m/n/12 NetLogoGraphVisitor\T1/cmr/m/n/12 .Come
  []
 
-[26 <./images/visitor-class-diagram.pdf>] [27 <./images/visitor-sequence.pdf>]
-[28]
+[24] [25 <./images/visitor-class-diagram.pdf>] [26 <./images/visitor-sequence.p
+df>] [27]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 155.
- (./images/example.xml) [29] (./images/example.xml) (./images/example.xml)
-[30] (./images/example.xml) (./images/example.xml) (./images/example.xml)
+nput line 129.
+ (./images/example.xml) (./images/example.xml) (./images/example.xml)
+[28] [29] (./images/example.xml) (./images/example.xml) (./images/example.xml)
 (./images/example.xml)
 
-LaTeX Warning: Float too large for page by 27.18126pt on input line 193.
+LaTeX Warning: Float too large for page by 27.18126pt on input line 167.
 
-[31] [32] [33]
-<images/ambiente-screen.png, id=1086, 629.35126pt x 629.35126pt>
+[30] [31] [32]
+<images/ambiente-screen.png, id=1082, 629.35126pt x 629.35126pt>
 File: images/ambiente-screen.png Graphic file (type png)
 
 <use images/ambiente-screen.png>
-Package pdftex.def Info: images/ambiente-screen.png used on input line 242.
-(pdftex.def)             Requested size: 390.00168pt x 390.00168pt.
- [34] [35 <./images/ambiente-screen.png>]
-Overfull \hbox (13.14038pt too wide) in paragraph at lines 255--256
+Package pdftex.def Info: images/ambiente-screen.png used on input line 214.
+(pdftex.def)             Requested size: 311.99557pt x 311.99557pt.
+ [33 <./images/ambiente-screen.png>]
+Overfull \hbox (13.14038pt too wide) in paragraph at lines 227--228
 []\T1/cmr/m/n/12 Lo sta-to ini-zia-le del si-ste-ma è con-te-nu-to in una sem-p
 li-ce li-sta \T1/cmtt/m/n/12 initial-state
  []
 
-<images/movers-screen.png, id=1096, 631.35875pt x 630.355pt>
+<images/movers-screen.png, id=1088, 631.35875pt x 630.355pt>
 File: images/movers-screen.png Graphic file (type png)
 
 <use images/movers-screen.png>
-Package pdftex.def Info: images/movers-screen.png used on input line 259.
-(pdftex.def)             Requested size: 390.00294pt x 389.3829pt.
- [36 <./images/movers-screen.png>]
-Overfull \hbox (5.02028pt too wide) in paragraph at lines 270--271
+Package pdftex.def Info: images/movers-screen.png used on input line 231.
+(pdftex.def)             Requested size: 311.9985pt x 311.50247pt.
+
+Overfull \hbox (5.02028pt too wide) in paragraph at lines 242--243
 []\T1/cmr/m/n/12 DOM (Do-cu-ment Ob-ject Mo-del) è uno stan-dard cross-platform
  e language-
  []
 
-[37] <images/complete-diagram.pdf, id=1112, 996.92451pt x 1194.4625pt>
+[34] [35 <./images/movers-screen.png>] [36]
+<images/complete-diagram.pdf, id=1109, 996.92451pt x 1194.4625pt>
 File: images/complete-diagram.pdf Graphic file (type pdf)
 
 <use images/complete-diagram.pdf>
-Package pdftex.def Info: images/complete-diagram.pdf used on input line 291.
+Package pdftex.def Info: images/complete-diagram.pdf used on input line 261.
 (pdftex.def)             Requested size: 390.00073pt x 467.27835pt.
-) [38] [39 <./images/complete-diagram.pdf>]
+) [37] [38 <./images/complete-diagram.pdf>]
 \openout2 = `files/capitolo4.aux'.
 
 
 (./files/capitolo4.tex
 Capitolo 4.
-[40
+[39
 
 
 
-] <images/mappa-completo.png, id=1285, 2166.0925pt x 1448.41125pt>
+] <images/mappa-completo.png, id=1281, 2166.0925pt x 1448.41125pt>
 File: images/mappa-completo.png Graphic file (type png)
 
 <use images/mappa-completo.png>
 Package pdftex.def Info: images/mappa-completo.png used on input line 14.
 (pdftex.def)             Requested size: 389.97899pt x 260.76907pt.
 
-<images/meancdf.pdf, id=1287, 505.89pt x 289.08pt>
+<images/meancdf.pdf, id=1283, 505.89pt x 289.08pt>
 File: images/meancdf.pdf Graphic file (type pdf)
  <use images/meancdf.pdf>
 Package pdftex.def Info: images/meancdf.pdf used on input line 23.
 (pdftex.def)             Requested size: 390.00737pt x 222.86134pt.
 
-[41 <./images/mappa-completo.png>]
-<images/mappa-scenario-A.png, id=1297, 2166.0925pt x 1448.41125pt>
+[40 <./images/mappa-completo.png>]
+<images/mappa-scenario-A.png, id=1293, 2166.0925pt x 1448.41125pt>
 File: images/mappa-scenario-A.png Graphic file (type png)
 
 <use images/mappa-scenario-A.png>
 Package pdftex.def Info: images/mappa-scenario-A.png used on input line 34.
 (pdftex.def)             Requested size: 389.97899pt x 260.76907pt.
 
-<images/mappa-scenario-D.png, id=1298, 2166.0925pt x 1448.41125pt>
+<images/mappa-scenario-D.png, id=1294, 2166.0925pt x 1448.41125pt>
 File: images/mappa-scenario-D.png Graphic file (type png)
 
 <use images/mappa-scenario-D.png>
 Package pdftex.def Info: images/mappa-scenario-D.png used on input line 35.
 (pdftex.def)             Requested size: 389.97899pt x 260.76907pt.
- [42 <./images/meancdf.pdf>] [43 <./images/mappa-scenario-A.png> <./images/mapp
-a-scenario-D.png>] [44] [45]
-<images/scenariosAD.pdf, id=1331, 505.89pt x 289.08pt>
+ [41 <./images/meancdf.pdf>] [42 <./images/mappa-scenario-A.png> <./images/mapp
+a-scenario-D.png>] [43] [44]
+<images/scenariosAD.pdf, id=1327, 505.89pt x 289.08pt>
 File: images/scenariosAD.pdf Graphic file (type pdf)
 
 <use images/scenariosAD.pdf>
 Package pdftex.def Info: images/scenariosAD.pdf used on input line 115.
 (pdftex.def)             Requested size: 312.00435pt x 178.2882pt.
 
-<images/errorplotAD.pdf, id=1333, 505.89pt x 289.08pt>
+<images/errorplotAD.pdf, id=1329, 505.89pt x 289.08pt>
 File: images/errorplotAD.pdf Graphic file (type pdf)
 
 <use images/errorplotAD.pdf>
 Package pdftex.def Info: images/errorplotAD.pdf used on input line 124.
 (pdftex.def)             Requested size: 312.00435pt x 178.2882pt.
-) [46 <./images/scenariosAD.pdf>] [47 <./images/errorplotAD.pdf>]
+) [45 <./images/scenariosAD.pdf>] [46 <./images/errorplotAD.pdf>]
 \openout2 = `files/capitolo5.aux'.
 
  (./files/capitolo5.tex
 Capitolo 5.
-) [48
+) [47
 
 
 
@@ -1202,7 +1184,7 @@ Underfull \hbox (badness 3343) in paragraph at lines 4--7
 . com / javase / 7 / docs / api /
  []
 
-[49
+[48
 
 
 
@@ -1214,14 +1196,14 @@ Underfull \hbox (badness 1019) in paragraph at lines 85--90
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
- [50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
+ [49]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
  (./master-thesis.aux (./files/introduzione.aux) (./files/capitolo1.aux)
 (./files/capitolo2.aux) (./files/capitolo3.aux) (./files/capitolo4.aux)
 (./files/capitolo5.aux) (./files/bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
 Package rerunfilecheck Info: File `master-thesis.out' has not changed.
 (rerunfilecheck)             Checksum: A01AB9603C45110E70B113439A5ECB0D;2590.
 
@@ -1231,8 +1213,8 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \ifx on line 60 was incomplete) 
 Here is how much of TeX's memory you used:
- 12237 strings out of 493304
- 169052 string characters out of 6139872
+ 12236 strings out of 493304
+ 169045 string characters out of 6139872
  344589 words of memory out of 5000000
  15175 multiletter control sequences out of 15000+600000
  19916 words of font info for 51 fonts, out of 8000000 for 9000
@@ -1250,10 +1232,10 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc
 1728.pfb>
-Output written on master-thesis.pdf (56 pages, 1321122 bytes).
+Output written on master-thesis.pdf (55 pages, 1321012 bytes).
 PDF statistics:
- 1480 PDF objects out of 1728 (max. 8388607)
- 1106 compressed objects within 12 object streams
- 240 named destinations out of 1000 (max. 500000)
+ 1476 PDF objects out of 1728 (max. 8388607)
+ 1103 compressed objects within 12 object streams
+ 239 named destinations out of 1000 (max. 500000)
  424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
