@@ -149,47 +149,47 @@ La struttura del documento XML prevista per il funzionamento del nostro strument
 Rappresenta la topologia dell'ambiente in cui gli attori si muovono, ed è descritta sotto forma di grafo con \texttt{edges} che rappresentano le strade e \texttt{nodes} che rappresentano gli incroci.
 
 Gli edges possono essere \texttt{directed} e \texttt{undirected}, per ognuno di essi vengono specificati peso e larghezza, ovvero \texttt{weight} e \texttt{eWidth} come mostrato in Figura \ref{fig:xml-edges}. Il formato GraphML, inoltre, permette di specificare un tipo di default per gli edges come valore dell'attributo \texttt{edgedefault} di Graph.
+
 \begin{figure}[htbp]
 \centering
-\label{fig:xml-edges}
 \lstinputlisting[language=XML, firstline=178, lastline=188]{images/example.xml} %edges
 \caption{Esempio XML di definizione delle due tipologie di archi}
+\label{fig:xml-edges}
 \end{figure}
 
-I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta, quindi avremo \texttt{nx}, \texttt{ny}, \texttt{nWidth}, \texttt{nHeight} e \texttt{nRadius}. All'interno del codice si usa l'attributo \texttt{ntype} per specificare il tipo di nodo e anche in questo caso è possibile specificare un tipo di default settato a \texttt{normal}.
+I nodes invece possono essere di tre tipi: normal, entry o exit. Per tutti e tre i tipi vengono specificate coordinate spaziali e dimensioni fisiche dell'incrocio che esso rappresenta, quindi avremo \texttt{nx}, \texttt{ny}, \texttt{nWidth}, \texttt{nHeight} e \texttt{nRadius}. All'interno del codice si usa l'attributo \texttt{nType} per specificare il tipo di nodo e anche in questo caso è possibile specificare un tipo di default settato a \texttt{normal}. In Figura \ref{fig:xml-nodes} mostriamo un esempio della definizione delle tre tipologie di nodi.  
+
 \begin{figure}[htbp]
 \centering
-\label{fig:xml-nodes}
 \lstinputlisting[language=XML, firstline=32, lastline=38]{images/example.xml} %nodo regolare
-
 \lstinputlisting[language=XML, firstline=152, lastline=169]{images/example.xml} %entry e exit node
 \caption{Esempio XML di definizione delle tre tipologie di nodi}
+\label{fig:xml-nodes}
 \end{figure}
 
 
 \subsection{Behaviors}
 
-Per quanto riguarda i \texttt{Behaviors} si ha una struttura a grafo in cui ogni nodo rappresenta un behavior di cui viene indicata la tipologia, ovvero \texttt{bType}, l'identificatore e la lista dei nodi di interesse.
+Per quanto riguarda i \texttt{Behaviors} si ha una struttura a grafo, mostrata in Figura \ref{fig:xml-behaviors}, in cui ogni nodo rappresenta un behavior di cui viene indicata la tipologia, ovvero \texttt{bType}, l'identificatore e la lista dei nodi di interesse.
 
 \begin{figure}[htbp]
 \centering
-\label{fig:xml-behaviors}
 \lstinputlisting[language=XML, firstline=299, lastline=308]{images/example.xml} %behavior 
 \caption{Esempio XML di definizione di un behavior}
+\label{fig:xml-behaviors}
 \end{figure}
 
 \subsection{System}
 
-La sezione \texttt{System} descrive lo stato iniziale dell'ambiente. Per questa parte del modello si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. Per ogni nodo, sotto il tag “\texttt{graph}” con identificatore \texttt{state}, viene indicato il comportamento e la quantità degli attori presenti. In particolare, nei nodi contrassegnati come entry o exit, vi è un ulteriore tag “\texttt{graph}” con identificatore \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili (\texttt{entry-limit}), che può essere messo negativo nel caso in cui, invece, non si vogliano porre limiti.
+La sezione \texttt{System} descrive lo stato iniziale dell'ambiente. Per questa parte del modello si è preferito distaccarci leggermente dallo standard, in modo da avere una struttura più comprensibile, usando gli specifici tag \texttt{<behavior \textbackslash>}. In Figura \ref{fig:xml-system} si può osservare che per ogni nodo, sotto il tag “\texttt{graph}” con identificatore \texttt{state}, viene indicato il comportamento e la quantità degli attori presenti. In particolare, nei nodi contrassegnati come entry o exit, vi è un ulteriore tag “\texttt{graph}” con identificatore \texttt{parameters} in cui si specificano la frequenza di generazione o eliminazione degli attori e le percentuali relative ad ogni behavior. Per i nodi di ingresso viene anche indicato un limite superiore agli attori generabili (\texttt{entry-limit}), che può essere messo negativo nel caso in cui, invece, non si vogliano porre limiti.
 
 \begin{figure}[htbp]
 \centering
-\label{fig:xml-system}
 \lstinputlisting[language=XML, firstline=310, lastline=318]{images/example.xml} %stato nodo regolare
 \lstinputlisting[language=XML, firstline=439, lastline=469]{images/example.xml} %stato entry e exit
-
 \lstinputlisting[language=XML, firstline=484, lastline=485]{images/example.xml} %chiusura tag
 \caption{Esempio XML di definizione dello stato iniziale per ogni tipologia di nodo}
+\label{fig:xml-system}
 \end{figure}
 
 %\subsection{Esempio}

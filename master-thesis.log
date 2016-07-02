@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  2 JUL 2016 16:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.5.3)  3 JUL 2016 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1093,14 +1093,14 @@ Overfull \hbox (15.98pt too wide) in paragraph at lines 111--112
 [28]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 155.
- (./images/example.xml) (./images/example.xml) (./images/example.xml)
-[29] [30] (./images/example.xml) (./images/example.xml) (./images/example.xml)
+ (./images/example.xml) [29] (./images/example.xml) (./images/example.xml)
+[30] (./images/example.xml) (./images/example.xml) (./images/example.xml)
 (./images/example.xml)
 
 LaTeX Warning: Float too large for page by 27.18126pt on input line 193.
 
 [31] [32] [33]
-<images/ambiente-screen.png, id=1083, 629.35126pt x 629.35126pt>
+<images/ambiente-screen.png, id=1086, 629.35126pt x 629.35126pt>
 File: images/ambiente-screen.png Graphic file (type png)
 
 <use images/ambiente-screen.png>
@@ -1112,7 +1112,7 @@ Overfull \hbox (13.14038pt too wide) in paragraph at lines 255--256
 li-ce li-sta \T1/cmtt/m/n/12 initial-state
  []
 
-<images/movers-screen.png, id=1093, 631.35875pt x 630.355pt>
+<images/movers-screen.png, id=1096, 631.35875pt x 630.355pt>
 File: images/movers-screen.png Graphic file (type png)
 
 <use images/movers-screen.png>
@@ -1124,7 +1124,7 @@ Overfull \hbox (5.02028pt too wide) in paragraph at lines 270--271
  e language-
  []
 
-[37] <images/complete-diagram.pdf, id=1109, 996.92451pt x 1194.4625pt>
+[37] <images/complete-diagram.pdf, id=1112, 996.92451pt x 1194.4625pt>
 File: images/complete-diagram.pdf Graphic file (type pdf)
 
 <use images/complete-diagram.pdf>
@@ -1140,28 +1140,28 @@ Capitolo 4.
 
 
 
-] <images/mappa-completo.png, id=1282, 2166.0925pt x 1448.41125pt>
+] <images/mappa-completo.png, id=1285, 2166.0925pt x 1448.41125pt>
 File: images/mappa-completo.png Graphic file (type png)
 
 <use images/mappa-completo.png>
 Package pdftex.def Info: images/mappa-completo.png used on input line 14.
 (pdftex.def)             Requested size: 389.97899pt x 260.76907pt.
 
-<images/meancdf.pdf, id=1284, 505.89pt x 289.08pt>
+<images/meancdf.pdf, id=1287, 505.89pt x 289.08pt>
 File: images/meancdf.pdf Graphic file (type pdf)
  <use images/meancdf.pdf>
 Package pdftex.def Info: images/meancdf.pdf used on input line 23.
 (pdftex.def)             Requested size: 390.00737pt x 222.86134pt.
 
 [41 <./images/mappa-completo.png>]
-<images/mappa-scenario-A.png, id=1294, 2166.0925pt x 1448.41125pt>
+<images/mappa-scenario-A.png, id=1297, 2166.0925pt x 1448.41125pt>
 File: images/mappa-scenario-A.png Graphic file (type png)
 
 <use images/mappa-scenario-A.png>
 Package pdftex.def Info: images/mappa-scenario-A.png used on input line 34.
 (pdftex.def)             Requested size: 389.97899pt x 260.76907pt.
 
-<images/mappa-scenario-D.png, id=1295, 2166.0925pt x 1448.41125pt>
+<images/mappa-scenario-D.png, id=1298, 2166.0925pt x 1448.41125pt>
 File: images/mappa-scenario-D.png Graphic file (type png)
 
 <use images/mappa-scenario-D.png>
@@ -1169,14 +1169,14 @@ Package pdftex.def Info: images/mappa-scenario-D.png used on input line 35.
 (pdftex.def)             Requested size: 389.97899pt x 260.76907pt.
  [42 <./images/meancdf.pdf>] [43 <./images/mappa-scenario-A.png> <./images/mapp
 a-scenario-D.png>] [44] [45]
-<images/scenariosAD.pdf, id=1328, 505.89pt x 289.08pt>
+<images/scenariosAD.pdf, id=1331, 505.89pt x 289.08pt>
 File: images/scenariosAD.pdf Graphic file (type pdf)
 
 <use images/scenariosAD.pdf>
 Package pdftex.def Info: images/scenariosAD.pdf used on input line 115.
 (pdftex.def)             Requested size: 312.00435pt x 178.2882pt.
 
-<images/errorplotAD.pdf, id=1330, 505.89pt x 289.08pt>
+<images/errorplotAD.pdf, id=1333, 505.89pt x 289.08pt>
 File: images/errorplotAD.pdf Graphic file (type pdf)
 
 <use images/errorplotAD.pdf>
@@ -1233,7 +1233,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  12237 strings out of 493304
  169052 string characters out of 6139872
- 343368 words of memory out of 5000000
+ 344589 words of memory out of 5000000
  15175 multiletter control sequences out of 15000+600000
  19916 words of font info for 51 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1250,10 +1250,10 @@ m1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sftt1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfxc
 1728.pfb>
-Output written on master-thesis.pdf (56 pages, 1320917 bytes).
+Output written on master-thesis.pdf (56 pages, 1321122 bytes).
 PDF statistics:
- 1477 PDF objects out of 1728 (max. 8388607)
- 1103 compressed objects within 12 object streams
+ 1480 PDF objects out of 1728 (max. 8388607)
+ 1106 compressed objects within 12 object streams
  240 named destinations out of 1000 (max. 500000)
  424 words of extra memory for PDF output out of 10000 (max. 10000000)
 
