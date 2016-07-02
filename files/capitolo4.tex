@@ -48,7 +48,62 @@ In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli rigener
 
 \section{Risultati}
 
-Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella tabella X sono confrontati il modello monolitico e i due scenari sia con approccio rigenerativo che senza. La prima cosa da osservare è che in generale il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico devono essere eseguite nuovamente tutte le simulazioni, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Quindi la natura modulare del modello nei due scenari ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
+Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella Tabella \ref{tab:tabella-confronto} sono confrontati il modello monolitico e i due scenari sia con approccio rigenerativo che senza. La prima cosa da osservare è che in generale il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico devono essere eseguite nuovamente tutte le simulazioni, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Quindi la natura modulare del modello nei due scenari ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
+
+\begin{table}[h]
+  \centering
+  \resizebox{0.7\textwidth}{!} {
+  \begin{tabular}{ |l|l|l| }
+	\hline
+\textbf{Scenario}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
+\textbf{Monolitico} &		 						&		9:19:40		\\ \hline
+\textbf{A}			 &		21:33:36 				&		0:21:51		\\ \hline
+\textbf{D}			 &		4:49:27 				&		0:23:13		\\ \hline
+
+  \end{tabular}
+  }
+  \caption{Confronto dei tempi complessivi di simulazione}
+  \label{tab:tabella-confronto}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \resizebox{\textwidth}{!} {
+  \begin{tabular}{ |l|l|l| }
+	\hline
+\textbf{Regione}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
+\textbf{A1} 		&		3:16:25					&		0:3:6.6			\\ \hline
+\textbf{A2}			 &		2:13:11 				&		0:2:40.2		\\ \hline
+\textbf{A3}			 &		5:12:48 				&		0:3:40.2		\\ \hline
+\textbf{A4}			 &		6:20:39 				&		0:6:8.4			\\ \hline
+\textbf{A5}			 &		2:36:25 				&		0:3:29.4		\\ \hline
+\textbf{A6}			 &		1:46:20 				&		0:2:46.8		\\ \hline
+
+
+  \end{tabular}
+  
+	\begin{tabular}{ |l|l|l| }
+	 	\hline
+	\textbf{Regione}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
+	\textbf{D1} 		&		27:26.40				&		0:1:56.4			\\ \hline
+	\textbf{D2}		&		29:15.90 				&		0:2:3.3		\\ \hline
+	\textbf{D3}		 &		49:46.37 				&		0:1:58.8		\\ \hline
+	\textbf{D4}		 &		29:48.04 				&		0:2:00.0			\\ \hline
+	\textbf{D5}		 &		42:43.85 				&		0:1:51.6		\\ \hline
+	\textbf{D6}		 &		37:23.94 				&		0:1:40.2		\\ \hline
+	\textbf{D7}		 &		12:58.50 				&		0:1:58.8		\\ \hline
+	\textbf{D8}		 &		11:20.55 				&		0:2:7.8		\\ \hline
+	\textbf{D9}		 &		23:57.05 				&		0:1:58.8		\\ \hline
+	\textbf{D10}		 &		21:52.79 				&		0:2:06.0		\\ \hline
+	\textbf{D11}		 &		2:08.55 				&		0:1:43.8		\\ \hline
+	\textbf{D12}		 &		0:52.59 				&		0:1:48.0		\\ \hline
+	
+	
+	\end{tabular}
+  }
+  \caption{Tempi di simulazione relativi alle singole regioni con metodo rigenerativo e non rigenerativo}
+  \label{tab:tabelle-dati-simulazioni}
+\end{table}
 
 I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura \ref{fig:scenariosAD} in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione di campo medio ottenuta dai due scenari. Inoltre in Figura \ref{fig:errorsplotAD} è mostrato l'errore commesso dalle approssimazioni rispetto al sistema completo. Da questi risultati si osserva che le approssimazioni introdotte hanno un comportamento simile al modello monolitico, con una accuratezza diversa al variare degli scenari.
 
