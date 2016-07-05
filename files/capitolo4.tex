@@ -40,22 +40,22 @@ Il gruppo di ricerca del STLAB in \cite{esperimenti-sandro} ha usato le simulazi
 
 Nei due scenari A e D la mappa è suddivisa rispettivamente in 6 e 12 sezioni indipendenti in cui i punti di uscita sono punti di connessione con le regioni confinanti. Per ognuna di queste zone sono eseguite simulazioni con 3 diversi stati iniziali, ovvero con densità di affollamento alta, media e bassa. 
 
-Abbiamo inoltre lanciato le simulazioni in due modalità diverse: rigenerativa e non rigenerativa o transitiva (transiente?). La modalità rigenerativa consiste nel mantenere costante la densità di attori all'interno della regione generando un nuovo agente ogni volta che qualcuno raggiunge l'uscita ed eseguendo il modello per un numero prefissato di unità temporali. In questo modo si ottengono informazioni sui tempi di transizione del sistema che si trova in uno stato stabile di affollamento. La modalità transitiva, invece, è la più semplice e rapida delle due, infatti non prevede la generazione di alcun attore, quindi si registrano solo i dati relativi agli agenti che costituiscono lo stato iniziale della regione.
+Abbiamo inoltre lanciato le simulazioni in due modalità diverse: con densità degli attori costante e transitoria. La modalità con densità costante consiste nel mantenere fisso il numero degli attori all'interno della regione generando un nuovo agente ogni volta che qualcuno raggiunge l'uscita ed eseguendo il modello per un numero prefissato di unità temporali. In questo modo si ottengono informazioni sui tempi di transizione del sistema che si trova in uno stato stabile di affollamento. La modalità transitoria, invece, è la più semplice e rapida delle due, infatti non prevede la generazione di alcun attore, quindi si registrano solo i dati relativi agli agenti che costituiscono lo stato iniziale della regione.
 
-In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli rigenerativi sono usati per calcolare le probabilità di transizione della Catena di Markov che astrae il comportamento dell'attore attraverso le varie regioni come spiegato nella Sezione \ref{sec:approccio-gerarchico}.
+In \cite{esperimenti-sandro} i tempi di transizione ottenuti dai modelli con densità degli attori costante sono usati per calcolare le probabilità di transizione della Catena di Markov che astrae il comportamento dell'attore attraverso le varie regioni come spiegato nella Sezione \ref{sec:approccio-gerarchico}.
 
 
 
 \section{Risultati}
 
-Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella Tabella \ref{tab:tabella-confronto} sono confrontati il modello monolitico e i due scenari sia con approccio rigenerativo che senza. 
+Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un numero consistente di simulazioni dalle quali estrarre i tempi di transizione dei vari attori. Nella Tabella \ref{tab:tabella-confronto} sono confrontati il modello monolitico e i due scenari sia con approccio a densità costante che transitorio. 
 
 \begin{table}[h]
   \centering
   \resizebox{0.7\textwidth}{!} {
   \begin{tabular}{ |l|l|l| }
 	\hline
-	\textbf{Scenario}	&		\textbf{rigenerativo}	&		\textbf{non rigenerativo}	\\ \hline
+	\textbf{Scenario}	&		\textbf{densità costante}	&		\textbf{transitorio}	\\ \hline
 	\textbf{Monolitico} &		 						&		9:19:40		\\ \hline
 	\textbf{A}			 &		21:33:36 				&		0:21:51		\\ \hline
 	\textbf{D}			 &		4:49:27 				&		0:23:13		\\ \hline
@@ -66,14 +66,14 @@ Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un num
   \label{tab:tabella-confronto}
 \end{table}
 
-La prima cosa da osservare è che il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni dello scenario A con metodo rigenerativo. Nello scenario D invece il tempo totale delle simulazioni rigenerative è comunque minore di quello di riferimento del modello monolitico. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico si devono eseguire nuovamente le simulazioni su tutto l'ambiente, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Ad esempio se volessimo valutare i tempi di evacuazione del modello eliminando alcune strade della zona A2, nel caso del modello monolitico, per ottenere nuovamente tutti i dati sarebbero necessarie sempre circa 9 ore, al contrario nello scenario A potremmo lanciare simulazioni solo per la zona interessata e quindi impiegare solo circa 2 ore per l'ottenimento dei nuovi dati.
+La prima cosa da osservare è che il tempo totale di simulazione del modello completo è minore di quello necessario ad eseguire tutte le simulazioni sulle varie regioni dello scenario A con metodo a densità costante. Nello scenario D invece il tempo totale delle simulazioni con il medesimo metodo è comunque minore di quello di riferimento del modello monolitico. Il vantaggio che questo approccio porta, però, si manifesta nel momento in cui si vogliono studiare le conseguenze di piccole modifiche apportate in certe regioni. Infatti nel caso del modello monolitico si devono eseguire nuovamente le simulazioni su tutto l'ambiente, mentre nei due scenari si possono eseguire simulazioni isolate alla specifica regione, riducendo drasticamente il tempo necessario per la misura dei nuovi dati. Ad esempio se volessimo valutare i tempi di evacuazione del modello eliminando alcune strade della zona A2, nel caso del modello monolitico, per ottenere nuovamente tutti i dati sarebbero necessarie sempre circa 9 ore, al contrario nello scenario A potremmo lanciare simulazioni solo per la zona interessata e quindi impiegare solo circa 2 ore per l'ottenimento dei nuovi dati.
  
 \begin{table}[h]
   \centering
-  \resizebox{\textwidth}{!} {
+  \resizebox{0.7\textwidth}{!} {
   \begin{tabular}[t]{ |l|l|l| }
 	\hline
-	\textbf{Regione}	&		\textbf{Rigenerativo}	&		\textbf{Non Rigenerativo}	\\ \hline
+	\textbf{Regione}	&		\textbf{Densità costante}	&		\textbf{Transitorio}	\\ \hline
 	\textbf{A1} 		&		3:16:25					&		0:03:06.6			\\ \hline
 	\textbf{A2}			 &		2:13:11 				&		0:02:40.2		\\ \hline
 	\textbf{A3}			 &		5:12:48 				&		0:03:40.2		\\ \hline
@@ -83,9 +83,17 @@ La prima cosa da osservare è che il tempo totale di simulazione del modello com
 
   \end{tabular}
   
-  \begin{tabular}[t]{ |l|l|l| }
+  }
+  \caption{Tempi di simulazione relativi alle singole regioni dello scenario A con metodo a densità costante e transitorio}
+  \label{tab:tabella-dati-simulazioni-A}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \resizebox{0.7\textwidth}{!} {
+ \begin{tabular}[t]{ |l|l|l| }
 	 	\hline
-	\textbf{Regione}	&		\textbf{Rigenerativo}	&		\textbf{Non Rigenerativo}	\\ \hline
+	\textbf{Regione}	&		\textbf{Densità costante}	&		\textbf{Transitorio}	\\ \hline
 	\textbf{D1} 		&		27:26.40				&		0:1:56.4			\\ \hline
 	\textbf{D2}		&		29:15.90 				&		0:02:03.3		\\ \hline
 	\textbf{D3}		 &		49:46.37 				&		0:01:58.8		\\ \hline
@@ -101,14 +109,15 @@ La prima cosa da osservare è che il tempo totale di simulazione del modello com
 	
 	
   \end{tabular}
+  
   }
-  \caption{Tempi di simulazione relativi alle singole regioni con metodo rigenerativo e non rigenerativo}
-  \label{tab:tabelle-dati-simulazioni}
+  \caption{Tempi di simulazione relativi alle singole regioni dello scenario D con metodo a densità costante e transitorio}
+  \label{tab:tabella-dati-simulazioni-D}
 \end{table}
  
 La natura modulare del modello nei due scenari, quindi, ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
 
-I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura \ref{fig:scenariosAD} in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione di campo medio ottenuta dai due scenari.
+I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura \ref{fig:scenariosAD} in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione ottenuta dai due scenari usando la tecnica del campo medio.
 
 \begin{figure}[htbp]
 \centering
