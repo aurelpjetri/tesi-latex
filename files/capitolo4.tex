@@ -55,10 +55,10 @@ Dagli esperimenti condotti abbiamo misurato i tempi necessari ad eseguire un num
   \resizebox{0.7\textwidth}{!} {
   \begin{tabular}{ |l|l|l| }
 	\hline
-	\textbf{Scenario}	&		\textbf{densità costante}	&		\textbf{transitorio}	\\ \hline
+	\textbf{Scenario}	&		\textbf{Densità costante}	&		\textbf{Transitorio}	\\ \hline
 	\textbf{Monolitico} &		 						&		9:19:40		\\ \hline
 	\textbf{A}			 &		21:33:36 				&		0:21:51		\\ \hline
-	\textbf{D}			 &		4:49:27 				&		0:23:13		\\ \hline
+	\textbf{D}			 &		09:09:02 				&		0:23:13		\\ \hline
 
   \end{tabular}
   }
@@ -98,14 +98,14 @@ La prima cosa da osservare è che il tempo totale di simulazione del modello com
 	\textbf{D2}		 &		0:29:15 				&		0:02:03		\\ \hline
 	\textbf{D3}		 &		0:49:46 				&		0:01:58		\\ \hline
 	\textbf{D4}		 &		0:29:48 				&		0:02:00		\\ \hline
-	\textbf{D5}		 &		0:42:43 				&		0:01:51		\\ \hline
-	\textbf{D6}		 &		0:37:23 				&		0:01:40		\\ \hline
-	\textbf{D7}		 &		0:12:58 				&		0:01:58		\\ \hline
-	\textbf{D8}		 &		0:11:20 				&		0:02:07		\\ \hline
-	\textbf{D9}		 &		0:23:57 				&		0:01:58		\\ \hline
-	\textbf{D10}	 &		0:21:52 				&		0:02:06		\\ \hline
-	\textbf{D11}	 &		0:02:08 				&		0:01:43		\\ \hline
-	\textbf{D12}	 &		0:0:52 					&		0:01:48		\\ \hline
+	\textbf{D5}		 &		1:12:14 				&		0:01:51		\\ \hline
+	\textbf{D6}		 &		1:04:18 				&		0:01:40		\\ \hline
+	\textbf{D7}		 &		1:14:06 				&		0:01:58		\\ \hline
+	\textbf{D8}		 &		1:04:41 				&		0:02:07		\\ \hline
+	\textbf{D9}		 &		1:08:36 				&		0:01:58		\\ \hline
+	\textbf{D10}	 &		0:53:40 				&		0:02:06		\\ \hline
+	\textbf{D11}	 &		0:06:25 				&		0:01:43		\\ \hline
+	\textbf{D12}	 &		0:08:47 				&		0:01:48		\\ \hline
 	
 	
   \end{tabular}
@@ -116,6 +116,24 @@ La prima cosa da osservare è che il tempo totale di simulazione del modello com
 \end{table}
  
 La natura modulare del modello nei due scenari, quindi, ci permette uno studio dei movimenti delle masse molto più flessibile, riducendo considerevolmente il costo del calcolo della soluzione rispetto al modello monolitico.
+
+Nella Tabella \ref{tab:tabella-confronto-numero-dati} si può osservare come il modello a densità costante generi una quantità di dati totale di gran lunga maggiore rispetto al modello transitorio. In un contesto in cui queste misurazioni sono usate per effettuare delle approssimazioni, una maggiore quantità di dati permette di effettuare una migliore approssimazione rendendo quindi il modello a densità costante preferibile rispetto a quello transitorio.
+
+\begin{table}[h]
+  \centering
+  \resizebox{0.7\textwidth}{!} {
+  \begin{tabular}{ |l|l|l| }
+	\hline
+	\textbf{Scenario}	&		\textbf{Densità costante}	&		\textbf{Transitorio}	\\ \hline
+	\textbf{Monolitico} &		 						&		9949		\\ \hline
+	\textbf{A}			 &		395650 				&		15998		\\ \hline
+	\textbf{D}			 &		408295 				&		15862		\\ \hline
+
+  \end{tabular}
+  }
+  \caption{Confronto numero totale di dati raccolti dalle simulazioni}
+  \label{tab:tabella-confronto-numero-dati}
+\end{table}
 
 I ricercatori del STLAB nel loro lavoro di sperimentazione in \cite{esperimenti-sandro} hanno generato il grafico in Figura \ref{fig:scenariosAD} in cui è mostrato il confronto tra la probabilità di aver raggiunto l'uscita al tempo t del modello monolitico e l'approssimazione ottenuta dai due scenari usando la tecnica del campo medio.
 
